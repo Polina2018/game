@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=cyrillic')
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic')
+*, html, body
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    -ms-content-zooming: none
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto Condensed', sans-serif
+    outline: none
+body
+    background-color: #030617  
+$blue: #23527c
+    
+input[type="submit"]
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    cursor: pointer
+.wr
+    width: 1200px
+    margin-right: auto
+    margin-left: auto
+
+ul
+    list-style: none
+
+a
+    color: inherit
+    text-decoration: none
+a:focus, a:hover
+    color: #23527c
+.btn
+    color: #03cef3
+    border: solid 2px #03cef3
+    background-color: transparent
+    font-size: 17px
+    padding: 8px 50px
+    text-transform: uppercase
+    font-family: 'Roboto', sans-serif
+     -webkit-transition: all 0.35s ease-in-out
+    -moz-transition: all 0.35s ease-in-out
+    -ms-transition: all 0.35s ease-in-out
+    -o-transition: all 0.35s ease-in-out
+    transition: all 0.35s ease-in-out
+    &:hover
+        color: #1c2237
+        border: solid 2px #03cef3
+        background-color: #03cef3
+        -webkit-transition: all 0.35s ease-in-out
+        -moz-transition: all 0.35s ease-in-out
+        -ms-transition: all 0.35s ease-in-out
+        -o-transition: all 0.35s ease-in-out
+        transition: all 0.35s ease-in-out
+img
+    max-width: 100%
+    height: auto
+
+section
+    padding: 60px 0 80px
+.banner
+    height: 562px
+    .wr
+        width: 80%
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        height: 100%
+    .swiper-container 
+        width: 100%
+        height: 100%
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+    .swiper-slide 
+        text-align: center
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 100%
+        .item
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            transition: transform .6s ease-in-out
+            -webkit-backface-visibility: hidden
+            backface-visibility: hidden
+            -webkit-perspective: 1000px
+            perspective: 1000px
+            width: 100%
+            &_image
+                background-repeat: no-repeat !important
+                background-position: center !important
+                background-size: contain !important
+                height: 783px
+                width: 50%
+            &_info
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: flex-start
+                text-align: left
+                width: 50%
+            h2
+                font-size: 36px
+                color: #fff
+                margin-bottom: 15px
+                width: 70%
+            ul
+                margin-bottom: 40px
+            li
+                font-size: 21px
+                color: #fff
+                position: relative
+                margin-bottom: 5px
+                &:before
+                    background-color: #313aac
+                    border-radius: 50%
+                    content: ""
+                    display: inline-block
+                    margin-right: 10px
+                    margin-bottom: 2px
+                    height: 8px
+                    width: 8px
+.prev, .next
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    transition: all .2s ease
+    width: 40px !important
+    height: 84px !important
+    z-index: 10
+    cursor: pointer
+    background-size: 40px 84px !important
+    background-image:  none !important
+    &:after
+        background: url(../img/arrow-right.png) !important
+        background-repeat: no-repeat !important
+        background-size: contain !important
+        content: ''
+        position: absolute
+        
+        height: 100%
+        width: 100%
+        transition: all .2s ease
+    &:hover
+        opacity: 1
+        transition: all .2s ease
+        -webkit-filter: brightness(0) invert(1)
+        filter: brightness(0) invert(1)
+.prev
+    &:after
+        transform: rotate(180deg)
+.header
+    position: relative
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 100
+    height: 90px
+    background-color: #030617
+    border-bottom: 1px solid #3b5a88
+    .wr
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        height: 100%
+        width: 97%
+    &_left
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        height: 100%
+        width: 70%
+        &-logo
+            height: 100%
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            a
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+            img
+                width: 170px
+        &-menu
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            height: 100%
+    &_right
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        height: 100%
+        width: 30%
+        justify-content: flex-end
+    ul
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        height: 100%
+        align-items: center
+        li
+            height: 100%
+            font-size: 18px
+            color: #fff
+            margin-left: 15px
+            transition: all 0.3s ease-in-out
+            display: inline-block
+            position: initial
+            a
+                height: 100%
+                padding: 0 12px
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+            &:hover
+                background: #1b213a
+                a
+                    color: #05c9ef
+                    transition: all 0.3s ease-in-out
+    .profile
+        img
+            height: 30px
+            width: 30px
+    .lang, .profile
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            background: url(../img/menu-arrow.svg)
+            background-size: contain
+            background-repeat: no-repeat
+            width: 8px
+            height: 5px
+        &:hover:after
+            transform: translateY(-50%) rotate(180deg) 
+            transition: all .3s
+    .sub-menu
+        display: none
+    .dropdown
+        transition: all 0.3s ease-in-out
+        a
+            position: relative
+            &:before
+                content: ""
+                position: absolute
+                top: 27px
+                right: -8px
+                width: 1px
+                height: 36px
+                background-color: #3b5a88
+            &:after
+                content: ''
+                position: absolute
+                right: 0
+                top: 50%
+                transform: translateY(-50%)
+                background: url(../img/menu-arrow.svg)
+                background-size: contain
+                background-repeat: no-repeat
+                width: 8px
+                height: 5px
+        &:hover
+            a:after
+                transform: translateY(-50%) rotate(180deg) 
+                transition: all .3s
+        &:hover
+            transition: all 0.3s ease-in-out
+            .sub-menu
+                transition: all 0.3s ease-in-out
+                display: block
+                width: 100%
+                padding: 40px 40px 0 190px
+                top: 83px
+                left: 0
+                background: #1b213a
+                border: 0
+                position: absolute
+                height: auto
+                li
+                    align-content: space-between
+                    display: inline-flex
+                    flex-wrap: wrap
+                    width: 250px
+                    padding: 0px
+                    margin-bottom: 70px
+                    a
+                        color: #fff
+                    
+                    img
+                        width: 28px
+                        margin-right: 12px
+                .active
+                    a
+                        color: #5e7eb1
+                    img
+                        opacity: .4
+.news
+    padding-top: 120px
+    padding-bottom: 120px
+    background-image: url(../img/star.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center -136px
+    background-attachment: fixed
+    .wr
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        height: 100%
+        justify-content: space-between
+        width: 80%
+    &_body
+        width: 50%
+        .btn_white
+            color: #fff
+            border: 2px solid #fff
+            &:hover
+                border-color: #ba3044
+                background-color: #ba3044
+        h2
+            font-size: 48px
+            color: #fff
+            margin-bottom: 60px
+        &-imgs
+            margin-bottom: 40px
+            img
+                &:nth-child(1)
+                        margin-right: 40px
+        &-btns
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            .btn_white
+                &:nth-child(1)
+                    margin-right: 40px
+.none
+    display: none
