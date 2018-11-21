@@ -30,8 +30,7 @@ ul
 a
     color: inherit
     text-decoration: none
-a:focus, a:hover
-    color: #23527c
+
 .btn
     color: #03cef3
     border: solid 2px #03cef3
@@ -39,12 +38,12 @@ a:focus, a:hover
     font-size: 17px
     padding: 8px 50px
     text-transform: uppercase
-    font-family: 'Roboto', sans-serif
      -webkit-transition: all 0.35s ease-in-out
     -moz-transition: all 0.35s ease-in-out
     -ms-transition: all 0.35s ease-in-out
     -o-transition: all 0.35s ease-in-out
     transition: all 0.35s ease-in-out
+    font-weight: 700
     &:hover
         color: #1c2237
         border: solid 2px #03cef3
@@ -61,7 +60,8 @@ img
 section
     padding: 60px 0 80px
 .banner
-    height: 562px
+    height: calc(100vh - 90px)
+    margin-top: 90px
     .wr
         width: 80%
         display: -webkit-flex
@@ -105,10 +105,13 @@ section
             width: 100%
             &_image
                 background-repeat: no-repeat !important
-                background-position: center !important
-                background-size: contain !important
+                background-position: 100% !important
+                background-size: 90% !important
                 height: 783px
-                width: 50%
+                width: 55%
+            .item_image2
+                background-size: 70% !important
+                background-position: center !important
             &_info
                 display: -webkit-flex
                 display: -moz-flex
@@ -119,7 +122,7 @@ section
                 justify-content: center
                 align-items: flex-start
                 text-align: left
-                width: 50%
+                width: 45%
             h2
                 font-size: 36px
                 color: #fff
@@ -141,42 +144,41 @@ section
                     margin-bottom: 2px
                     height: 8px
                     width: 8px
-.prev, .next
-    display: -webkit-flex
-    display: -moz-flex
-    display: -ms-flex
-    display: -o-flex
-    display: flex
-    align-items: center
-    justify-content: center
-    position: relative
-    transition: all .2s ease
-    width: 40px !important
-    height: 84px !important
-    z-index: 10
-    cursor: pointer
-    background-size: 40px 84px !important
-    background-image:  none !important
-    &:after
-        background: url(../img/arrow-right.png) !important
-        background-repeat: no-repeat !important
-        background-size: contain !important
-        content: ''
-        position: absolute
-        
-        height: 100%
-        width: 100%
+    .prev, .next
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        justify-content: center
         transition: all .2s ease
-    &:hover
-        opacity: 1
-        transition: all .2s ease
-        -webkit-filter: brightness(0) invert(1)
-        filter: brightness(0) invert(1)
-.prev
-    &:after
-        transform: rotate(180deg)
+        width: 40px !important
+        height: 84px !important
+        z-index: 10
+        cursor: pointer
+        background-size: 40px 84px !important
+        background-image:  none !important
+        &:after
+            background: url(../img/arrow-right.png) !important
+            background-repeat: no-repeat !important
+            background-size: contain !important
+            content: ''
+            position: absolute
+
+            height: 100%
+            width: 100%
+            transition: all .2s ease
+        &:hover
+            opacity: 1
+            transition: all .2s ease
+            -webkit-filter: brightness(0) invert(1)
+            filter: brightness(0) invert(1)
+    .prev
+        &:after
+            transform: rotate(180deg)
 .header
-    position: relative
+    position: fixed
     top: 0
     left: 0
     width: 100%
@@ -192,7 +194,7 @@ section
         display: flex
         align-items: center
         height: 100%
-        width: 97%
+        width: 92%
     &_left
         display: -webkit-flex
         display: -moz-flex
@@ -226,6 +228,13 @@ section
             display: flex
             align-items: center
             height: 100%
+            margin-left: 15px
+            li
+                &:hover
+                    background: #1b213a
+                    a
+                        color: #05c9ef
+                        transition: all 0.3s ease-in-out
     &_right
         display: -webkit-flex
         display: -moz-flex
@@ -248,7 +257,7 @@ section
             height: 100%
             font-size: 18px
             color: #fff
-            margin-left: 15px
+            padding: 0 8px
             transition: all 0.3s ease-in-out
             display: inline-block
             position: initial
@@ -261,17 +270,17 @@ section
                 display: -o-flex
                 display: flex
                 align-items: center
-            &:hover
-                background: #1b213a
+                font-family: 'Roboto', sans-serif
+            &:hover    
                 a
                     color: #05c9ef
-                    transition: all 0.3s ease-in-out
     .profile
         img
             height: 30px
             width: 30px
     .lang, .profile
         position: relative
+        color: #fff
         &:after
             content: ''
             position: absolute
@@ -283,20 +292,33 @@ section
             background-repeat: no-repeat
             width: 8px
             height: 5px
-        &:hover:after
-            transform: translateY(-50%) rotate(180deg) 
+        &:hover  
+            a
+                color: #fff
+            > a
+                color: #05c9ef
+        .lang.active:after, .profile.active:after
+            transform: translateY(-50%) 
             transition: all .3s
+            > a
+                color: #05c9ef
+        .dropdown-lang
+            display: none
+        .dropdown-menu
+            display: none
     .sub-menu
         display: none
     .dropdown
         transition: all 0.3s ease-in-out
-        a
+        padding: 0 15px
+        > a 
+            width: 120px
             position: relative
             &:before
                 content: ""
                 position: absolute
                 top: 27px
-                right: -8px
+                right: -17px
                 width: 1px
                 height: 36px
                 background-color: #3b5a88
@@ -312,6 +334,8 @@ section
                 width: 8px
                 height: 5px
         &:hover
+            a:before
+                display: none
             a:after
                 transform: translateY(-50%) rotate(180deg) 
                 transition: all .3s
@@ -341,11 +365,118 @@ section
                     img
                         width: 28px
                         margin-right: 12px
+                    &:hover
+                        a
+                            color: #05c9ef
+                        img
+                            opacity: 1
                 .active
                     a
                         color: #5e7eb1
                     img
                         opacity: .4
+.lang.active
+    color: #fff
+    .dropdown-lang
+        width: 170px
+        top: 52px
+        left: -55px
+        position: absolute
+        background-color: #030617
+        border: 1px solid #334e78
+        height: 200px
+        display: block
+        ul
+            padding: 10px 20px 10px 25px
+            position: relative
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-direction: column
+            &:before 
+                top: -30px
+                left: 53%
+                content: " "
+                height: 0
+                width: 0
+                position: absolute
+                border: solid transparent
+                border-bottom-color: #3b5a88
+                border-width: 15px
+                margin-left: -17px
+            li
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                &:hover
+                    a
+                        color: #05c9ef
+            .dropdown-item
+                font-size: 17px
+                padding: 10px 20px 10px 35px
+                color: #fff
+                font-family: 'Roboto', sans-serif
+                position: relative
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                img
+                    position: absolute
+                    left: 0
+                    width: 20px
+.profile.active
+    .dropdown-menu
+        width: 170px
+        top: 52px
+        left: -55px
+        position: absolute
+        background-color: #030617
+        border: 1px solid #334e78
+        height: 120px
+        display: block
+        box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.28)
+        background-image: linear-gradient(to top, #305078, #030617)
+        ul
+            padding: 10px 20px 10px 25px
+            position: relative
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-direction: column
+            &:before 
+                top: -30px
+                left: 53%
+                content: " "
+                height: 0
+                width: 0
+                position: absolute
+                border: solid transparent
+                border-bottom-color: #3b5a88
+                border-width: 15px
+                margin-left: -17px
+            li
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                a
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+                &:hover
+                    a
+                        color: #05c9ef
 .news
     padding-top: 120px
     padding-bottom: 120px
@@ -369,6 +500,9 @@ section
         .btn_white
             color: #fff
             border: 2px solid #fff
+            padding: 12px 50px
+            font-size: 19px
+            
             &:hover
                 border-color: #ba3044
                 background-color: #ba3044
@@ -379,8 +513,9 @@ section
         &-imgs
             margin-bottom: 40px
             img
-                &:nth-child(1)
-                        margin-right: 40px
+                margin-right: 50px
+                &:nth-child(2)
+                        margin-right: 0
         &-btns
             display: -webkit-flex
             display: -moz-flex
@@ -388,7 +523,936 @@ section
             display: -o-flex
             display: flex
             .btn_white
-                &:nth-child(1)
+                margin-right: 50px
+                &:nth-child(2)
+                    margin-right: 0px
+.tournament
+    .wr
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .section_head
+        width: 100%
+        margin-bottom: 60px
+        h2
+            font-size: 33px
+            font-weight: bold
+            text-transform: uppercase
+            
+            color: #fff
+            text-align: center
+    .tournament_body
+        width: 65%
+    .tournament_body > div
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+    .tbl_head
+        border-bottom: none
+        background-color: #1b213a
+        color: #044669
+        border-bottom: 1px solid #030617
+        div
+            color: #fff
+            padding: 12px 8px
+            padding: 25px 10px
+            width: 15%
+            font-size: 14px
+            text-transform: uppercase
+            text-align: center
+            font-weight: bold
+        .name 
+            width: 40%
+    .tbl_row
+        background: #fff
+        border-bottom: 1px solid #cfe0e7
+        border-bottom: 1px solid #030617
+        background-color: #1b213a
+        &:nth-child(2n)
+            background: #e0ebf0
+            background-color: #1b213a
+        
+        div
+            text-align: center
+            font-size: 12px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 15%
+            padding: 12px 8px
+            padding: 19px 10px
+            color: #044669
+            color: #fff
+            p
+                opacity: .4
+        .name 
+            width: 40%
+            justify-content: flex-start
+            img
+                max-height: 25px
+                max-width: 25px
+                margin-right: 10px
+            a
+                font-size: 13px
+                color: #009ad3
+                color: #fff
+                opacity: 1
+                font-weight: bold
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+        .status
+            color: #69ac41
+            opacity: 1
+            font-weight: bold
+            padding-left: 24px
+            position: relative
+            display: none
+        .status.active
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+        .status-plus
+            &:before
+                position: absolute
+                content: ''
+                background: url(../img/checked.svg)
+                background-position: center
+                background-size: 10px
+                top: 50%
+                transform: translateY(-50%)
+                left: 22%
+                width: 10px
+                height: 10px
+        .status-minus
+            color: #8a8a8a
+            &:before
+                position: absolute
+                content: ''
+                background: url(../img/cancel.svg)
+                background-position: center
+                background-size: 10px
+                top: 50%
+                transform: translateY(-50%)
+                left: 22%
+                width: 10px
+                height: 10px
+        .status-none
+            color: yellow 
+            &:before
+                position: absolute
+                content: ''
+                background: url(../img/reload.svg)
+                background-position: center
+                background-size: 10px
+                top: 50%
+                transform: translateY(-50%)
+                left: 22%
+                width: 10px
+                height: 10px
+        
+            
+            
+.tournament_calendar
+    width: 25%
+    position: relative
+    background-color: #1b213a
+    .calendar_head
+        
+        color: #fff
+        border-bottom: 1px solid #03c7eb
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        justify-content: center
+        padding:  18px 0
+        h2
+            font-size: 18px
+            font-family: 'Roboto', sans-serif
+            text-transform: uppercase
+    .filter_calendar
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+    .filter_month
+        position: relative
+        width: 75%
+        height: 50px
+        padding: 4px 20px
+        border-bottom: 1px solid #030617
+        border-right: 1px solid #030617
+        background-color: #1b213a
+        text-align: center
+        .c_right, .c_left
+            height: 12px
+            cursor: pointer
+            top: 50%
+            transform: translateY(-50%)
+            position: absolute
+        .c_left
+            width: 20px
+            left: 23px
+        .c_right
+            right: 23px
+            width: 20px
+            transform: translateY(-50%) rotate(180deg)
+        .c_date
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center 
+            justify-content: center
+            font-family: 'Roboto', sans-serif
+            font-size: 14px
+            color: #6a8ab9
+            cursor: pointer
+            height: 100% 
+    .filter_game
+        width: 25%
+        height: 50px
+        padding: 4px 20px
+        text-align: left
+        border-bottom: 1px solid #030617
+        background-color: #1b213a
+        cursor: pointer
+        position: relative
+        transition: all 0.3s
+        
+        &:after
+            background-image: url(../img/arrow-left.svg)
+            background-repeat: no-repeat
+            background-size: contain
+            width: 15px
+            height: 15px
+            position: absolute
+            right: 10px
+            top: 50%
+            transform: translateY(-50%) rotate(270deg)
+            content: ''
+            transition: all 0.3s
+        img
+            width: 27px
+            margin-top: 8px
+            right: 5px
+            position: relative
+    .filter_game.active 
+        &:after
+            background-image: url(../img/arrow-left.svg)
+            background-repeat: no-repeat
+            background-size: contain
+            width: 15px
+            height: 15px
+            position: absolute
+            right: 10px
+            top: 50%
+            transform: translateY(-50%) rotate(90deg)
+            content: ''
+            transition: all 0.3s
+    .calendar_games 
+        position: absolute
+        top: 108px
+        left: 0
+        width: 100%
+        height: calc(100% - 108px)
+        padding: 26px 15px
+        background: #1b213a
+        display: inline-flex
+        flex-flow: row wrap
+        justify-content: center
+        align-items: center
+        z-index: 2
+        display: none
+        img
+            object-fit: contain
+            
+            width: 31px
+            height: 30px
+            margin: 10px
+    .calendar_table  
+        width: 100%
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-flow: column nowrap
+        justify-content: space-between
+        height: auto
+        padding-bottom: 7px
+        font-family: 'Roboto', sans-serif
+        .calendar_table_row
+            display: flex
+            flex-flow: row nowrap
+            .calendar_table_cell
+                font-size: 13px
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                flex-flow: row nowrap
+                word-break: break-word
+                justify-content: center
+                align-items: center
+                flex-grow: 1
+                flex-basis: 0
+                height: 35px
+                color: #6a8ab9
+                font-family: 'Roboto', sans-serif
+            .calendar_table_cell_day 
+                display: flex
+                flex-direction: column
+                align-content: center
+                align-items: center
+                justify-content: center
+                position: relative
+                border-radius: 50%
+                height: 34px
+                width: 34px
+                cursor: default
+                transition: all .3s ease
+                &:hover
+                    transition: all .3s ease
+                    background: #424f79
+                    color: #fff
+            .calendar_table_cell.selected 
+                transition: all .3s ease
+                background: #424f79
+                color: #fff
+            .calendar_table_cell_day.withclick
+                cursor: pointer
+        .calendar_header_row
+            .calendar_table_cell
+                color: #fff
+        .selected_calendar_day 
+            .calendar_table_cell_day 
+                color: #fff
+                background: #03c7eb
+        .points_container
+            display: block
+            line-height: 5px
+            position: absolute
+            bottom: 2px
+            .day_points
+                width: 5px
+                height: 5px
+                background: #03c7eb
+                border-radius: 50%
+                display: inline-block
+                line-height: 5px
+.footer
+    padding: 60px 0    
+    background-color: #031020
+    .wr
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        width: 1170px
+    &_col
+        width: 25%
+        color: #556c8f
+        padding-left: 15px
+        padding-right: 15px
+        h3
+            font-family: 'Roboto', sans-serif
+            font-weight: bold
+            font-size: 16px
+            margin-bottom: 15px
+            text-transform: uppercase
+        li
+            font-family: 'Roboto', sans-serif
+            font-size: 15px
+            margin-bottom: 12px
+            a
+                font-family: 'Roboto', sans-serif
+                font-weight: 400
+                
+    &_col4
+        .social
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            margin-bottom: 20px
+            li
+                width: 55px
+                height: 55px
+                text-align: center
+                background: #0F1831
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-right: 10px
+                a
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 100%
+                    height: 100%
+                img
+                    height: 25px
+                    opacity: .5
+                &:hover
+                    img
+                        opacity: 1
+        .work
+            p
+                color: #556c8f
+                font-size: 16px
+                margin-bottom: 5px
+            a
+                font-family: 'Roboto Condensed', sans-serif
+                color: #337ab7
+                font-size: 16px
+.news_archive
+    background-color: #0d1025
+    background-image: none
+    margin-top: 90px
+    padding-top: 60px
+    padding-bottom: 80px
+    height: calc(100% - 90px)
+    .wr
+        flex-direction: column
+    .news_filter
+        width: 100%
+        margin-bottom: 20px
+        h2
+            float: left
+            font-size: 36px
+            color: #fff
+            margin-left: 10px
+        .filter_sort
+            float: right
+            vertical-align: middle
+            text-align: right
+            margin-right: 20px
+        select
+            display: inline-block
+            width: 250px
+            height: 42px
+            margin-left: 15px
+            padding-left: 15px
+            font-family: 'Roboto', sans-serif
+            font-size: 17px
+            border: 1px solid #3b5a88
+            
+            outline: none
+            color: #6a8ab9
+            background-color: #0d1025
+    .btn-more
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        padding: 8px 48px 
+    .news_body
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        position: relative
+        padding-bottom: 150px
+        .news-item
+            background-position: center !important
+            background-size: cover !important
+            background-repeat: no-repeat !important
+            width: calc(33% - 20px)
+            margin: 10px 
+            height: 300px
+            position: relative
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: flex-start
+            justify-content: flex-end
+            padding: 10px 20px
+            flex-direction: column
+            &:before
+                content: ''
+                position: absolute
+                height: 40%
+                right: 0
+                bottom: 0
+                left: 0
+                z-index: 1
+                background: -moz-linear-gradient(top, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+                background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+                background: -o-linear-gradient(top, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+                background: -ms-linear-gradient(top, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+                background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 )
+            h3
+                color: #fff
+                font-size: 26px
+                text-align: left
+                margin-bottom: 0px
+                text-transform: uppercase
+                z-index: 2
+            p
+                font-size: 16px
+                color: #03cef3
+                font-weight: 500
+                text-transform: uppercase
+                text-align: left
+                position: relative
+                z-index: 2
+                line-height: 1.6em
+                a
+                    margin-right: 5px
+                span
+                    font-size: 29px
+                    position: relative
+                    top: -5px
+                    left: 0%
+                    margin-right: 5px
+        .news-item > a 
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+.article 
+    height: calc(100% - 90px)
+    margin-top: 90px
+    background: #0b1225
+    .wr
+        width: 730px
+    &_img
+        background-position: center !important
+        background-size: cover !important
+        background-repeat: no-repeat !important
+        width: calc(33% - 20px)
+        margin: 0
+        margin-bottom: 30px
+        width: 100%
+        height: 300px
+        position: relative
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: flex-start
+        justify-content: flex-end
+        padding: 20px 20px
+        flex-direction: column
+        line-height: 1.3em
+        &:before
+            content: ''
+            position: absolute
+            height: 40%
+            right: 0
+            bottom: 0
+            left: 0
+            z-index: 1
+            background: -moz-linear-gradient(top, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+            background: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+            background: -o-linear-gradient(top, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+            background: -ms-linear-gradient(top, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+            background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+            background: linear-gradient(to bottom, transparent 38%, rgba(0,0,0,0.41) 74%, rgba(0,0,0,0.6) 100%)
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 )
+        h3
+            color: #fff
+            font-size: 26px
+            text-align: left
+            margin-bottom: 5px
+            text-transform: uppercase
+            z-index: 2
+        .info
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            width: 100%
+            z-index: 2
+        a
+            font-size: 14px
+            color: #fff
+            font-weight: 600
+            text-transform: uppercase
+            text-align: left
+            position: relative
+            padding-right: 10px
+            margin-right: 10px
+            &:after
+                content: ''
+                position: absolute
+                width: 1px
+                background: #fff
+                height: 100%
+                right: 0
+                top: 0
+            &:last-child:after
+                display: none
+    &_content
+        color: #fff
+        font-size: 18px
+        text-align: justify
+        line-height: 1.6em
+        p
+            letter-spacing: -0.3px
+            font-family: 'Roboto', sans-serif
+            margin-bottom: 20px
+        h1, h2, h3, h4, h5
+            font-family: 'Roboto', sans-serif
+            margin-bottom: 10px
+        h1
+            font-size: 26px
+        h2
+            font-size: 24px
+        h3
+            font-size: 22px
+        h4
+            font-size: 20px
+        h5
+            font-size: 18px
+            
+    &_comments
+        margin-top: 40px
+        margin-bottom: 50px
+        border-top: 1px solid #242f43
+        border-bottom: 1px solid #242f43
+        textarea
+            width: 100%
+            padding: 15px 1em 55px
+            background: #030617
+            border: none
+            outline: none
+            resize: none
+            font-size: 18px
+            color: #6d7e9c
+.tournament_page
+    position: relative
+    height: calc(100% - 90px)
+    margin-top: 90px
+    background: #0d1025
+    .wr
+        padding-left: 75px
+    .tournament_calendar
+        height: 100%
+    .filter_left
+        position: fixed
+        left: 0
+        top: 90px
+        bottom: 0
+        z-index: 4
+        background-color: #022b40
+        height: 100%
+        width: 75px
+        li
+            transition: 0.3s
+            display: block
+            width: 100%
+            height: 50px
+            margin-bottom: 1px
+            background-color: #022131
+            cursor: pointer
+            position: relative
+            &:hover
+                background-color: #02324a
+            a
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 100%
+                height: 100%
+        img
+            height: 30px
+            width: 30px
+    .pagination 
+        display: inline-block
+        border-radius: 0px
+        margin-left: auto
+        .nav-links
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            width: auto
+            align-items: center
+            padding: 0
+            
+        .page-numbers
+            font-size: 14px
+            width: 20px
+            color: #fff
+            margin: 0 5px
+            &:last-child
+                margin-right: 0
+        .current, .dots
+        
+        .prev, .next
+            width: 39px
+            height: 39px
+            opacity: 0.3
+            border-radius: 0px
+            background: #031020
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            transition: all .2s ease
+            &:after
+                background: url(../img/arrow-left.svg) !important
+                background-repeat: no-repeat !important
+                background-size: contain !important
+                content: ''
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                height: 14px
+                width: 10px
+                transition: all .2s ease
+            &:hover
+                background: #fff
+                opacity: 1
+                transition: all .2s ease
+        .next
+            &:after
+                transform: translate(-50%, -50%) rotate(180deg)
+.about
+    background-color: #031020
+    height: 500px
+.download
+    img
+        width: 199px
+        height: 77px
+.md
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,.8)
+    z-index: 100
+    
+    &_back
+        width: 100%
+        height: 100%
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        justify-content: flex-start
+    .close
+        width: 15px
+        height: 15px
+        padding: 20px
+        background-image: url(../img/cross.svg)
+        background-size: 15px !important
+        background-position: center
+        background-repeat: no-repeat
+        margin-bottom: 20px
+        position: absolute
+        right: 0
+        top: 0
+    .md_body
+        display: none
+    .md_body.active
+        display: block
+    .md_cont
+        width: 560px 
+        text-align: left
+        margin: auto
+        padding: 45px
+        background-color: #242b49
+        border: 1px solid #122344
+        -webkit-box-shadow: 1px 5px 160px -22px #1c0b1e
+        -moz-box-shadow: 1px 5px 160px -22px #1c0b1e
+        box-shadow: 1px 5px 160px -22px #1c0b1e
+        position: relative
+        .nav
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            margin-bottom: 30px
+            justify-content: flex-end
+            li  
+                a
+                    color: #8da1c2
+                    font-family: 'Roboto', sans-serif
                     margin-right: 40px
+                    font-size: 16px
+            li.active
+                a
+                    color: #fff
+                    border-bottom: 2px solid #fff
+        .form-group
+            position: relative
+            margin-bottom: 50px
+            .label_placeholder
+                font-weight: 400
+                font-size: 17px
+                color: #fff
+                position: absolute
+                top: 5px
+                left: 0
+                transition: 0.4s
+            input
+                padding: 12px 0px
+                font-size: 17px
+                border: none
+                color: #fff
+                border-bottom: 1px solid #92a9cb
+                background-color: #242b49
+                border-radius: 0px
+                margin-top: 0
+                box-shadow: none
+                width: 100%
+        .form-group.focused 
+            .label_placeholder 
+                transform: translateY(-120%)
+                font-size: 14px
+                color: #8297ba
+        
+        input[type=submit]
+            width: 100%
+            margin-top: 10px
+            margin-bottom: 0px
+            padding: 10px
+            background-color: #03dd9b
+            border: 0px
+            border-radius: 0px
+            color: #fff
+            font-size: 20px
+            text-transform: none
+            margin-bottom: 20px
+        .btn_resetpass 
+            width: 100%
+            text-align: center
+            font-family: 'Roboto', sans-serif
+            font-size: 14px
+            color: #8297ba
+            background: transparent
+            border: none
+            text-transform: none
+            font-weight: 400
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 20px
+            margin-top: -20px
+            &:hover
+                outline: none
+                text-decoration: none
+                color: #A3BDE8
+        
+    .md_footer
+        #btn-facebook
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 10px
+            background-color: #3b5998
+            font-size: 20px
+            color: #fff
+            img
+                margin-right: 7px    
+                width: 10px
+.checkbox
+    font-size: 17px
+    color: #8297ba
+    position: relative
+    padding-left: 30px
+    margin-bottom: 20px
+    input[type=checkbox]
+        display: none
+    .checkbox_check
+        label
+            min-height: 20px
+            padding-left: 20px
+            margin-bottom: 0
+            font-weight: 400
+            cursor: pointer
+            position: absolute
+            width: 20px
+            height: 20px
+            top: 0
+            left: 0
+            padding-left: 17px
+            background: transparent
+            border: 1px solid #8297ba
+            &:after
+                opacity: 0
+                content: '';
+                position: absolute
+                background-image: url(../img/checked.png)
+                width: 10px
+                height: 7px
+                top: 6px
+                left: 4px
+        input[type=checkbox]:checked+label:after 
+            opacity: 1 
+    a
+        text-decoration: underline
 .none
     display: none
