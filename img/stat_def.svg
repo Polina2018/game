@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="ic_status_def-c" x1="37.53%" x2="80.802%" y1="77.473%" y2="10.196%">
+      <stop offset="0%" stop-color="#725DAA"/>
+      <stop offset="58.685%" stop-color="#58AFAD"/>
+      <stop offset="100%" stop-color="#83C4A3"/>
+    </linearGradient>
+    <circle id="ic_status_def-b" cx="18" cy="18" r="18"/>
+    <filter id="ic_status_def-a" width="125%" height="125%" x="-12.5%" y="-12.5%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#ic_status_def-a)" xlink:href="#ic_status_def-b"/>
+    <use fill="url(#ic_status_def-c)" xlink:href="#ic_status_def-b"/>
+    <circle cx="18" cy="18" r="16" fill="#424152"/>
+    <path fill="#FFF" d="M17.660106,23.426154 L14.1333283,25.2721008 C13.5461542,25.579433 12.8210135,25.3525762 12.5136813,24.7654021 C12.3915062,24.5319801 12.3495455,24.2648378 12.3942745,24.0051997 L13.0664526,20.1034116 L10.2239536,17.3448986 C9.7483509,16.8833483 9.73695916,16.1236358 10.1985094,15.6480331 C10.3831143,15.4578077 10.6255091,15.3340595 10.8878528,15.2961071 L14.8210721,14.7271014 L16.5849587,11.1688638 C16.8793105,10.5750763 17.5992897,10.3323357 18.1930772,10.6266876 C18.4282314,10.743258 18.6186829,10.9337096 18.7352534,11.1688638 L20.49914,14.7271014 L24.4323592,15.2961071 C25.0882728,15.3909959 25.5430733,15.9996416 25.4481844,16.6555552 C25.410232,16.917899 25.2864838,17.1602938 25.0962585,17.3448986 L22.2537594,20.1034116 L22.9259376,24.0051997 C23.0384535,24.6583205 22.6002068,25.2789917 21.947086,25.3915077 C21.687448,25.4362366 21.4203057,25.3942759 21.1868837,25.2721008 L17.660106,23.426154 Z" opacity=".309"/>
+  </g>
+</svg>

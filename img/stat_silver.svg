@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="ic_status_silver-c" x1="84.091%" x2="16.359%" y1="83.166%" y2="12.291%">
+      <stop offset="0%" stop-color="#91928F"/>
+      <stop offset="44.904%" stop-color="#DEDFDE"/>
+      <stop offset="100%" stop-color="#90918E"/>
+    </linearGradient>
+    <circle id="ic_status_silver-b" cx="18" cy="18" r="18"/>
+    <filter id="ic_status_silver-a" width="125%" height="125%" x="-12.5%" y="-12.5%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+    <linearGradient id="ic_status_silver-d" x1="50%" x2="50%" y1="4.506%" y2="97.564%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#90918E"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#ic_status_silver-a)" xlink:href="#ic_status_silver-b"/>
+    <use fill="url(#ic_status_silver-c)" xlink:href="#ic_status_silver-b"/>
+    <circle cx="18" cy="18" r="16" fill="#424152"/>
+    <path fill="url(#ic_status_silver-d)" d="M18,11 C17.4477153,11 17,10.5522847 17,10 C17,9.44771525 17.4477153,9 18,9 C18.5522847,9 19,9.44771525 19,10 C19,10.5522847 18.5522847,11 18,11 Z M27,15 C26.4477153,15 26,14.5522847 26,14 C26,13.4477153 26.4477153,13 27,13 C27.5522847,13 28,13.4477153 28,14 C28,14.5522847 27.5522847,15 27,15 Z M9,15 C8.44771525,15 8,14.5522847 8,14 C8,13.4477153 8.44771525,13 9,13 C9.55228475,13 10,13.4477153 10,14 C10,14.5522847 9.55228475,15 9,15 Z M17.648073,13.2207788 C17.6855872,13.1538644 17.7408462,13.0986054 17.8077605,13.0610913 C18.0084865,12.9485583 18.262433,13.0200528 18.374966,13.2207788 L21.3160505,18.4668135 L25.3951452,16.3879813 C25.4916889,16.3387797 25.6036024,16.3291235 25.707147,16.3610609 C25.9270432,16.4288859 26.0503213,16.6621301 25.9824963,16.8820263 L23.7870214,24 L12.0671022,24 L10.0152302,16.8626067 C9.98605786,16.7611313 9.99649811,16.6523649 10.0444408,16.5582916 C10.1489296,16.3532631 10.3998429,16.2717596 10.6048714,16.3762484 L14.7069886,18.4668135 L17.648073,13.2207788 Z M12.4166667,25 L23.5833333,25 C23.813452,25 24,25.186548 24,25.4166667 L24,26.5833333 C24,26.813452 23.813452,27 23.5833333,27 L12.4166667,27 C12.186548,27 12,26.813452 12,26.5833333 L12,25.4166667 C12,25.186548 12.186548,25 12.4166667,25 Z"/>
+  </g>
+</svg>

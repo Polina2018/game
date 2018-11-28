@@ -76,6 +76,7 @@ a.disabled {
     cursor: default;  /* устанавливаем курсор в виде стрелки */
     color: #999; /* цвет текста для нективной ссылки */
 }
+
 .select-items div:first-child {
     display: none;
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64" enable-background="new 0 0 47.6 59.8">
+  
+    <path id="glow" fill="none" stroke-width="2" stroke-miterlimit="10" stroke="#66afe9" d="m.8 34.7s8.7-12.4 7.5-24.3l5.2 8.9 6.1-14.4v15.9l15.4-10.4-7 16.6 16.8 1.2-19 14.5 12.7 2.2-26 14" filter="url(#blur-filter)"/>
+    <path id="color" fill="none" stroke-width="2" stroke-miterlimit="10" stroke="#66afe9" d="m.8 34.7s8.7-12.4 7.5-24.3l5.2 8.9 6.1-14.4v15.9l15.4-10.4-7 16.6 16.8 1.2-19 14.5 12.7 2.2-26 14" />
+    
+  </svg>
+ 
+

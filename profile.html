@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/other.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="wr">
+            <div class="header_left">
+                <div class="header_left-logo">
+                    <a href=""><img src="img/logo.svg" alt=""></a>
+                </div>
+                <div class="header_left-menu">
+                    <ul>
+                        <li class="dropdown"> <a href="">Турниры</a>
+                            <ul class="sub-menu none">
+                                <li class="active">
+                                    <a href="#" class="disabled"><img class="game_menu_logo" src="img/menu-img.svg" alt="all games">Все игры</a>
+                                </li>
+                                <li class="inactive">
+                                    <a href=""><img class="game_menu_logo" src="img/starcraft.png" alt="Starcraft"><span class="active-game-name">Starcraft</span> </a>
+                                </li>
+                                <li class="inactive">
+                                    <a href=""><img class="game_menu_logo" src="img/starcraft.png" alt="Starcraft"><span class="active-game-name">Starcraft</span> </a>
+                                </li>
+                                <li class="inactive">
+                                    <a href=""><img class="game_menu_logo" src="img/starcraft.png" alt="Starcraft"><span class="active-game-name">Starcraft</span> </a>
+                                </li>
+                                <li class="inactive">
+                                    <a href=""><img class="game_menu_logo" src="img/starcraft.png" alt="Starcraft"><span class="active-game-name">Starcraft</span> </a>
+                                </li>
+                                <li class="inactive">
+                                    <a href=""><img class="game_menu_logo" src="img/starcraft.png" alt="Starcraft"><span class="active-game-name">Starcraft</span> </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Школа</a></li>
+                        <li><a href="">Прогнозы</a></li>
+                        <li><a href="">Магазин</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_right">
+                <div class="header_right-menu">
+                    <ul>
+                        <li><a href="">Статьи</a></li>
+                        <li><a href="">Медиа</a></li>
+                        <li class="search">
+                            <a href="#" data-toggle="modal" data-target="#searchModal"> <img src="img/search.svg" alt=""></a>
+                        </li>
+                        <li class="lang" id="lang"><a href="javascript:void(0);">RU</a>
+                            <div id="dropdown-lang" class="dropdown-lang">
+                                <ul class="lang-list">
+                                    <li>
+                                        <a class="dropdown-item" href=""><img src="img/en.svg" alt="">English</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href=""><img src="img/ger.svg" alt="">Deutsch</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href=""><img src="img/rus.svg" alt="">Pусский</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href=""><img src="img/span.svg" alt="">Español</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="profile" class="profile">
+                            <a href="javascript:void(0);"><img src="img/profile-icon.png" alt=""></a>
+                            <div id="dropdown-menu" class="dropdown-menu">
+                                <ul>
+                                    <li id="login"><a href="javascript:void(0);">Вход в систему</a> </li>
+                                    <li id="register"><a href="javascript:void(0);">Зарегистрироваться</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="profile">
+        <div class="wr">
+            <div class="profile_content">
+                <div class="col col1">
+                    <div class="profile_content-user">
+                        <div class="user_avatar">
+                            <div class="profile_def"><img src="img/profile-icon.png" alt=""></div>
+                        </div>
+                        <h2>Denis2003</h2>
+                        <!--                        <p>ID: 28406269</p>-->
+                        <div class="user_rank">Новый пользователь</div>
+                        <a href="" class="wallet "><img src="img/purse.svg" alt="" class="svg">100WP</a>
+                    </div>
+                    <div class="profile_content-menu">
+                        <ul class="nav nav-list">
+                            <li><a href="#prof">Мой профиль</a></li>
+                            <li><a href="#teams">Команды</a></li>
+                            <li class="active"><a href="#games">Игры</a></li>
+                            <li class=""><a href="#balance">Баланс</a></li>
+                            <li class=""><a href="#status">Рейтинг</a></li>
+                            <li class=""><a href="#history">История турниров</a></li>
+                            <li><a id="" href="#sms">Сообщения</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col2">
+                    <div class="profile_content-info active" id="prof">
+                        <div class="tournament options">
+                            <div class="options_head">
+                                <h2 class="">Профиль</h2> <a href="#prof_edit" class="btn edit">Редактировать</a></div>
+                            <div class="row">
+                                <div class="col100 col">
+                                    <div class="tournament_body">
+                                        <div class="tbl_row">
+                                            <div class="name"> Логин: </div>
+                                            <div>
+                                                <p>Denis2003</p>
+                                            </div>
+                                        </div>
+                                        <div class="tbl_row">
+                                            <div class="name"> Имя: </div>
+                                            <div>
+                                                <p>Denis</p>
+                                            </div>
+                                        </div>
+                                        <div class="tbl_row">
+                                            <div class="name"> Фамилия: </div>
+                                            <div>
+                                                <p>Familia</p>
+                                            </div>
+                                        </div>
+                                        <div class="tbl_row">
+                                            <div class="name"> Адрес электронной почты: </div>
+                                            <div>
+                                                <p>example@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="tbl_row">
+                                            <div class="name"> Дата рождения: </div>
+                                            <div>
+                                                <p>-</p>
+                                            </div>
+                                        </div>
+                                        <div class="tbl_row">
+                                            <div class="name"> Телефон: </div>
+                                            <div>
+                                                <p>-</p>
+                                            </div>
+                                        </div>
+                                        <div class="tbl_row">
+                                            <div class="name"> Город: </div>
+                                            <div>
+                                                <p>Берлин</p>
+                                            </div>
+                                        </div>
+                                        <div class="tbl_row">
+                                            <div class="name"> Почтовый индекс: </div>
+                                            <div>
+                                                <p>32000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_content-info" id="prof_edit">
+                        <div class="options">
+                            <div class="options_head">
+                                <h2 class="">Редактировать профиль</h2> <a href="#prof" class="btn edit">Вернуться</a></div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Личные данные</p>
+                                    <form class="form-group" novalidate="novalidate">
+                                        <label for="fname">Имя пользователя:</label>
+                                        <input type="text" class="form-control" name="user" readonly="" value="admin" required="">
+                                        <label for="fname">Имя:</label>
+                                        <input type="text" class="form-control" name="fname" value="Денис" required="">
+                                        <label for="lname">Фамилия:</label>
+                                        <input type="text" class="form-control" name="lname" value="Денисович" required="">
+                                        <label for="email">Адрес электронной почты:</label>
+                                        <input readonly="" type="email" class="form-control" value="example@mail.ru">
+                                        <label for="email">Дата рождения:</label>
+                                        <input type="text" class="form-control hasDatepicker" name="birthday">
+                                        <label for="phone">Телефон</label>
+                                        <input type="text" class="form-control" name="phone">
+                                        <div class="form-group">
+                                            <div class="left">
+                                                <label for="city">Город:</label>
+                                                <input type="text" class="form-control" name="city"> </div>
+                                            <div class="left">
+                                                <label for="postcode">Почтовый индекс:</label>
+                                                <input type="text" class="form-control" name="postcode"> </div>
+                                        </div>
+                                        <input type="submit" value="Сохранить изменения" class="btn btn-default btn-profile"> </form>
+                                    <div class="deact_account">
+                                        <p>Аккаунт</p>
+                                        <input type="submit" value="Удалить мой аккаунт" class="btn btn-blue delete_acc"> </div>
+                                </div>
+                                <div class="col">
+                                    <p>Сменить пароль</p>
+                                    <form class="form-group" novalidate="">
+                                        <label for="oldpwd">Старый Пароль</label>
+                                        <input type="password" class="form-control" name="" required="">
+                                        <label for="newpwd">Новый Пароль</label>
+                                        <input type="password" class="form-control" name="" required="">
+                                        <label for="confpwd">Подтвердить Новый Пароль</label>
+                                        <input type="password" class="form-control" name="" required="">
+                                        <input type="submit" value="Сменить пароль" class="btn btn-blue resetpass"> </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_content-info active" id="games">
+                        <div class="tournament options">
+                            <div class="options_head">
+                                <h2 class="">В игре</h2> <a href="#choose_games" class="btn edit">Редактировать</a></div>
+                            <div class="tournament_body">
+                                <div class="tbl_head">
+                                    <div class="name">Название</div>
+                                    <div class="rating">Рейтинг</div>
+                                    <div class="player">Ник</div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="name">
+                                        <a href=""><img src="https://www.esports.com/upload/games/1/image/lol-logo.png" alt="">WePlay WoT Cup (8 lvl) 3x3 #64 </a>
+                                    </div>
+                                    <div>
+                                        <p>2000</p>
+                                    </div>
+                                    <div>
+                                        <p>Admin</p>
+                                    </div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="name">
+                                        <a href=""><img src="https://www.esports.com/upload/games/1/image/lol-logo.png" alt="">WePlay WoT Cup (8 lvl) 3x3 #64 </a>
+                                    </div>
+                                    <div>
+                                        <p>2000</p>
+                                    </div>
+                                    <div>
+                                        <p>Admin2</p>
+                                    </div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="name">
+                                        <a href=""><img src="https://www.esports.com/upload/games/1/image/lol-logo.png" alt="">WePlay WoT Cup (8 lvl) 3x3 #64 </a>
+                                    </div>
+                                    <div>
+                                        <p>2000</p>
+                                    </div>
+                                    <div>
+                                        <p>Admin3</p>
+                                    </div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="name">
+                                        <a href=""><img src="https://www.esports.com/upload/games/1/image/lol-logo.png" alt="">WePlay WoT Cup (8 lvl) 3x3 #64 </a>
+                                    </div>
+                                    <div>
+                                        <p>2000</p>
+                                    </div>
+                                    <div>
+                                        <p>Admin4</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_content-info active" id="teams">
+                        <div class="tournament options">
+                            <div class="options_head">
+                                <h2 class="">Команды</h2> <a href="#create_team" class="btn edit">Редактировать</a></div>
+                            <div class="tournament_body">
+                                <div class="tbl_head">
+                                    <div class="name">Название</div>
+                                    <div class="rating">Рейтинг</div>
+                                    <div class="player">Формат</div>
+                                    <div class="member_stat">Статус учасника</div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="name">
+                                        <a href=""><img src="https://www.esports.com/upload/games/1/image/lol-logo.png" alt="">WePlay WoT Cup (8 lvl) 3x3 #64 </a>
+                                    </div>
+                                    <div>
+                                        <p>2000</p>
+                                    </div>
+                                    <div>
+                                        <p>4 игрока</p>
+                                    </div>
+                                    <div class="member"> Капитан </div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="name">
+                                        <a href=""><img src="https://www.esports.com/upload/games/1/image/lol-logo.png" alt="">WePlay WoT Cup (8 lvl) 3x3 #64 </a>
+                                    </div>
+                                    <div>
+                                        <p>2000</p>
+                                    </div>
+                                    <div>
+                                        <p>4 игрока</p>
+                                    </div>
+                                    <div class="member"> Капитан </div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="name">
+                                        <a href=""><img src="https://www.esports.com/upload/games/1/image/lol-logo.png" alt="">WePlay WoT Cup (8 lvl) 3x3 #64 </a>
+                                    </div>
+                                    <div>
+                                        <p>2000</p>
+                                    </div>
+                                    <div>
+                                        <p>4 игрока</p>
+                                    </div>
+                                    <div class="member"> Капитан </div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="name">
+                                        <a href=""><img src="https://www.esports.com/upload/games/1/image/lol-logo.png" alt="">WePlay WoT Cup (8 lvl) 3x3 #64 </a>
+                                    </div>
+                                    <div>
+                                        <p>2000</p>
+                                    </div>
+                                    <div>
+                                        <p>4 игрока</p>
+                                    </div>
+                                    <div class="member"> Капитан </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_content-info" id="create_team">
+                        <div class="tournament options">
+                            <div class="options_head">
+                                <h2>Настройки команд</h2> <a href="#teams" class="btn edit">Вернуться</a></div>
+                            <div class="team_head">
+                                <h2 class="">Мои команды</h2> <a href="javascript:void(0);" class="btn edit btn-create">Создать команду</a></div>
+                            <div class="team_body">
+                                <form class="form-group" novalidate="novalidate">
+                                    <div class="field field50">
+                                        <label for="tname">Название команды:</label>
+                                        <input type="text" class="form-control" name="tname" value="" required=""> </div>
+                                    <div class="field field50">
+                                        <label for="numb">Игровая дисциплина:</label>
+                                        <div class="custom-select">
+                                            <select class=" ">
+                                                <option disabled="" selected="" hidden="">Выбрать:</option>
+                                                <option value=""> Heroes of Newerth </option>
+                                                <option value=""> Counter-Strike: GO </option>
+                                                <option value=""> HearthStone </option>
+                                                <option value=""> Smite </option>
+                                                <option value=""> World of Warcraft </option>
+                                                <option value=""> Call of Duty </option>
+                                                <option value=""> Heroes of Newerth </option>
+                                                <option value=""> Counter-Strike: GO </option>
+                                                <option value=""> HearthStone </option>
+                                                <option value=""> Smite </option>
+                                                <option value=""> World of Warcraft </option>
+                                                <option value=""> Call of Duty </option>
+                                                <option value=""> Heroes of Newerth </option>
+                                                <option value=""> Counter-Strike: GO </option>
+                                                <option value=""> HearthStone </option>
+                                                <option value=""> Smite </option>
+                                                <option value=""> World of Warcraft </option>
+                                                <option value=""> Call of Duty </option>
+                                                <option value=""> Heroes of Newerth </option>
+                                                <option value=""> Counter-Strike: GO </option>
+                                                <option value=""> HearthStone </option>
+                                                <option value=""> Smite </option>
+                                                <option value=""> World of Warcraft </option>
+                                                <option value=""> Call of Duty </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="field field50">
+                                        <label for="skype">Skype капитана:</label>
+                                        <input type="text" class="form-control" name="skype" value="" required=""> </div>
+                                    <div class="field field50">
+                                        <label for="">Количество участников в команде:</label>
+                                        <div class="custom-select">
+                                            <select class=" ">
+                                                <option disabled="" selected="">Выбрать:</option>
+                                                <option value=""> 1 </option>
+                                                <option value=""> 2 </option>
+                                                <option value=""> 3 </option>
+                                                <option value=""> 4 </option>
+                                                <option value=""> 5 </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="field field50">
+                                        <label for="file" class="for_file">Загрузить изображение команды</label>
+                                        <input type="file" name="pic" accept="image/*" class="inputfile" id="file"> </div>
+                                    <div class="field field100">
+                                        <textarea name="description" class="description" placeholder="Введите текст"></textarea>
+                                    </div>
+                                    <div class="form_btns">
+                                        <input type="submit" value="Сохранить изменения" class="btn btn-default btn-profile"> <a href="" class="btn btn-cancel">Отмена</a> </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="options team">
+                            <a href="" class="team_img"><img src="img/avatar.jpg" alt=""></a>
+                            <div class="team_info">
+                                <h2>Название команды</h2>
+                                <ul class="general">
+                                    <li>
+                                        <h3>Формат:</h3>
+                                        <p>4x4</p>
+                                    </li>
+                                    <li>
+                                        <h3>Ранг:</h3> <img src="img/rang.png" alt=""> </li>
+                                    <li>
+                                        <h3>Рейтинг:</h3>
+                                        <p>2000</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team_info">
+                                <div class="discipline">
+                                    <h3>Дисциплина:</h3>
+                                    <div class="value"><img src="img/fortnite.png" alt="">
+                                        <p>Dota Allstars</p>
+                                    </div>
+                                </div>
+                                <ul class="general">
+                                    <li>
+                                        <h3>Количество матчей:</h3>
+                                        <p>0</p>
+                                    </li>
+                                    <li>
+                                        <h3>Количество игроков:</h3>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <h3>Капитан:</h3> <a href="">Admin Adminsurname</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="options team">
+                            <a href="" class="team_img"><img src="img/avatar.jpg" alt=""></a>
+                            <div class="team_info">
+                                <h2>Название команды</h2>
+                                <ul class="general">
+                                    <li>
+                                        <h3>Формат:</h3>
+                                        <p>4x4</p>
+                                    </li>
+                                    <li>
+                                        <h3>Ранг:</h3> <img src="img/rang.png" alt=""> </li>
+                                    <li>
+                                        <h3>Рейтинг:</h3>
+                                        <p>2000</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team_info">
+                                <div class="discipline">
+                                    <h3>Дисциплина:</h3>
+                                    <div class="value"><img src="img/fortnite.png" alt="">
+                                        <p>Dota Allstars</p>
+                                    </div>
+                                </div>
+                                <ul class="general">
+                                    <li>
+                                        <h3>Количество матчей:</h3>
+                                        <p>0</p>
+                                    </li>
+                                    <li>
+                                        <h3>Количество игроков:</h3>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <h3>Капитан:</h3> <a href="">Admin Adminsurname</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="options team">
+                            <a href="" class="team_img"><img src="img/avatar.jpg" alt=""></a>
+                            <div class="team_info">
+                                <h2>Название команды</h2>
+                                <ul class="general">
+                                    <li>
+                                        <h3>Формат:</h3>
+                                        <p>4x4</p>
+                                    </li>
+                                    <li>
+                                        <h3>Ранг:</h3> <img src="img/rang.png" alt=""> </li>
+                                    <li>
+                                        <h3>Рейтинг:</h3>
+                                        <p>2000</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team_info">
+                                <div class="discipline">
+                                    <h3>Дисциплина:</h3>
+                                    <div class="value"><img src="img/fortnite.png" alt="">
+                                        <p>Dota Allstars</p>
+                                    </div>
+                                </div>
+                                <ul class="general">
+                                    <li>
+                                        <h3>Количество матчей:</h3>
+                                        <p>0</p>
+                                    </li>
+                                    <li>
+                                        <h3>Количество игроков:</h3>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <h3>Капитан:</h3> <a href="">Admin Adminsurname</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_content-info" id="choose_games">
+                        <div class="tournament options">
+                            <div class="options_head">
+                                <h2 class="">Настройки игр</h2> <a href="#teams" class="btn edit">Вернуться</a></div>
+                            <div class="tournament_body">
+                                <div class="choose_game">
+                                    <div class="game">
+                                        <div class="checkbox">
+                                            <label tabindex="0" for="checkboxFourInput"><img src="img/overwatch.png" alt="">Heroes of Newerth</label>
+                                            <div class="checkbox_check">
+                                                <input type="checkbox" value="1" name="keep_login" id="1">
+                                                <label for="1"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="">
+                                        <input type="text" class="form-control" name="nik" placeholder="Никнейм"> </div>
+                                </div>
+                                <div class="choose_game">
+                                    <div class="game">
+                                        <div class="checkbox">
+                                            <label tabindex="0" for="2"><img src="img/fortnite.png" alt="">Heroes of Newerth</label>
+                                            <div class="checkbox_check">
+                                                <input type="checkbox" value="1" name="keep_login" id="2">
+                                                <label for="2"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="">
+                                        <input type="text" class="form-control" name="nik" placeholder="Никнейм"> </div>
+                                </div>
+                                <div class="choose_game">
+                                    <div class="game">
+                                        <div class="checkbox">
+                                            <label tabindex="0" for=""><img src="img/overwatch.png" alt="">Heroes of Newerth</label>
+                                            <div class="checkbox_check">
+                                                <input type="checkbox" value="1" name="keep_login" id="3">
+                                                <label for="3"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="">
+                                        <input type="text" class="form-control" name="nik" placeholder="Никнейм"> </div>
+                                </div>
+                                <div class="choose_game">
+                                    <div class="game">
+                                        <div class="checkbox">
+                                            <label tabindex="0" for="checkboxFourInput"><img src="img/fortnite.png" alt="">Heroes of Newerth</label>
+                                            <div class="checkbox_check">
+                                                <input type="checkbox" value="1" name="keep_login" id="4">
+                                                <label for="4"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="">
+                                        <input type="text" class="form-control" name="nik" placeholder="Никнейм"> </div>
+                                </div>
+                                <div class="choose_game">
+                                    <div class="game">
+                                        <div class="checkbox">
+                                            <label tabindex="0" for="checkboxFourInput"><img src="img/overwatch.png" alt="">Heroes of Newerth</label>
+                                            <div class="checkbox_check">
+                                                <input type="checkbox" value="1" name="keep_login" id="5">
+                                                <label for="5"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="">
+                                        <input type="text" class="form-control" name="nik" placeholder="Никнейм"> </div>
+                                </div>
+                                <div class="choose_game">
+                                    <div class="game">
+                                        <div class="checkbox">
+                                            <label tabindex="0" for="checkboxFourInput"><img src="img/fortnite.png" alt="">Heroes of Newerth</label>
+                                            <div class="checkbox_check">
+                                                <input type="checkbox" value="1" name="keep_login" id="6">
+                                                <label for="6"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="">
+                                        <input type="text" class="form-control" name="nik" placeholder="Никнейм"> </div>
+                                </div>
+                                <div class="choose_game">
+                                    <div class="game">
+                                        <div class="checkbox">
+                                            <label tabindex="0" for="checkboxFourInput"><img src="img/overwatch.png" alt="">Heroes of Newerth</label>
+                                            <div class="checkbox_check">
+                                                <input type="checkbox" value="1" name="keep_login" id="7">
+                                                <label for="7"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="">
+                                        <input type="text" class="form-control" name="nik" placeholder="Никнейм"> </div>
+                                </div>
+                                <div class="choose_game">
+                                    <div class="game">
+                                        <div class="checkbox">
+                                            <label tabindex="0" for="checkboxFourInput"><img src="img/fortnite.png" alt="">Heroes of Newerth</label>
+                                            <div class="checkbox_check">
+                                                <input type="checkbox" value="1" name="keep_login" id="8">
+                                                <label for="8"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="">
+                                        <input type="text" class="form-control" name="nik" placeholder="Никнейм"> </div>
+                                </div>
+                                <input type="submit" value="Сохранить" class="btn btn-default btn-profile">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_content-info" id="balance">
+                        <div class="options">
+                            <div class="options_head">
+                                <h2 class="">Пополнить баланс</h2>
+                                <p>Воспользуйтесь удобным пополнением баланса при помощи подобранных пакетов</p>
+                            </div>
+                            <div class="balance_cards">
+                                <div class="card btn_pay"><a href=""><span>50 ₽</span></a></div>
+                                <div class="card btn_pay"><a href=""><span>100 ₽</span></a></div>
+                                <div class="card btn_pay"><a href=""><span>300 ₽</span></a></div>
+                                <div class="card btn_pay"><a href=""><span>750 ₽</span></a></div>
+                                <div class="card btn_pay"><a href=""><span>1500 ₽</span></a></div>
+                                <div class="card btn_pay"><a href=""><span>3000 ₽</span></a></div> <a href="javascript:void(0);" class="enter_price_btn" id="enter_price_btn">Ввести сумму</a> </div>
+                            <div id="enter_price">
+                                <form class="form-group">
+                                    <div class="field field30">
+                                        <label for="skype">Сумма платежа</label>
+                                        <input type="text" class="form-control" value="" required=""> </div>
+                                    <div class="field field30">
+                                        <input type="submit" value="Попонить" class="btn btn-default btn-profile">
+                                    </div>
+                                </form> <a href="javascript:void(0);" class="enter_price_btn" id="choose_price_btn">Выбрать пакет</a></div>
+                        </div>
+                        <div class="options">
+                            <div class="options_head">
+                                <h2 class="">Отправить подарок другу</h2>
+                                <p>Введите никнейм друга или портальный ID любого пользователя, выберите сумму и нажмите кнопку "Отправить".</p>
+                            </div>
+                            <form action="">
+                                <div class="field field30">
+                                    <label for="fname">Выберите друга:</label>
+                                    <input type="text" class="form-control" name="" required="">
+                                </div>
+                                <div class="field field30">
+                                    <label for="fname">Введите сумму:</label>
+                                    <input type="text" class="form-control" name="" required="">
+                                </div>
+                                <div class="field field30">
+                                    <input type="submit" value="Отправить">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="options">
+                            <div class="options_head">
+                                <h2 class="">Промокод</h2>
+                                <p>Введите ниже полученный промокод нашего портала на бонусную валюту.</p>
+                            </div>
+                            <form action="">
+                                <div class="field field30">
+                                    <label for="fname">Промокод:</label>
+                                    <input type="text" class="form-control" name="" required="">
+                                </div>
+                                <div class="field field30">
+                                    <input type="submit" value="Активировать">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="options">
+                            <div class="options_head">
+                                <h2 class="">История платежей</h2> </div>
+                            <p>Платежей нет.</p>
+                        </div>
+                    </div>
+                    <div class="profile_content-info" id="status">
+                        
+                            <div class="status_head">
+                                <div class="status_head-img">
+                                    <div class="stat stat_new active"><img src="img/stat_def.svg" alt=""></div>
+                                    <div class="stat stat_bronze"><img src="img/status_bronz.svg" alt=""></div>
+                                    <div class="stat stat_silver "><img src="img/stat_silver.svg" alt=""></div>
+                                    <div class="stat stat_diamond"><img src="img/status_diamnd.svg" alt=""></div>
+                                    <div class="stat stat_gold "><img src="img/status_gold.svg" alt=""></div>
+                                </div>
+                                <div class="status_head-info">
+                                    <h2>Новичок</h2>
+                                    <div class="stat_view"><img src="img/multiple-users-silhouette.svg" alt="">
+                                        <p>Статус виден всем</p>
+                                    </div>
+                                    <div class="stat_progress">
+                                        <div class="stat-def stat-from"><img src="img/star-grey.svg" alt=""><p>Новичек</p></div>
+                                        <div class="progress">
+                                        <div class="progress-bar"><div class="progress-full"></div>
+                                        
+                                        </div>
+                                        <div class="points-counter"><span>0/</span><span>3000</span><img src="img/icon-pr.svg" alt=""></div></div>
+                                        
+                                        <div class="stat-def stat-to"><img src="img/star-bronze.svg" alt=""><p>Bronze</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                         <div class="options">
+                            <div class="options_head">
+                                <h2 class="">Время улучшений!</h2>
+                                <p>Больше возможностей, больше событий, больше впечатлений!</p>
+                                <p class="">Стань одним из членов Клуба 101XP – подчеркни свою индивидуальность, получи особые привилегии и максимум внимания!</p>
+                             </div>
+                             <div class="status_body">
+                                <div class="status-item def active">
+                                 <img src="img/stat_def.svg" alt="">
+                                 <h2>Новичок</h2>
+                                 <div class="points-counter"><span>до</span><img src="img/icon-pr.svg" alt=""><span>3000</span></div>
+                                 <div class="card-info">
+                                     <p>Пополняй баланс для получения особых привилегий Клуба 101XP!</p>
+                                 </div>
+                                 <div class="card-plus">
+                                     <span>+</span>
+                                      <img src="img/crown.svg" alt="">
+                                     <p>Путь силы</p>
+                                 </div>
+                                    
+                                
+                                 <p></p>
+                             </div>
+                                <div class="status-item bronze">
+                                 <img src="img/status_bronz.svg" alt="">
+                                 <h2>Bronze</h2>
+                                 <div class="points-counter"><span>от</span><img src="img/icon-pr.svg" alt=""><span>3 000</span></div>
+                                 <div class="card-info">
+                                     <p><span>x1,6</span>Увеличение набранных очков</p>
+                                 </div>
+                                 <div class="card-plus">
+                                     <span>+</span>
+                                      <img src="img/speech-bubbles-comment-option.svg" alt="">
+                                     <p>Чат VIP-support</p>
+                                 </div>
+                                    
+                                
+                                 <p></p>
+                             </div>
+                                <div class="status-item silver">
+                                 <img src="img/stat_silver.svg" alt="">
+                                 <h2>Silver</h2>
+                                 <div class="points-counter"><span>от</span><img src="img/icon-pr.svg" alt=""><span>15 000</span></div>
+                                 <div class="card-info">
+                                      <p><span>x1,75</span>Увеличение набранных очков</p>
+                                 </div>
+                                 <div class="card-plus">
+                                     <span>+</span>
+                                      <img src="img/diamond.svg" alt="">
+                                     <p>Чат VIP-support</p>
+                                 </div>
+                                    
+                                
+                                 <p></p>
+                             </div>
+                                <div class="status-item gold">
+                                 <img src="img/status_gold.svg" alt="">
+                                 <h2>Gold</h2>
+                                 <div class="points-counter"><span>от</span><img src="img/icon-pr.svg" alt=""><span>50 000</span></div>
+                                 <div class="card-info">
+                                     <p><span>x1,75</span>Увеличение набранных очков</p>
+                                 </div>
+                                 <div class="card-plus">
+                                     <span>+</span>
+                                      <img src="img/biceps.svg" alt="">
+                                     <p>Персональные предложения</p>
+                                 </div>
+                                    
+                                
+                                 <p></p>
+                             </div>
+                                <div class="status-item diamond">
+                                 <img src="img/status_diamnd.svg" alt="">
+                                 <h2>Diamond</h2>
+                                 <div class="points-counter"><span>от</span><img src="img/icon-pr.svg" alt=""><span>100 000</span></div>
+                                 <div class="card-info">
+                                  <p><span>x1,75</span>Увеличение набранных очков</p>
+                                 </div>
+                                 <div class="card-plus">
+                                     <span>+</span>
+                                      <img src="img/discount.svg" alt="">
+                                     <p>Уникальные скидки в играх*</p>
+                                 </div>
+                                    
+                                
+                                 <p></p>
+                             </div>
+                             
+                             </div>
+                             <p class="status-text">Текущий прогресс получения нового статуса отображается на шкале опыта, который растет в зависимости от ваших платежей на портале и в браузерных/клиентских играх. Обновление статуса происходит каждые 3 месяца. По окончании квартала полученный вами статус сохраняется на новый квартал, а текущий опыт обнуляется. Чтобы подтвердить свой статус и перенести его на следующий квартал, вам нужно заново набрать весь клубный опыт. Сделать это будет проще, ведь в зависимости от статуса дается повышенный модификатор роста опыта!
+
+</p>
+                              </div>
+                    </div>
+                    <div class="profile_content-info" id="history">
+                        <div class="tournament options">
+                            <div class="options_head">
+                               <div class="form_btns">
+                                        <a href="#" class="btn edit btn-current">Текущие</a>
+                                        <a href="#prev" class="btn btn-dark">История участия</a> </div>
+                                </div>
+                            <div class="tournament_body">
+                                <div class="tbl_head">
+                                    <div class="name">Турнир</div>
+                                    <div class="result">Результат</div>
+                                </div>
+                                <div class="tbl_row">
+                                   <div class="numb">1</div>
+                                    <div class="tourn_name">
+                                        <a href="">PVP Alpha Daily Blitz #7</a>
+                                    </div>
+                                    <div>
+                                         <a href="javascript:void(0);" class="add_result">Добавить</a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tbl_row">
+                                   <div class="numb">2</div>
+                                    <div class="tourn_name">
+                                        <a href="">PVP Alpha Daily Blitz #7</a>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="add_result">Добавить</a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tbl_row">
+                                   <div class="numb">3</div>
+                                    <div class="tourn_name">
+                                        <a href="">PVP Alpha Daily Blitz #7</a>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="add_result">Добавить</a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tbl_row">
+                                   <div class="numb">4</div>
+                                    <div class="tourn_name">
+                                        <a href="">PVP Alpha Daily Blitz #7</a>
+                                    </div>
+                                    <div>
+                                         <a href="javascript:void(0);" class="add_result">Добавить</a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                       <div class="profile_content-info" id="prev">
+                        <div class="tournament options">
+                            <div class="options_head">
+                               <div class="form_btns">
+                                        <a href="#history" class="btn btn-current btn-dark">Текущие</a>
+                                        <a href="#" class="btn edit">История участия</a> </div>
+                                </div>
+                            <div class="tournament_body">
+                                <div class="tbl_head">
+                                    <div class="name">Турнир</div>
+                                    <div class="result">Результат</div>
+                                </div>
+                                <div class="tbl_row">
+                                   <div class="numb">1</div>
+                                    <div class="tourn_name">
+                                        <a href="">PVP Alpha Daily Blitz #7</a>
+                                    </div>
+                                    <div>
+                                        <span>Выбыл из раунда: 1/512.</span>
+                                        <<a href="">Scramble</a> <span>(6:11)</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tbl_row">
+                                   <div class="numb">2</div>
+                                    <div class="tourn_name">
+                                        <a href="">PVP Alpha Daily Blitz #7</a>
+                                    </div>
+                                    <div>
+                                        <span>Выбыл из раунда: 1/512.</span>
+                                        <<a href="">Scramble</a> <span>(6:11)</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tbl_row">
+                                   <div class="numb">3</div>
+                                    <div class="tourn_name">
+                                        <a href="">PVP Alpha Daily Blitz #7</a>
+                                    </div>
+                                    <div>
+                                        <span>Выбыл из раунда: 1/512.</span>
+                                        <<a href="">Scramble</a> <span>(6:11)</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tbl_row">
+                                   <div class="numb">4</div>
+                                    <div class="tourn_name">
+                                        <a href="">PVP Alpha Daily Blitz #7</a>
+                                    </div>
+                                    <div>
+                                        <span>Выбыл из раунда: 1/512.</span>
+                                        <<a href="">Scramble</a> <span>(6:11)</span>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="wr">
+            <div class="footer_col footer_col1">
+                <h3>ESPORTS</h3>
+                <ul>
+                    <li><a href="">League of Legends</a></li>
+                    <li><a href="">CS:GO</a></li>
+                    <li><a href="">Dota 2</a></li>
+                    <li><a href="">Fortnite</a></li>
+                    <li><a href="">PUBG</a></li>
+                    <li><a href="">StarCraft II</a></li>
+                </ul>
+            </div>
+            <div class="footer_col footer_col2">
+                <h3>FEATURED</h3>
+                <ul>
+                    <li><a href="">Статьи</a></li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer_col footer_col3">
+                <h3>КОМПАНИЯ</h3>
+                <ul>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Условия использования баллов</a></li>
+                </ul>
+            </div>
+            <div class="footer_col footer_col4">
+                <h3>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                <ul class="social">
+                    <li>
+                        <a href=""><img src="img/facebook.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/twitter.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/youtube.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/google.png" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="work">
+                    <li>
+                        <p>Напишите нам по адресу </p> <a href="">info@esports.com</a> </li>
+                    <li>
+                        <p>Запросы на работу:</p> <a href=""> career@esports.com</a> </li>
+                    <li>
+                        <p>Команда поддержки:</p> <a href=""> support@esports.com</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="md md1 none">
+        <div class="md_back">
+            <div class="md_cont">
+                <a class="close" href="javascript:void(0);"></a>
+                <div class="md_header">
+                    <ul class="nav">
+                        <li class="active" id="md_login"><a href="javascript:void(0);">Вход в систему</a></li>
+                        <li id="md_register"><a href="javascript:void(0);">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+                <div class="md_body md_login active">
+                    <form id="form-login" autocomplete="" novalidate="novalidate">
+                        <div class="form-group">
+                            <label class="label_placeholder" for="login_user">Имя пользователя или адрес электронной почты</label>
+                            <input autocomplete="off" type="text" class="form-control" id="login_user" name="user"> </div>
+                        <div class="form-group">
+                            <label class="label_placeholder" for="login_pwd">Пароль</label>
+                            <input autocomplete="off" type="password" class="form-control" id="login_pwd" name="pwd"> </div>
+                        <div class="checkbox">
+                            <label tabindex="0" for="checkboxFourInput">Запомнить меня</label>
+                            <div class="checkbox_check">
+                                <input type="checkbox" value="1" name="keep_login" id="checkboxFourInput">
+                                <label for="checkboxFourInput"></label>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-default login" value="Вход в систему" id="btn-submit-login"> <a href="" class="btn btn_resetpass">Забыли свой пароль?</a> </form>
+                    <div class="md_footer">
+                        <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=372662433182682&amp;state=798a28e89215c15099d77e63c823e21f&amp;response_type=code&amp;sdk=php-sdk-5.6.3&amp;redirect_uri=https%3A%2F%2Fwww.esports.com%2F%2Ffacebook-login&amp;scope=email" class="btn-facebook"> <img src="img/facebook_icon.png" alt="facebook icon"> Войти в Facebook </a>
+                    </div>
+                </div>
+                <div class="md_body md_register">
+                    <form id="form-register" autocomplete="" novalidate="novalidate">
+                        <div class="form-group">
+                            <label class="label_placeholder" for="register_email">Адрес электронной почты</label>
+                            <input autocomplete="off" type="email" class="form-control" id="register_email" name="email"> </div>
+                        <div class="form-group">
+                            <label class="label_placeholder" for="register_pwd">Пароль</label>
+                            <input autocomplete="off" type="password" class="form-control" id="register_pwd" name="pwd"> </div>
+                        <div class="checkbox">
+                            <label tabindex="0" for="checkboxFiveInput"> Подписаться на рассылку и специальные предложения</label>
+                            <div class="checkbox_check">
+                                <input type="checkbox" value="1" name="" id="checkboxFiveInput">
+                                <label for="checkboxFourInput"></label>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <label tabindex="0" class="container" for="accept_toup"> Я соглашаюсь с <a href="" target="_blank">Положения и условия</a></label>
+                            <div class="checkbox_check">
+                                <input type="checkbox" value="1" id="accept_toup" name="accept_toup" required="">
+                                <label for="accept_toup"></label>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <label tabindex="0" class="container" for="accept_age"> Мне не менее 14 лет </label>
+                            <div class="checkbox_check">
+                                <input type="checkbox" value="1" id="accept_age" name="accept_age" required="">
+                                <label for="accept_age"></label>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-default sign-up" value="Зарегистрироваться" id="btn-submit-register"> </form>
+                    <div class="md_footer">
+                        <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=372662433182682&amp;state=798a28e89215c15099d77e63c823e21f&amp;response_type=code&amp;sdk=php-sdk-5.6.3&amp;redirect_uri=https%3A%2F%2Fwww.esports.com%2F%2Ffacebook-login&amp;scope=email" class="btn-facebook"> <img src="img/facebook_icon.png" alt="facebook icon"> Зарегистрируйтесь в Facebook </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="md md2 none">
+        <div class="md_back">
+            <div class="md_cont">
+                <a class="close" href="javascript:void(0);"></a> 
+                <h2>Добавить результаты турнира</h2>
+                <div class="md_body active">
+                <form class="form-group" novalidate="novalidate">
+                                    <div class="field field50">
+                                        <label for="tname">Название команды:</label>
+                                        <input type="text" class="form-control" name="tname" value="" required=""> </div>
+                                    <div class="field field50">
+                                        <label for="numb">Игровая дисциплина:</label>
+                                        <div class="custom-select">
+                                            <select class=" ">
+                                                <option disabled="" selected="" hidden="">Выбрать:</option>
+                                                <option value=""> Heroes of Newerth </option>
+                                                <option value=""> Counter-Strike: GO </option>
+                                                <option value=""> HearthStone </option>
+                                                <option value=""> Smite </option>
+                                                <option value=""> World of Warcraft </option>
+                                                <option value=""> Call of Duty </option>
+                                                <option value=""> Heroes of Newerth </option>
+                                                <option value=""> Counter-Strike: GO </option>
+                                                <option value=""> HearthStone </option>
+                                                <option value=""> Smite </option>
+                                                <option value=""> World of Warcraft </option>
+                                                <option value=""> Call of Duty </option>
+                                                <option value=""> Heroes of Newerth </option>
+                                                <option value=""> Counter-Strike: GO </option>
+                                                <option value=""> HearthStone </option>
+                                                <option value=""> Smite </option>
+                                                <option value=""> World of Warcraft </option>
+                                                <option value=""> Call of Duty </option>
+                                                <option value=""> Heroes of Newerth </option>
+                                                <option value=""> Counter-Strike: GO </option>
+                                                <option value=""> HearthStone </option>
+                                                <option value=""> Smite </option>
+                                                <option value=""> World of Warcraft </option>
+                                                <option value=""> Call of Duty </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="field field50">
+                                        <label for="skype">Skype капитана:</label>
+                                        <input type="text" class="form-control" name="skype" value="" required=""> </div>
+                                    <div class="field field50">
+                                        <label for="">Количество участников в команде:</label>
+                                        <div class="custom-select">
+                                            <select class=" ">
+                                                <option disabled="" selected="">Выбрать:</option>
+                                                <option value=""> 1 </option>
+                                                <option value=""> 2 </option>
+                                                <option value=""> 3 </option>
+                                                <option value=""> 4 </option>
+                                                <option value=""> 5 </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="field field100">
+                                        <label for="file" class="for_file">Загрузить изображение выигрыша</label>
+                                        <input type="file" name="pic" accept="image/*" class="inputfile" id="file"> </div>
+                                   
+                                  
+                                        <input type="submit" value="Добавить" class="btn btn-default btn-profile">
+                                </form></div>
+                </div></div></div>
+    <script>
+    </script>
+</body>
+
+</html>

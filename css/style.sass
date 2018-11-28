@@ -232,6 +232,7 @@ section
             li
                 &:hover
                     background: #1b213a
+                    z-index: 1
                     a
                         color: #05c9ef
                         transition: all 0.3s ease-in-out
@@ -274,6 +275,8 @@ section
             &:hover    
                 a
                     color: #05c9ef
+     
+        
     .profile
         img
             height: 30px
@@ -322,6 +325,7 @@ section
                 width: 1px
                 height: 36px
                 background-color: #3b5a88
+                z-index: 0
             &:after
                 content: ''
                 position: absolute
@@ -352,6 +356,7 @@ section
                 border: 0
                 position: absolute
                 height: auto
+                border-bottom: 1px solid #0d1025
                 li
                     align-content: space-between
                     display: inline-flex
@@ -375,6 +380,11 @@ section
                         color: #5e7eb1
                     img
                         opacity: .4
+                    &:hover
+                        a
+                            color: #5e7eb1
+                        img
+                            opacity: .4
 .lang.active
     color: #fff
     .dropdown-lang
@@ -432,16 +442,16 @@ section
                     width: 20px
 .profile.active
     .dropdown-menu
-        width: 170px
+        width: 220px
         top: 52px
-        left: -55px
+        left: -110px
         position: absolute
         background-color: #030617
         border: 1px solid #334e78
         height: 120px
         display: block
         box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.28)
-        background-image: linear-gradient(to top, #305078, #030617)
+       
         ul
             padding: 10px 20px 10px 25px
             position: relative
@@ -453,7 +463,7 @@ section
             flex-direction: column
             &:before 
                 top: -30px
-                left: 53%
+                left: 68%
                 content: " "
                 height: 0
                 width: 0
@@ -478,13 +488,32 @@ section
                     a
                         color: #05c9ef
 .news
-    padding-top: 120px
-    padding-bottom: 120px
-    background-image: url(../img/star.png)
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center -136px
-    background-attachment: fixed
+    
+    height: 650px
+    overflow-x: hidden
+    overflow-y: auto
+    -webkit-perspective: 1px
+    perspective: 1px
+    .parallax__layer
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+    .parallax__layer.parallax__layer--base
+        -webkit-transform: translateZ(0)
+        transform: translateZ(0)
+        .news_back
+            background-position: center -136px
+            background-image: url(../img/star.png)
+            background-size: cover
+            background-repeat: no-repeat
+            height: 100%
+            width: 100%
+    .parallax__layer.parallax__layer--back
+        transform: translateZ(-1px) scale(2)
+        -webkit-transform: translateZ(-1px) scale(2)
+        
     .wr
         display: -webkit-flex
         display: -moz-flex
@@ -495,6 +524,7 @@ section
         height: 100%
         justify-content: space-between
         width: 80%
+        
     &_body
         width: 50%
         .btn_white
@@ -526,6 +556,16 @@ section
                 margin-right: 50px
                 &:nth-child(2)
                     margin-right: 0px
+.section_head
+    width: 100%
+    margin-bottom: 60px
+    h2
+        font-size: 33px
+        font-weight: bold
+        text-transform: uppercase
+
+        color: #fff
+        text-align: center
 .tournament
     .wr
         display: -webkit-flex
@@ -535,18 +575,9 @@ section
         display: flex
         flex-wrap: wrap
         justify-content: space-between
-    .section_head
-        width: 100%
-        margin-bottom: 60px
-        h2
-            font-size: 33px
-            font-weight: bold
-            text-transform: uppercase
-            
-            color: #fff
-            text-align: center
+    
     .tournament_body
-        width: 65%
+        width: 72%
     .tournament_body > div
         display: -webkit-flex
         display: -moz-flex
@@ -561,7 +592,7 @@ section
         div
             color: #fff
             padding: 12px 8px
-            padding: 25px 10px
+            padding: 15px 10px
             width: 15%
             font-size: 14px
             text-transform: uppercase
@@ -590,7 +621,7 @@ section
             justify-content: center
             width: 15%
             padding: 12px 8px
-            padding: 19px 10px
+            padding: 15px 10px
             color: #044669
             color: #fff
             p
@@ -896,42 +927,7 @@ section
                 font-weight: 400
                 
     &_col4
-        .social
-            display: -webkit-flex
-            display: -moz-flex
-            display: -ms-flex
-            display: -o-flex
-            display: flex
-            margin-bottom: 20px
-            li
-                width: 55px
-                height: 55px
-                text-align: center
-                background: #0F1831
-                display: -webkit-flex
-                display: -moz-flex
-                display: -ms-flex
-                display: -o-flex
-                display: flex
-                align-items: center
-                justify-content: center
-                margin-right: 10px
-                a
-                    display: -webkit-flex
-                    display: -moz-flex
-                    display: -ms-flex
-                    display: -o-flex
-                    display: flex
-                    align-items: center
-                    justify-content: center
-                    width: 100%
-                    height: 100%
-                img
-                    height: 25px
-                    opacity: .5
-                &:hover
-                    img
-                        opacity: 1
+        
         .work
             p
                 color: #556c8f
@@ -941,6 +937,42 @@ section
                 font-family: 'Roboto Condensed', sans-serif
                 color: #337ab7
                 font-size: 16px
+.social
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    margin-bottom: 20px
+    li
+        width: 55px
+        height: 55px
+        text-align: center
+        background: #0F1831
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 10px
+        a
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 100%
+            height: 100%
+        img
+            height: 25px
+            opacity: .5
+        &:hover
+            img
+                opacity: 1
 .news_archive
     background-color: #0d1025
     background-image: none
@@ -991,7 +1023,7 @@ section
         flex-wrap: wrap
         width: 100%
         position: relative
-        padding-bottom: 150px
+        padding-bottom: 110px
         .news-item
             background-position: center !important
             background-size: cover !important
@@ -1059,6 +1091,7 @@ section
     background: #0b1225
     .wr
         width: 730px
+        position: relative
     &_img
         background-position: center !important
         background-size: cover !important
@@ -1078,7 +1111,7 @@ section
         justify-content: flex-end
         padding: 20px 20px
         flex-direction: column
-        line-height: 1.3em
+        
         &:before
             content: ''
             position: absolute
@@ -1110,6 +1143,7 @@ section
             align-items: center
             width: 100%
             z-index: 2
+           
         a
             font-size: 14px
             color: #fff
@@ -1131,13 +1165,14 @@ section
                 display: none
     &_content
         color: #fff
-        font-size: 18px
         text-align: justify
-        line-height: 1.6em
+        line-height: 32px
         p
-            letter-spacing: -0.3px
             font-family: 'Roboto', sans-serif
             margin-bottom: 20px
+        
+            font-size: 18px
+            letter-spacing: -0.3px
         h1, h2, h3, h4, h5
             font-family: 'Roboto', sans-serif
             margin-bottom: 10px
@@ -1151,21 +1186,77 @@ section
             font-size: 20px
         h5
             font-size: 18px
+        a
+            border-bottom: 1px solid #06dcf9
             
     &_comments
         margin-top: 40px
         margin-bottom: 50px
-        border-top: 1px solid #242f43
-        border-bottom: 1px solid #242f43
-        textarea
-            width: 100%
-            padding: 15px 1em 55px
-            background: #030617
+        border: 1px solid #242f43
+       
+        background: #030617
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        input[type=submit]
+            margin-left: auto
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            margin-bottom: 15px
+            margin-right: 20px
+            color: #03cef3
             border: none
-            outline: none
-            resize: none
-            font-size: 18px
-            color: #6d7e9c
+            padding: 0
+            font-size: 14px
+            text-transform: none
+            &:hover
+                background: none
+                color: #23527c
+        .profiile_icon
+            width: 15%
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: flex-start
+            justify-content: center
+            padding-top: 15px
+        .profile_comment
+            width: 85%
+            border-top: 1px solid #242f43
+        img
+            height: 60px
+            width: 60px
+    &_share
+        position: absolute
+        left: -70px
+        top: 0
+        ul
+            flex-direction: column
+            li
+                margin: 0
+                margin-bottom: 10px
+textarea
+    width: 100%
+    padding: 20px 0 55px
+    background: #030617
+    border: none
+    outline: none
+    resize: none
+    font-size: 18px
+    color: #6881a9
+textarea::placeholder
+    color: #6881a9
+textarea::-moz-placeholder
+    color: #6881a9
+textarea::-webkit-input-placeholder
+    color: #6881a9       
 .tournament_page
     position: relative
     height: calc(100% - 90px)
@@ -1266,12 +1357,60 @@ section
             &:after
                 transform: translate(-50%, -50%) rotate(180deg)
 .about
-    background-color: #031020
-    height: 500px
+    background-color: #0d1025
+    padding-top: 80px
+    padding-bottom: 90px
+    &_body
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        .card
+            width: calc(25% - 20px)
+            height:
+            margin-left: 10px
+            margin-right: 10px
+            padding: 40px 30px
+            background: #030617
+            border-radius: 3px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: flex-start
+            
+            h2
+                font-size: 16px
+                text-transform: uppercase
+                line-height: 1.4em
+                color: #fff
+                text-align: center
+            img
+                height: 60px
+                width: 60px
+                margin-bottom: 20px
+                
+    
 .download
     img
         width: 199px
         height: 77px
+.news_main
+    padding: 60px 0 80px
+    background-color: #0d1025
+    background-image: none
+    .wr
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
 .md
     position: fixed
     top: 0
@@ -1310,10 +1449,11 @@ section
     .md_body.active
         display: block
     .md_cont
-        width: 560px 
+        width: 540px 
         text-align: left
         margin: auto
-        padding: 45px
+        margin-top: 80px
+        padding: 47px
         background-color: #242b49
         border: 1px solid #122344
         -webkit-box-shadow: 1px 5px 160px -22px #1c0b1e
@@ -1333,12 +1473,13 @@ section
                     color: #8da1c2
                     font-family: 'Roboto', sans-serif
                     margin-right: 40px
-                    font-size: 16px
+                    font-size: 17px
+                    font-weight: 500
             li.active
                 a
                     color: #fff
                     border-bottom: 2px solid #fff
-        .form-group
+        form
             position: relative
             margin-bottom: 50px
             .label_placeholder
@@ -1350,7 +1491,7 @@ section
                 left: 0
                 transition: 0.4s
             input
-                padding: 12px 0px
+                padding: 12px 0px 0
                 font-size: 17px
                 border: none
                 color: #fff
@@ -1360,7 +1501,7 @@ section
                 margin-top: 0
                 box-shadow: none
                 width: 100%
-        .form-group.focused 
+        form.focused 
             .label_placeholder 
                 transform: translateY(-120%)
                 font-size: 14px
@@ -1378,6 +1519,9 @@ section
             font-size: 20px
             text-transform: none
             margin-bottom: 20px
+            line-height: 1.42857143
+            &:hover
+                background-color: #2EFEBD
         .btn_resetpass 
             width: 100%
             text-align: center
@@ -1403,7 +1547,7 @@ section
                 color: #A3BDE8
         
     .md_footer
-        #btn-facebook
+        .btn-facebook
             display: -webkit-flex
             display: -moz-flex
             display: -ms-flex
@@ -1415,6 +1559,12 @@ section
             background-color: #3b5998
             font-size: 20px
             color: #fff
+            line-height: 1.42857143
+            transition: all .3s ease
+            font-weight: 500
+            &:hover
+                background-color: #4766A8
+                transition: all .3s ease
             img
                 margin-right: 7px    
                 width: 10px
@@ -1454,5 +1604,1014 @@ section
             opacity: 1 
     a
         text-decoration: underline
+section.profile
+    height: calc(100% - 90px)
+    margin-top: 90px
+    .profile_content
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        .col1
+            width: 25%
+            padding-right: 15px
+            padding-left: 15px
+        &-user
+            width: 100%
+            padding: 30px
+            border-radius: 3px
+            background: #1b213a
+            .user_avatar
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+                justify-content: center
+                margin: 0 auto 10px
+                position: relative
+                width: 120px
+                height: 120px
+                border-radius: 50%
+                background-color: #2a335a
+                background-image: linear-gradient(-45deg, #2a335a 50%, transparent 50%, transparent),linear-gradient(-27deg, #03c7eb 50%, #2a335a 50%, #2a335a)
+                background-image: linear-gradient(33deg,#725daa,#58afad 59%,#83c4a3);
+                background-position: center
+                background-size: 297px
+                background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/lk_profile/avatar_default.png)
+            
+                div
+                    background: #030617
+                    width: 106px
+                    height: 106px
+                    border-radius: 50%
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    
+                img
+                    width: 55px
+                    height: 55px
+                    cursor: pointer
+            h2
+                font-size: 20px
+                color: #fff
+                font-family: 'Roboto', sans-serif
+                font-weight: bold
+                text-align: center
+                margin-bottom: 2px
+            p
+                font-family: 'Roboto', sans-serif
+                font-weight: 300
+                font-size: 16px
+                color: #fff
+                text-align: center
+                margin-bottom: 10px
+            .user_rank
+                margin-bottom: 10px
+            .user_rank, .wallet
+                font-size: 14px
+                color: #6a8ab9
+                font-family: 'Roboto', sans-serif
+                font-weight: 500
+                text-align: center
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    width: 25px
+                    height: 25px
+                    margin-right: 5px
+            
+        &-menu
+            width: 100%
+            margin-top: 20px
+            border-bottom: 0
+            background-color: #1b213a
+            border-radius: 3px
+            li
+                width: 100%
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                
+            li > a
+                padding: 20px 30px
+                width: 100%
+                font-family: 'Roboto', sans-serif
+                font-size: 16px
+                color: #6a8ab9
+                border-radius: 0
+                margin-right: 0px
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                &:hover
+                    background-color: #222a49 
+            li.active
+                border-left: 3px solid #03c7eb
+            li.active > a
+                color: #03c7eb
+                border: none
+                background-color: #222a49 
+                border-radius: 3px
+                position: relative
+                &:after
+                    content: ""
+                    position: absolute
+                    right: 10px
+                    top: 50%
+                    transform: translateY(-50%)
+                    width: 10px
+                    height: 13px
+                    background-image: url(../img/profile-arrow.svg)
+                    background-repeat: no-repeat
+        .col2
+            width: 75%
+            padding-right: 15px
+            padding-left: 15px
+    .profile_content-info.active
+        display: block
+    .profile_content-info
+        height: auto
+        display: none
+        .options
+            padding: 20px
+            border-bottom: 0
+            background-color: #1b213a
+            border-radius: 3px
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0
+        .options_head
+            border-bottom: 1px solid #2b3559
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 20px
+            padding-bottom: 20px
+        .edit 
+            background: #03c7eb
+            background-image: linear-gradient(to top, #4b98da, #03c7eb)
+            color: #fff
+            -webkit-appearance: none
+            border: 0
+            text-transform: none
+            border-radius: 3px
+            transition: all 0.35s ease-in-out
+            &:hover
+                transition: all 0.35s ease-in-out
+                background-color: #03dd9b
+                box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6)
+        h2  
+            text-transform: uppercase
+            margin-top: 0px
+
+            font-family: 'Roboto', sans-serif
+            font-weight: 400
+            font-size: 15px
+            color: #fff
+
+
+        .row
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+        .col
+            width: 49%
+            p
+                margin-bottom: 23px
+                font-family: 'Roboto', sans-serif
+                font-weight: 400
+                font-size: 15px
+                color: white
+        .col100
+            width: 100%
+            .tbl_row 
+                p
+                    margin-bottom: 0
+                div
+                    font-size: 15px
+                    padding: 15px 25px
+                    justify-content: flex-start
+        input
+            font-size: 14px
+            color: #5e7aa6
+            border: 1px solid #5e7aa6
+            background: transparent
+            border-radius: 3px
+            height: 100%
+            padding: 10px
+            width: 100%
+            margin-top: 5px
+            margin-bottom: 20px
+            transition: all .2s linear
+            &:focus 
+                transition: all .2s linear
+                border-color: #66afe9
+                outline: 0
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6)
+        label
+            
+            font-size: 14px
+            color: #6786b4
+            font-weight: 400
+            width: 100%
+        input[type="submit"]
+            width: 100%
+            background: #03c7eb
+            background-image: linear-gradient(to top, #4b98da, #03c7eb)
+            box-shadow: 0 0.125rem 1.25rem 0 rgba(0,0,0,.5)
+            color: #fff
+            -webkit-appearance: none
+            border: 0
+            text-transform: none
+            
+            &:hover
+                background-color: #03dd9b
+                box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6)
+        input[type="submit"].delete_acc
+            padding: 10px 10px
+            color: #6a8ab9
+            border: 1px solid #6a8ab9
+            background-image: unset
+            background-color: unset
+            
+            &:hover
+                color: #03c7eb
+                border-color: #03c7eb
+        input[readonly] 
+            background-color: #0f1831
+        .deact_account
+            p
+                margin-bottom: 10px
+        .left
+            width: 50%
+            float: left
+            &:first-child
+                padding-right: 2%   
+        .tournament_body
+            width: 100%
+            .tbl_row, .tbl_head
+                border-bottom: 1px solid #2b3559
+                background-color: #222a49
+                div
+                    width: 25%
+                .name
+                    width: 50%
+    #teams, #create_team
+        .tournament_body
+            width: 100%
+            .tbl_row, .tbl_head
+                border-bottom: 1px solid #2b3559
+                background-color: #222a49
+                div
+                    width: 20%
+                .name
+                    width: 40%
+                .member
+                    color: #69ac41
+                    font-weight: bold
+                    padding-left: 24px
+                    position: relative
+                    &:before 
+                        position: absolute
+                        content: ''
+                        background: url(../img/star.svg)
+                        background-position: center
+                        background-size: 10px
+                        top: 50%
+                        transform: translateY(-50%)
+                        left: 29%
+                        width: 10px
+                        height: 10px
+        .team
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            &_img
+                width: 120px
+                height: 120px
+                border-radius: 3px
+                img
+                    border-radius: 3px
+            &_info
+                width: calc((100% - 180px)/2)
+                margin-left: 15px
+                margin-right: 15px
+                .discipline
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+                    align-items: center
+                    color: #fff
+                    margin-bottom: 15px
+                    width: 100%
+                    .value
+                        display: -webkit-flex
+                        display: -moz-flex
+                        display: -ms-flex
+                        display: -o-flex
+                        display: flex
+                        align-items: center
+                        img
+                            width: 20px
+                            height: 20px
+                        p
+                            width: calc(100% - 30px)
+                            margin-left: 10px
+                            font-size: 14px
+                    h3
+
+                        font-size: 14px
+                        margin-right: 8px
+                h2
+                    margin-bottom: 15px
+                    font-size: 14px
+                    font-family: 'Roboto Condensed', sans-serif
+                    font-weight: 600
+                    color: #03c7eb
+                    letter-spacing: 0px
+                li
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+                    align-items: center
+                    color: #fff
+                    font-size: 14px
+                    text-transform: none
+                    margin-bottom: 5px
+                    h3
+                        margin-right: 8px
+                        font-size: 14px
+                    img
+                        height: 20px
+                        width: 20px
+    .choose_game
+        width: 100%
+        border-bottom: 1px solid #2b3559
+        padding-bottom: 20px
+        
+        margin-bottom: 20px
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .game
+            
+            line-height: 25px
+        form
+            width: 250px
+            input
+                margin-bottom: 0
+                height: auto            
+    .checkbox
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        margin-bottom: 0
+        label
+            width: auto
+            top: 4px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            color: #fff
+        img
+            height: 30px
+            width: 30px
+            margin-right: 10px
+    .team_head
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 10px
+    #choose_games 
+        input[type="submit"]
+            width: 200px
+.team_body
+    display: none
+.team_body.active, .md_body
+    form
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        
+    .field50
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        width: 50%
+        &:nth-child(2n-1)
+            padding-right: 2%
+    .custom-select
+        margin-bottom: 20px
+        margin-top: 5px
+        width: 100%
+        height: auto
+    .custom-select > select
+        display: none
+    .select-selected
+        font-size: 14px
+    .select-items
+        div
+            font-size: 14px
+    .field100
+        width: 100%
+
+    textarea
+        border: 1px solid #3b5a88
+        padding-left: 20px
+        padding-right: 20px
+        font-size: 14px
+.balance_cards
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .card
+
+        width: 30%
+        height: 70px
+        margin-top: 15px
+        margin-bottom: 15px
+        color: #5e7aa6
+        border: 2px solid #5e7aa6
+        border-radius: .375rem
+        font-size: 22px
+        font-weight: 600
+        letter-spacing: .3px
+        transition: all 0.25s ease
+        a
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 100%
+            width: 100%
+        &:hover
+            transition: all 0.45s ease
+            background-image: linear-gradient(to top, #4b98da, #03c7eb)
+            border: none
+            color: #fff
+    
+.form_btns
+    width: 100%
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    margin-top: 15px
+    .btn, input[type=submit].btn
+        padding: 8px 50px
+        margin-top: 0
+        margin-bottom: 0
+        font-size: 14px
+        width: auto !important
+        text-transform: none
+        border-radius: 3px
+    input[type=submit], .btn-current
+        margin-right: 20px
+    .btn-cancel, .btn-dark
+        background-color: #030617
+        border: none
+        color: #6a8ab9 
+        transition: all 0.35s ease
+        &:hover
+            color: #fff
+            box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6)
+            background-image:  -webkit-linear-gradient(bottom, #4b98da, #03c7eb)
+            background-image: -o-linear-gradient(bottom, #4b98da, #03c7eb)
+            background-image: linear-gradient(to top, #4b98da, #03c7eb)
+            
+            transition: all 0.35s ease
+#balance
+    .options > p
+        text-align: center
+        color: #6a8ab9
+    .options_head
+        flex-wrap: wrap
+        h2
+            margin-bottom: 10px
+        p
+            width: 100%
+            font-size: 13px
+            color: #fff
+            
+    .enter_price_btn
+        font-size: 14px
+        width: 100%
+        text-align: center
+        color: #6a8ab9
+        margin-left: auto
+        margin-right: auto
+        transition: all 0.35s ease-in-out
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        justify-content: center
+        align-items: center
+        &:hover
+            color: #03c7eb
+            transition: all 0.35s ease-in-out
+            opacity: 1
+    form
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+    .select-items div, .select-selected
+        font-size: 14px
+    .custom-select
+        height: 40px
+    .custom-select > select
+        display: none
+    .field30
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        width: calc(33% - 20px)
+        margin: 10px
+        input
+            margin-bottom: 0
+        input[type="submit"]
+            height: 40px
+    #enter_price
+       display: none 
+    
+.school
+    height: calc(100% - 90px)
+    margin-top: 90px
+    position: relative
+    .wr
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        .news_body
+            width: 100%
+            margin-bottom: 50px
+    .news_back
+        background-position: center !important
+        background-size: cover !important
+        background-repeat: no-repeat !important
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+#status
+    .options_head
+        flex-wrap: wrap
+        h2
+            margin-bottom: 10px
+        p
+            width: 100%
+            font-size: 13px
+            color: #fff
+            line-height: 1.4em
+    .status_head
+        margin-bottom: 40px
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-img
+            .stat
+                display: none
+            .stat.active
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 80px
+                height: 80px
+                position: relative
+                &:before 
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    -webkit-transform: translate(-50%,-50%)
+                    transform: translate(-50%,-50%)
+                    display: block
+                    width: 180px
+                    height: 180px
+                    background: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient_badge_def@2x.png) center/contain no-repeat
+                    z-index: -1 
+                img
+                    position: relative
+                    z-index: 1
+                    width: 100%
+                    height: 100%
+                    
+        &-info
+            margin-top: 10px
+            h2
+                font-size: 24px
+                font-weight: bold
+                color: #fff
+                text-transform: none
+                font-family: 'Roboto Condensed', sans-serif
+                text-align: center
+            .stat_view
+                position: relative
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-top: 5px
+                p
+                    font-size: 16px
+                    color: #6a8ab9
+                    margin-left: 0px
+                    position: relative
+                    &:after
+                        content: ''
+                        position: absolute
+                        right: -20px
+                        top: 65%
+                        -webkit-transform: translateY(-50%)
+                        -ms-transform: translateY(-50%)
+                        transform: translateY(-50%)
+                        background: url(../img/menu-arrow-blue.svg)
+                        background-size: contain
+                        background-repeat: no-repeat
+                        width: 12px
+                        height: 12px
+                img
+                    height: 15px
+                    width: 15px
+                    margin-right: 10px
+    .stat_progress
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        margin-top: 20px
+        height: 49px
+        .progress
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 100%
+        .progress-bar
+            width: 13.25rem
+            height: .75rem
+            border-radius: .375rem
+            background-color: rgba(255,255,255,.35)
+            position: relative
+            top: 7px
+        .progress-full
+            position: relative
+            background-image: -webkit-gradient(linear,right top,left top,from(#0ee3d0),to(#8c73e6))
+            background-image: linear-gradient(to left,#0ee3d0,#8c73e6)
+            height: 100%
+            width: 18%
+            border-radius: .375rem
+    .points-counter
+        margin-top: 10px
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        color: #fff
+        font-size: 16px
+        align-items: center
+        justify-content: center
+        img
+            margin-left: 2px
+            width: 16px
+            height: 16px
+    .stat-def
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-left: 20px
+        margin-right: 20px
+        img
+            height: 25px
+            width: 25px
+            margin-bottom: 5px
+        p
+            color: #fff
+            font-size: 16px
+    .status_body
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        .status-item
+            width: calc(20% - 20px)
+            margin: 10px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-direction: column
+            align-items: center
+            border-radius: 3px
+            background-color: #222a49
+            padding: 30px 20px
+            background-repeat: no-repeat
+            background-position: center top
+            background-size: cover
+            img
+                height: 35px
+                width: 35px
+                margin-bottom: 10px
+            h2
+                text-transform: none
+                font-weight: bold
+                font-size: 18px
+        .points-counter
+            margin-top: 3px
+            margin-bottom: 15px
+            img
+                margin: 0 5px
+                height: 15px
+                width: 15px
+        p
+            text-align: center
+            font-size: 13px
+            color: #fff
+            font-weight: 100
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            line-height: 1.4em
+            span
+                line-height: 1.4em
+                width: 100%
+                font-weight: 800
+                margin-right: 5px
+                font-size: 18px
+        .card-plus
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 12px
+            span
+                font-size: 16px
+                font-weight: 500
+                color: #fff
+                text-align: center
+                margin-bottom: 10px
+            img
+                width: 20px
+                height: 20px
+                margin-bottom: 4px
+        .def
+            background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-def.png)
+        .silver
+            background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-silver.png)
+        .bronze
+            background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-bronze.png)
+        .gold
+            background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-gold.png)
+        .diamond
+            background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-diamond.png)
+        .card-info
+            height: 70px
+    .status-text
+        color: #fff
+        font-size: 14px
+        line-height: 1.6em
+        text-align: justify
+        margin-top: 20px
+.inputfile 
+    width: 0.1px !important
+    height: 0.1px !important
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+
+.inputfile + label 
+    font-size: 1.25em
+    font-weight: 700
+    color: white
+    background-color: black
+    display: inline-block
+    cursor: pointer
+
+.inputfile:focus + label, .inputfile + label:hover 
+    background-color: red
+label.for_file
+    font-size: 14px
+    color: #5e7aa6
+    border: 1px solid #5e7aa6
+    background: transparent
+    border-radius: 3px
+    height: 100%
+    padding: 10px
+    padding-left: 30px
+    width: 100%
+    margin-top: 5px
+    margin-bottom: 20px
+    transition: all .2s linear
+    cursor: pointer
+    position: relative
+    &:before
+        position: absolute
+        left: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 15px
+        height: 15px
+        background: url(../img/clip.svg)
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        content: ''
+#prof
+    .tournament_body 
+        .tbl_row:last-child
+            border-bottom: none
+#history.profile_content-info, #prev.profile_content-info
+    .tournament_body 
+        .tbl_head > div, .tbl_row > div
+            width: 50%
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            font-size: 14px
+            a
+                color: #03c7eb
+                &:nth-child(2)
+                    margin-left: 4px
+                    margin-right: 4px
+            span:nth-child(1)
+                width: 100%
+        .tbl_row
+            position: relative
+            .numb
+                font-size: 14px
+                position: absolute
+                left: 10px
+                top: 50%
+                transform: translateY(-50%)
+                border: 1px solid #03c7eb
+                color: #03c7eb
+                width: 12px
+                height: 12px
+                padding: 12px
+            .add_result
+                text-decoration: underline
+                color: #03c7eb
+.md2
+    h2
+        color: #fff
+        font-size: 20px
+        margin-bottom: 20px
+    .md_cont
+        form
+            .field100
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                width: 100%
+            label 
+                font-size: 14px
+                color: #6786b4
+                font-weight: 400
+                width: 100%
+            input
+                font-size: 14px
+                color: #5e7aa6
+                border: 1px solid #5e7aa6
+                background: transparent
+                border-radius: 3px
+                height: 100%
+                padding: 10px
+                width: 100%
+                margin-top: 5px
+                margin-bottom: 20px
+                transition: all .2s linear
+            input[type="submit"] 
+                width: 100%
+                background: #03c7eb
+                background-image: linear-gradient(to top, #4b98da, #03c7eb)
+                box-shadow: 0 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.5)
+                color: #fff
+                -webkit-appearance: none
+                border: 0
+                text-transform: none
+                font-size: 14px
+.svg
+    
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(102, 175, 233, 0.6))   
+    filter: drop-shadow(0px 0px 4px rgba(102, 175, 233, 0.6))
+input::placeholder
+    color: #6881a9
+input::-moz-placeholder
+    color: #6881a9
+input::-webkit-input-placeholder
+    color: #6881a9
 .none
     display: none
