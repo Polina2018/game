@@ -1,0 +1,1076 @@
+@media (min-width: 750px) {
+    .swiper-pagination {
+        display: none;
+    }
+    .header_mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+     .wr {
+        width: 100%;
+        max-width: 95%
+    }
+}
+@media (max-width: 750px) {
+    .md .md_cont {
+        width: 100%;
+        margin-top: 0;
+        height: 100%;
+        padding: 11.5vw 4.6875vw 7.5vw;
+        padding-top: 20%;
+    }
+    .md .md_cont .nav li a,
+    .md .md_cont form .label_placeholder,
+    .checkbox,
+    .md .md_cont .btn_resetpass,
+    .md .md_footer .btn-facebook {
+        font-size: 4.0625vw
+    }
+    .md .md_cont .btn_resetpass {
+        margin-bottom: 0;
+    }
+    .checkbox .checkbox_check label {
+        top: -2px;
+    }
+    .checkbox a {
+        margin-left: 5px;
+    }
+    .md .md_cont input[type=submit] {
+        font-size: 5.15625vw;
+        border-radius: 3px;
+        padding: 7px;
+    }
+    .md .md_cont .nav li {
+        width: 50%;
+    }
+    .header .profile {
+        margin-right: auto;
+    }
+    .header .profile a {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .open_menu {
+        margin-left: auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        -ms-align-items: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .open_menu span {
+        transition: all .35s ease;
+        width: 6.5625vw;
+        margin: 3px 0;
+    border: 1px solid #03cef3;
+    position: relative;
+    top: 0;
+    border-radius: 2px;
+    background: #00d0f8;
+        
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .open_menu.active span:first-child {
+        transform: rotate(-45deg) translatey(5.4px);
+        color: #03cef3;
+        border: 1px solid #03cef3;
+    }
+    .open_menu.active span:nth-child(2) {
+        display: none;
+    }
+    .open_menu.active span:nth-child(3) {
+        transform: rotate(45deg) translatey(-6px);
+        color: #03cef3;
+        border: 1px solid #03cef3;
+    }
+    
+    
+    .header_mobile {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        height: 100%;
+        -ms-align-items: center;
+        align-items: center;
+        width: 100%;
+        padding: 3vw 0;
+    }
+    .header .profile:after {
+        display: none;
+    }
+    .header .profile img {
+        width: 6.3125vw;
+        height: 6.3125vw;
+    }
+    .logo_mob img {
+        height: 9.0625vw;
+    }
+    .logo_mob a {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner .swiper-slide .item {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .banner .wr,
+    .news .wr,
+    .wr {
+        width: 100%;
+        max-width: 95%
+    }
+    .banner .prev,
+    .banner .next {
+        width: 20px !important;
+        height: 30px !important;
+        background-size: 20px 30px !important;
+    }
+    .swiper-button-next {
+        right: 0px !important;
+    }
+    .swiper-button-prev {
+        left: 0px !important;
+    }
+    .banner .swiper-slide .item_image {
+        height: 100%;
+        width: 100%;
+        height: 81.25vw;
+    }
+    .header {
+        max-height: 53px
+    }
+    .banner {
+        margin-top: 53px;
+        height: calc(100% - 53px);
+        padding-bottom: 30px;
+    }
+    .banner .swiper-slide .item .item_image {
+        background-size: 85% !important;
+        background-position: center !important;
+    }
+    .banner .swiper-slide .item .item_image2 {
+        background-size: 78% !important;
+    }
+    .banner .swiper-slide .item_info {
+        width: 100%;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .banner .swiper-slide .item h2 {
+        font-size: 5.625vw;
+        text-align: center;
+    }
+    .banner .swiper-slide .item li {
+        font-size: 4.625vw;
+    }
+    .banner .swiper-slide .item li:before {
+        height: 5px;
+        width: 5px;
+    }
+    .download img {
+        width: 48vw;
+        height: 18vw;
+    }
+    .news_archive .btn-more, .btn {
+        padding: 2.8125vw 1vw;
+        font-size: 4.0625vw;
+        width: 62vw;
+        text-align: center;
+        line-height: 1.3em;
+    }
+    .banner .swiper-slide .item ul {
+        margin-bottom: 15px;
+    }
+    .header_left,
+    .header_right {
+        display: none;
+    }
+    .section_head h2,
+    .news_body h2 {
+        font-size: 5.625vw;
+    }
+    .about_body .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        padding: 20px 15px;
+    }
+    .about_body .card h2 {
+        font-size: 3.28125vw;
+    }
+    .about_body .card img {
+        margin-bottom: 10px;
+        max-width: 12.625vw;
+        max-height: 12.625vw;
+        width: auto;
+        height: auto;
+    }
+    .tournament .tbl_row div,
+    .tournament .tbl_row .status.active,
+    .tournament .tbl_head div {
+        display: none;
+    }
+    .tournament .tbl_head .name,
+    .tournament .tbl_head .date,
+    .profile_content-info .tournament .tbl_head .player {
+        justify-content: center;
+    }
+    .tournament .tbl_row .name,
+    .tournament .tbl_head .name,
+    .profile_content-info .tournament_body .tbl_head .name,
+    .profile_content-info .tournament_body .tbl_row .name,
+    #teams .tournament_body .tbl_head .name,
+    #teams .tournament_body .tbl_row .name {
+        width: 70%;
+        text-align: center;
+    }
+    .tournament .tbl_head .date,
+    .profile_content-info .tournament .tbl_head .player,
+    .profile_content-info .tournament_body .tbl_head div,
+    .tournament .tbl_row div:nth-child(2),
+    #teams .tournament_body .tbl_head div,
+    #teams .tournament_body .tbl_row div {
+        width: 30%;
+    }
+    .tournament .tbl_row .name,
+    .tournament .tbl_head .date,
+    .tournament .tbl_head .name,
+    .tournament .tbl_row div:nth-child(2),
+    .profile_content-info .tournament .tbl_head .player {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    .tournament .tournament_body {
+        width: 100%;
+        order: 3
+    }
+    .tournament_calendar,
+    .tournament_page .tournament_calendar {
+        width: 100%;
+        height: 51px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+  
+    .section_head {
+        margin-bottom: 30px;
+    }
+    .tournament_calendar .calendar_head h2,
+    .tournament .tbl_head div {
+        font-size: 3.90625vw;
+    }
+    .footer_col {
+        width: 100%;
+    }
+    .news_body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .news_body-btns .btn_white {
+        font-size: 4.0625vw;
+        padding: 2.65625vw 0;
+        width: 30.78125vw;
+    }
+    .news_body h2 {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .news_body-imgs img {
+        max-width: 15.625vw;
+        max-height: 15.625vw;
+        width: auto;
+        height: auto;
+    }
+    .news_body-imgs {
+        margin-bottom: 30px;
+    }
+    .about,
+    section {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .news {
+        background-image: url(../img/star.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: unset;
+    }
+    .tournament .tbl_row .name img {
+        width: 4.53125vw;
+        height: 4.53125vw;
+    }
+    .tournament .tbl_row .name a {
+        font-size: 3.4375vw;
+        font-weight: 500;
+    }
+    .news_main {
+        padding: 60px 0 80px;
+        background-color: #0d1025;
+        background-image: none;
+        margin-top: 0;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .news_archive .news_body {
+        padding-bottom: 60px;
+    }
+    .news_archive .news_body .news-item {
+        height: 150px;
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .news_archive .news_body .news-item h3 {
+        font-size: 4.5vw;
+    }
+    .news_archive .news_body .news-item p {
+        font-size: 3.4375vw;
+    }
+    .news_archive .news_body {
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+    }
+    .news_archive .news_body .news-item p span {
+        font-size: 17px;
+        position: relative;
+        top: -3px;
+        left: 0%;
+        margin-right: 2px;
+    }
+    .news_archive .news_body .news-item p a {
+        margin-right: 3px;
+    }
+    .footer_col {
+        display: none;
+    }
+    .footer_col4 {
+        display: block;
+    }
+    .footer {
+        padding: 30px 0;
+    }
+    .footer_col h3 {
+        text-align: center;
+        font-size: 3.4375vw;
+    }
+    .social li {
+        width: 10.9375vw;
+        height: 10.9375vw;
+    }
+    .social li img {
+        height: 18px;
+    }
+    .social {
+        justify-content: center;
+        border-bottom: 1px solid #16244b;
+        margin-bottom: 12px;
+    }
+    .footer_col4 .work p,
+    .footer_col4 .work a {
+        font-size: 3.4375vw;
+    }
+    .footer_col li {
+        text-align: center;
+    }
+    .news_body-btns .btn_white {
+        margin-right: 4.6875vw;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: #222762 !important;
+        margin: 0 0.78125vw;
+        width: 12.5vw;
+        height: 1.25vw;
+        opacity: .7;
+        border-radius: 0
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {
+        background-color: #313aac !important;
+        opacity: 1;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: -4px !important;
+    }
+    .news_archive,
+    .article,
+    .tournament_page {
+        background-color: #0d1025;
+        background-image: none;
+        margin-top: 53px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        height: calc(100% - 53px);
+    }
+    .news_archive .news_filter h2 {
+        margin-left: 0;
+        font-size: 5.625vw;
+    }
+    .select-items div,
+    .select-selected {
+        font-size: 3.90625vw;
+        padding: 10px 15px;
+    }
+    .custom-select {
+        height: 36px;
+        width: 170px;
+    }
+    .news_archive .news_filter {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .news_archive .news_filter h2 {
+        margin-bottom: 15px;
+    }
+    .news_archive .news_filter .filter_sort {
+        margin-right: 0;
+    }
+    .article_img h3 {
+        font-size: 6.875vw;
+    }
+    .article_img a {
+        padding: 0 0.8125vw;
+        margin-right: 0.8125vw;
+        color: #03cef3;
+        font-size: 2.8125vw;
+    }
+    .article_img a:after {
+        background: #03cef3;
+        right: -2px;
+    }
+    .article_content p {
+        font-size: 4.53125vw;
+        padding: 4.53125vw 0;
+        line-height: 8.4375vw;
+        margin-bottom: 0;
+    }
+    .article_content p iframe {
+        max-width: 100%
+    }
+    .article .wr {
+        max-width: 100%;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .article_content {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        order: 3
+    }
+    .article {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .article_img {
+        margin-bottom: 10px;
+        order: 1
+    }
+    textarea {
+        font-size: 4.53125vw;
+        padding-left: 15px;
+    }
+    .article_comments input[type=submit] {
+        margin: 0;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        font-size: 4.53125vw;
+    }
+    .article_comments img {
+        height: 50px;
+        width: 50px;
+    }
+    .article_comments .profiile_icon {
+        padding-left: 15px;
+    }
+    .article_comments {
+        margin-top: 20px;
+        margin-bottom: 0;
+        order: 4
+    }
+    .article_share {
+        position: relative;
+        left: auto;
+        top: auto;
+        order: 2;
+    }
+    .article_share ul {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .article_share ul li {
+        margin: 0 10px;
+        margin-bottom: 10px;
+    }
+    .article_comments .profile_comment {
+        border-top: 0
+    }
+    .tournament_page .filter_left {
+      
+        width: 46px;
+    }
+    .tournament_page .filter_left img {
+        height: 20px;
+        width: 20px;
+    }
+    .tournament_page .wr {
+        padding-left: 46px;
+    }
+    .tournament_page .pagination {
+        width: 100%;
+    }
+    .faq .col2 {
+        width: 100%;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile_content-menu {
+        position: relative;
+    }
+    .nav.nav-list {
+        overflow-y: auto;
+        width: 100%;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        border-bottom: solid 0.3125vw #8297ba;
+       
+      
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .nav.nav-list:after {
+
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 14.0625vw;
+    height: 100%;
+   background-image: linear-gradient(to right, transparent, #1b213a)
+    }
+    .profile_content-menu li.active > a {
+        background: none
+    }
+    .profile_content-menu li > a {
+        font-size: 3.90625vw;
+        padding: 3vw;
+        height: 60px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+            width: 29vw;
+    justify-content: center;
+        text-align: center
+    }
+    .profile_content-menu li {
+        border-top: 3px solid #1b213a;
+    }
+    .profile_content-menu li.active {
+        border-top: 3px solid #03c7eb;
+        border-left: 0
+    }
+    .faq .col1 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .profile_content-menu li.active > a:after {
+        display: none;
+    }
+    .faq .section_head {
+        margin-bottom: 30px;
+    }
+    .faq_body .question .question_head h3 {
+        font-size: 4.5vw;
+    }
+    .faq_body .question .question_body p {
+        font-size: 3.90625vw;
+    }
+    .faq_body .question .question_head {
+        padding: 13px;
+    }
+    .faq_body .question .question_body p {
+        padding: 13px;
+        padding-left: 42px;
+    }
+    faq .section_head p {
+        width: 100%;
+    }
+    .faq .wr {
+        width: 100%;
+        max-width: 100%;
+    }
+    section.profile {
+        height: calc(100% - 53px);
+        margin-top: 53px;
+        padding-top: 0;
+    }
+    .faq {
+        height: calc(100% - 53px);
+        margin-top: 53px;
+    }
+    .profile_content {
+        flex-wrap: wrap
+    }
+    .profile_content .col {
+        width: 100%;
+        padding: 0;
+    }
+    section.profile .wr {
+        width: 100%;
+        max-width: 100%;
+    }
+    .profile_content-menu {
+        margin-top: 0;
+    }
+    .profile_content-user .user_avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .profile_content-user .user_avatar div {
+        width: 70px;
+        height: 70px;
+    }
+    .profile_content-user .user_avatar img {
+        width: 35px;
+        height: 35px;
+    }
+    .profile_content .col2 {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+    .profile_content-info h2 {
+        font-size: 3.90625vw;
+    }
+    .profile_content-info .edit {
+           width: auto;
+    padding: 8px 20px;
+    }
+    .profile_content-info .options {
+        padding: 15px;
+    }
+    #prof.profile_content-info .col100 .tbl_row div {
+        font-size: 15px;
+        padding: 15px 15px;
+        width: 50%;
+        font-size: 3.90625vw;
+        text-align: left
+    }
+    .profile_content-info .col p {
+        font-size: 3.5vw;
+    }
+    .balance_cards .card {
+         font-size: 5.90625vw;
+        height: 50px;
+    }
+  
+
+    .profile_content-info label,
+    .profile_content-info input,
+    .team_body.active .select-selected,
+    .md_body .select-selected,
+    .team_body.active .select-items div, .md_body .select-items div,
+    #history.profile_content-info .tournament_body .tbl_row > div,
+     #prev.profile_content-info .tournament_body .tbl_row > div{
+        font-size: 3.90625vw;
+    }
+    .profile_content-info input {
+        height: auto;
+    }
+    .team_body.active .field50:nth-child(5) {
+        width: 100%;
+        padding-right: 0;
+    }
+    #create_team .team {
+        flex-wrap: wrap
+    }
+    #create_team .team_info {
+        width: calc(100% - 135px);
+        margin: 0;
+        margin-left: 15px;
+    }
+    #create_team .team_info:last-child {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .form_btns .btn,
+    .form_btns input[type=submit].btn {
+        width: 50% !important;
+        padding: 8px 0;
+        font-size: 4vw;
+    }
+    .form_btns input[type=submit] {
+        margin-right: 6px;
+    }
+    #choose_games.profile_content-info input {
+        margin: 0;
+    }
+    .choose_game .game .checkbox_check > label {
+   top: 50%;
+    transform: translateY(-50%);
+}
+    #choose_games input[type="submit"] {
+    width: 100%;
+}
+    #balance form {
+        flex-wrap: wrap
+    }
+    #balance .field30 {
+            width: 100%;
+    }
+    #status .stat_progress .progress-bar {
+           width: 8.5rem;
+    }
+    #status .status_body .status-item {
+        width: calc(100% - 20px);}
+    #status .status_body .card-info {
+    height: 40px;
+}
+    #status .status_body p {
+        justify-content: center;
+    }
+    #history.profile_content-info .tournament_body .tbl_row .numb, #prev.profile_content-info .tournament_body .tbl_row .numb {
+        display: none;
+    }
+    #status {
+        padding-top: 20px;
+    }
+    #status .stat-def img {
+    height: 15px;
+    width: 15px;
+    }
+    #status .stat-def p, #status .points-counter {
+          font-size: 3.90625vw;
+    }
+    .tournament .wr {
+        max-width: 93%;
+    }
+    .faq .section_head p {
+        width: 100%;
+    }
+    .article_content p {
+    font-size: 15px;
+    padding: 25px 0 15px 0;
+    line-height: 1.75em;
+    margin-bottom: 0;
+}
+
+.article_content p iframe {
+    max-width: 100%;
+    height: 29vh;
+}
+    .team_head {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+            border-bottom: 1px solid #2b3559
+    }
+    .checkbox img {
+    height: 25px;
+    width: 25px;
+    margin-right: 4px;
+}
+    iframe {
+        width: 100%;
+    }
+    .tournament_calendar .calendar_head {
+        position: relative;
+    }
+    .tournament .tournament_calendar .calendar_head:after {
+  background-image: url(../img/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    right: 10px;
+       top: 46%;
+    -webkit-transform: translateY(-50%) rotate(270deg);
+    -ms-transform: translateY(-50%) rotate(270deg);
+    transform: translateY(-50%) rotate(270deg);
+    content: '';
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}   
+    .tournament_page .tournament_calendar .calendar_head:after {
+        right: 10px;
+    }
+    .tournament .tournament_calendar .calendar_head:before {
+     content: '';
+    position: absolute;
+  right: 69%;
+    top: 48%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url(../img/calendar.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+}   
+   .tournament_page  .tournament_calendar .calendar_head:before {
+         right: 70%;
+    }
+    .tournament_calendar.open .calendar_head:after {
+        background-image: url(../img/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+    content: '';
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    }
+  
+    .tournament_calendar.open {
+        height: auto;
+    }
+    .tournament_calendar .filter_game.active:after, .tournament_calendar .filter_game:after {
+        width: 13px;
+        height: 13px;
+    }
+    .school_body .professor {
+    margin-right: 0;
+        width: 100%;}
+    .school {
+    height: calc(100% - 53px);
+        margin-top: 53px;}
+    .school_body .professor {
+        -webkit-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        -o-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .school_body .professor-img, .school_body .professor-info {
+        width: 100%;
+    }
+    .school_body .professor-img {
+        border-radius:  3px 3px 0 0;
+        height: 230px;
+        background-position: top !important;
+
+    }
+    .school_body .professor-info {
+         border-radius:  0 0 3px 3px;
+        height: 230px;
+    }
+    {
+        display: flex;
+    z-index: 1000;
+    top: 45px;
+    border-top: 1px solid #ebebeb;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 45px);
+    background: rgba(255,255,255,.96);
+    opacity: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transform: none;
+    display: none;
+    padding-bottom: 50px;
+    transition: all .4s ease;
+    }
+    .header-2 {
+            max-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .header-2 .header_left, .header-2 .header_right {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    background: #030617;
+    z-index: 10;
+    height: auto;
+    width: 100%;
+    }
+    .header-2 .header_left {
+     margin-top: 30px;
+        z-index: 10000;
+    }
+    .header_left-logo {
+        display: none;
+    }
+    .header_left-menu {
+        height: auto;
+        margin-left: 0;
+    }
+    .header ul {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .header .wr {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .header-2 .header_mobile {
+            height: 53px;
+        position: relative;
+           
+    }
+    .header-2 .header_mobile:after {
+        content: '';
+         border-bottom: 1px solid #3b5a88;
+        width: 120%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    .header ul li {
+        margin: 20px 0;
+    }
+    .header .dropdown > a {
+        width: auto;
+    }
+    .header .dropdown > a:before {
+        display: none;
+    }
+    .header .dropdown > a:after {
+    right: -6%;
+       transform: translateY(-50%) rotate(270deg);
+    width: 13px;
+        height: 7px; }
+    .header-2 .search, .header-2 #profile {
+        display: none;
+    }
+    
+    .header_left-menu li:hover {
+    background: none;
+}
+    .header-2 .dropdown:hover .sub-menu {
+          top: 53px;
+    width: 70%;
+    left: auto;
+    padding: 20px;
+    right: 0;
+    z-index: 100;
+        height: 100%;
+        position: absolute;
+        overflow-y: scroll
+    }
+    .header .dropdown:hover .sub-menu li {
+        height: auto;
+            padding: 0px;
+    margin-bottom: 20px;
+    }
+    .scrollHidden {
+            overflow: hidden;
+    max-height: 100vh;
+    max-width: 100vw;
+    }
+    .lang.active .dropdown-lang {
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .banner .wr,
+    .wr {
+        width: 100%;
+        max-width: 98%;
+    }
+    .banner .prev,
+    .banner .next {
+        display: none;
+    }
+  
+}

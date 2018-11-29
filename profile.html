@@ -18,13 +18,30 @@
 <body>
     <div class="header">
         <div class="wr">
+            <div class="header_mobile">
+             <div id="login" class="profile">
+                            <a href="javascript:void(0);"><img src="img/profile.svg" alt=""></a>
+                            <div id="dropdown-menu" class="dropdown-menu">
+                                <ul>
+                                    <li id="login"><a href="javascript:void(0);">Вход в систему</a> </li>
+                                    <li id="register"><a href="javascript:void(0);">Зарегистрироваться</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="logo_mob"><a href=""><img src="img/logo-mob.svg" alt=""></a></div>
+             <div class="open_menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div></div>
             <div class="header_left">
                 <div class="header_left-logo">
                     <a href=""><img src="img/logo.svg" alt=""></a>
                 </div>
                 <div class="header_left-menu">
                     <ul>
-                        <li class="dropdown"> <a href="">Турниры</a>
+                        <li class="dropdown">
+                            <a href="">Турниры</a>
                             <ul class="sub-menu none">
                                 <li class="active">
                                     <a href="#" class="disabled"><img class="game_menu_logo" src="img/menu-img.svg" alt="all games">Все игры</a>
@@ -91,6 +108,9 @@
                     </ul>
                 </div>
             </div>
+           
+           
+            
         </div>
     </div>
     <section class="profile">
@@ -119,7 +139,7 @@
                     </div>
                 </div>
                 <div class="col col2">
-                    <div class="profile_content-info active" id="prof">
+                    <div class="profile_content-info cont active" id="prof">
                         <div class="tournament options">
                             <div class="options_head">
                                 <h2 class="">Профиль</h2> <a href="#prof_edit" class="btn edit">Редактировать</a></div>
@@ -180,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profile_content-info" id="prof_edit">
+                    <div class="profile_content-info cont" id="prof_edit">
                         <div class="options">
                             <div class="options_head">
                                 <h2 class="">Редактировать профиль</h2> <a href="#prof" class="btn edit">Вернуться</a></div>
@@ -191,9 +211,9 @@
                                         <label for="fname">Имя пользователя:</label>
                                         <input type="text" class="form-control" name="user" readonly="" value="admin" required="">
                                         <label for="fname">Имя:</label>
-                                        <input type="text" class="form-control" name="fname" value="Денис" required="">
+                                        <input type="text" class="form-control" name="fname" value="Имя" required="">
                                         <label for="lname">Фамилия:</label>
-                                        <input type="text" class="form-control" name="lname" value="Денисович" required="">
+                                        <input type="text" class="form-control" name="lname" value="Фамилия" required="">
                                         <label for="email">Адрес электронной почты:</label>
                                         <input readonly="" type="email" class="form-control" value="example@mail.ru">
                                         <label for="email">Дата рождения:</label>
@@ -227,7 +247,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profile_content-info active" id="games">
+                    <div class="profile_content-info cont active" id="games">
                         <div class="tournament options">
                             <div class="options_head">
                                 <h2 class="">В игре</h2> <a href="#choose_games" class="btn edit">Редактировать</a></div>
@@ -284,7 +304,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profile_content-info active" id="teams">
+                    <div class="profile_content-info cont active" id="teams">
                         <div class="tournament options">
                             <div class="options_head">
                                 <h2 class="">Команды</h2> <a href="#create_team" class="btn edit">Редактировать</a></div>
@@ -346,7 +366,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profile_content-info" id="create_team">
+                    <div class="profile_content-info cont" id="create_team">
                         <div class="tournament options">
                             <div class="options_head">
                                 <h2>Настройки команд</h2> <a href="#teams" class="btn edit">Вернуться</a></div>
@@ -531,10 +551,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profile_content-info" id="choose_games">
+                    <div class="profile_content-info cont" id="choose_games">
                         <div class="tournament options">
                             <div class="options_head">
-                                <h2 class="">Настройки игр</h2> <a href="#teams" class="btn edit">Вернуться</a></div>
+                                <h2 class="">Настройки игр</h2> <a href="#games" class="btn edit">Вернуться</a></div>
                             <div class="tournament_body">
                                 <div class="choose_game">
                                     <div class="game">
@@ -644,7 +664,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profile_content-info" id="balance">
+                    <div class="profile_content-info cont" id="balance">
                         <div class="options">
                             <div class="options_head">
                                 <h2 class="">Пополнить баланс</h2>
@@ -707,7 +727,7 @@
                             <p>Платежей нет.</p>
                         </div>
                     </div>
-                    <div class="profile_content-info" id="status">
+                    <div class="profile_content-info cont" id="status">
                         
                             <div class="status_head">
                                 <div class="status_head-img">
@@ -829,7 +849,7 @@
 </p>
                               </div>
                     </div>
-                    <div class="profile_content-info" id="history">
+                    <div class="profile_content-info cont" id="history">
                         <div class="tournament options">
                             <div class="options_head">
                                <div class="form_btns">
@@ -885,7 +905,7 @@
                             </div>
                         </div>
                     </div>
-                       <div class="profile_content-info" id="prev">
+                       <div class="profile_content-info cont" id="prev">
                         <div class="tournament options">
                             <div class="options_head">
                                <div class="form_btns">
@@ -1072,74 +1092,6 @@
             </div>
         </div>
     </div>
-      <div class="md md2 none">
-        <div class="md_back">
-            <div class="md_cont">
-                <a class="close" href="javascript:void(0);"></a> 
-                <h2>Добавить результаты турнира</h2>
-                <div class="md_body active">
-                <form class="form-group" novalidate="novalidate">
-                                    <div class="field field50">
-                                        <label for="tname">Название команды:</label>
-                                        <input type="text" class="form-control" name="tname" value="" required=""> </div>
-                                    <div class="field field50">
-                                        <label for="numb">Игровая дисциплина:</label>
-                                        <div class="custom-select">
-                                            <select class=" ">
-                                                <option disabled="" selected="" hidden="">Выбрать:</option>
-                                                <option value=""> Heroes of Newerth </option>
-                                                <option value=""> Counter-Strike: GO </option>
-                                                <option value=""> HearthStone </option>
-                                                <option value=""> Smite </option>
-                                                <option value=""> World of Warcraft </option>
-                                                <option value=""> Call of Duty </option>
-                                                <option value=""> Heroes of Newerth </option>
-                                                <option value=""> Counter-Strike: GO </option>
-                                                <option value=""> HearthStone </option>
-                                                <option value=""> Smite </option>
-                                                <option value=""> World of Warcraft </option>
-                                                <option value=""> Call of Duty </option>
-                                                <option value=""> Heroes of Newerth </option>
-                                                <option value=""> Counter-Strike: GO </option>
-                                                <option value=""> HearthStone </option>
-                                                <option value=""> Smite </option>
-                                                <option value=""> World of Warcraft </option>
-                                                <option value=""> Call of Duty </option>
-                                                <option value=""> Heroes of Newerth </option>
-                                                <option value=""> Counter-Strike: GO </option>
-                                                <option value=""> HearthStone </option>
-                                                <option value=""> Smite </option>
-                                                <option value=""> World of Warcraft </option>
-                                                <option value=""> Call of Duty </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="field field50">
-                                        <label for="skype">Skype капитана:</label>
-                                        <input type="text" class="form-control" name="skype" value="" required=""> </div>
-                                    <div class="field field50">
-                                        <label for="">Количество участников в команде:</label>
-                                        <div class="custom-select">
-                                            <select class=" ">
-                                                <option disabled="" selected="">Выбрать:</option>
-                                                <option value=""> 1 </option>
-                                                <option value=""> 2 </option>
-                                                <option value=""> 3 </option>
-                                                <option value=""> 4 </option>
-                                                <option value=""> 5 </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="field field100">
-                                        <label for="file" class="for_file">Загрузить изображение выигрыша</label>
-                                        <input type="file" name="pic" accept="image/*" class="inputfile" id="file"> </div>
-                                   
-                                  
-                                        <input type="submit" value="Добавить" class="btn btn-default btn-profile">
-                                </form></div>
-                </div></div></div>
-    <script>
-    </script>
 </body>
 
 </html>

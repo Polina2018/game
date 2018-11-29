@@ -1,58 +1,53 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=cyrillic");
-/* line 3, /Applications/MAMP/htdocs/game/css/style.sass */
 *, html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -ms-content-zooming: none;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   outline: none; }
 
-/* line 13, /Applications/MAMP/htdocs/game/css/style.sass */
 body {
   background-color: #030617; }
 
-/* line 17, /Applications/MAMP/htdocs/game/css/style.sass */
 input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   cursor: pointer; }
 
-/* line 22, /Applications/MAMP/htdocs/game/css/style.sass */
 .wr {
   width: 1200px;
   margin-right: auto;
   margin-left: auto; }
 
-/* line 27, /Applications/MAMP/htdocs/game/css/style.sass */
 ul {
   list-style: none; }
 
-/* line 30, /Applications/MAMP/htdocs/game/css/style.sass */
 a {
   color: inherit;
   text-decoration: none; }
 
-/* line 34, /Applications/MAMP/htdocs/game/css/style.sass */
 .btn {
   color: #03cef3;
   border: solid 2px #03cef3;
   background-color: transparent;
   font-size: 17px;
-  padding: 8px 50px;
+  padding: 4px 50px;
   text-transform: uppercase;
     text-transform--webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -ms-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
-  font-weight: 700; }
-  /* line 47, /Applications/MAMP/htdocs/game/css/style.sass */
+  font-weight: 700;
+  line-height: 1.7em; }
   .btn:hover {
     color: #1c2237;
     border: solid 2px #03cef3;
@@ -63,30 +58,30 @@ a {
     -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out; }
 
-/* line 56, /Applications/MAMP/htdocs/game/css/style.sass */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 60, /Applications/MAMP/htdocs/game/css/style.sass */
 section {
   padding: 60px 0 80px; }
 
-/* line 62, /Applications/MAMP/htdocs/game/css/style.sass */
 .banner {
   height: calc(100vh - 90px);
   margin-top: 90px; }
-  /* line 65, /Applications/MAMP/htdocs/game/css/style.sass */
   .banner .wr {
     width: 80%;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100%; }
-  /* line 74, /Applications/MAMP/htdocs/game/css/style.sass */
   .banner .swiper-container {
     width: 100%;
     height: 100%;
@@ -94,72 +89,94 @@ section {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center; }
-  /* line 83, /Applications/MAMP/htdocs/game/css/style.sass */
   .banner .swiper-slide {
     text-align: center;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     height: 100%; }
-    /* line 94, /Applications/MAMP/htdocs/game/css/style.sass */
     .banner .swiper-slide .item {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-transition: -webkit-transform .6s ease-in-out;
+      transition: -webkit-transform .6s ease-in-out;
+      -o-transition: transform .6s ease-in-out;
       transition: transform .6s ease-in-out;
+      transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       -webkit-perspective: 1000px;
       perspective: 1000px;
       width: 100%; }
-      /* line 106, /Applications/MAMP/htdocs/game/css/style.sass */
       .banner .swiper-slide .item_image {
         background-repeat: no-repeat !important;
         background-position: 100% !important;
         background-size: 90% !important;
         height: 783px;
         width: 55%; }
-      /* line 112, /Applications/MAMP/htdocs/game/css/style.sass */
       .banner .swiper-slide .item .item_image2 {
         background-size: 70% !important;
         background-position: center !important; }
-      /* line 115, /Applications/MAMP/htdocs/game/css/style.sass */
       .banner .swiper-slide .item_info {
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
         align-items: flex-start;
         text-align: left;
         width: 45%; }
-      /* line 126, /Applications/MAMP/htdocs/game/css/style.sass */
       .banner .swiper-slide .item h2 {
         font-size: 36px;
         color: #fff;
         margin-bottom: 15px;
         width: 70%; }
-      /* line 131, /Applications/MAMP/htdocs/game/css/style.sass */
       .banner .swiper-slide .item ul {
         margin-bottom: 40px; }
-      /* line 133, /Applications/MAMP/htdocs/game/css/style.sass */
       .banner .swiper-slide .item li {
         font-size: 21px;
         color: #fff;
         position: relative;
         margin-bottom: 5px; }
-        /* line 138, /Applications/MAMP/htdocs/game/css/style.sass */
         .banner .swiper-slide .item li:before {
           background-color: #313aac;
           border-radius: 50%;
@@ -169,15 +186,24 @@ section {
           margin-bottom: 2px;
           height: 8px;
           width: 8px; }
-  /* line 147, /Applications/MAMP/htdocs/game/css/style.sass */
   .banner .prev, .banner .next {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
     transition: all .2s ease;
     width: 40px !important;
     height: 84px !important;
@@ -185,7 +211,6 @@ section {
     cursor: pointer;
     background-size: 40px 84px !important;
     background-image: none !important; }
-    /* line 162, /Applications/MAMP/htdocs/game/css/style.sass */
     .banner .prev:after, .banner .next:after {
       background: url(../img/arrow-right.png) !important;
       background-repeat: no-repeat !important;
@@ -194,18 +219,21 @@ section {
       position: absolute;
       height: 100%;
       width: 100%;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
       transition: all .2s ease; }
-    /* line 172, /Applications/MAMP/htdocs/game/css/style.sass */
     .banner .prev:hover, .banner .next:hover {
       opacity: 1;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
       transition: all .2s ease;
       -webkit-filter: brightness(0) invert(1);
       filter: brightness(0) invert(1); }
-  /* line 178, /Applications/MAMP/htdocs/game/css/style.sass */
   .banner .prev:after {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg); }
 
-/* line 180, /Applications/MAMP/htdocs/game/css/style.sass */
 .header {
   position: fixed;
   top: 0;
@@ -215,93 +243,120 @@ section {
   height: 90px;
   background-color: #030617;
   border-bottom: 1px solid #3b5a88; }
-  /* line 189, /Applications/MAMP/htdocs/game/css/style.sass */
   .header .wr {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100%;
     width: 92%; }
-  /* line 198, /Applications/MAMP/htdocs/game/css/style.sass */
   .header_left {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100%;
     width: 70%; }
-    /* line 207, /Applications/MAMP/htdocs/game/css/style.sass */
     .header_left-logo {
       height: 100%;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center; }
-      /* line 215, /Applications/MAMP/htdocs/game/css/style.sass */
       .header_left-logo a {
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; }
-      /* line 221, /Applications/MAMP/htdocs/game/css/style.sass */
       .header_left-logo img {
         width: 170px; }
-    /* line 223, /Applications/MAMP/htdocs/game/css/style.sass */
     .header_left-menu {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
       height: 100%;
       margin-left: 15px; }
-      /* line 233, /Applications/MAMP/htdocs/game/css/style.sass */
       .header_left-menu li:hover {
         background: #1b213a;
         z-index: 1; }
-        /* line 236, /Applications/MAMP/htdocs/game/css/style.sass */
         .header_left-menu li:hover a {
           color: #05c9ef;
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out; }
-  /* line 239, /Applications/MAMP/htdocs/game/css/style.sass */
   .header_right {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100%;
     width: 30%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
     justify-content: flex-end; }
-  /* line 249, /Applications/MAMP/htdocs/game/css/style.sass */
   .header ul {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center; }
-    /* line 257, /Applications/MAMP/htdocs/game/css/style.sass */
     .header ul li {
       height: 100%;
       font-size: 18px;
       color: #fff;
       padding: 0 8px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       display: inline-block;
       position: initial; }
-      /* line 265, /Applications/MAMP/htdocs/game/css/style.sass */
       .header ul li a {
         height: 100%;
         padding: 0 12px;
@@ -309,63 +364,62 @@ section {
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
         font-family: 'Roboto', sans-serif; }
-      /* line 276, /Applications/MAMP/htdocs/game/css/style.sass */
       .header ul li:hover a {
         color: #05c9ef; }
-  /* line 281, /Applications/MAMP/htdocs/game/css/style.sass */
   .header .profile img {
     height: 30px;
     width: 30px; }
-  /* line 284, /Applications/MAMP/htdocs/game/css/style.sass */
   .header .lang, .header .profile {
     position: relative;
     color: #fff; }
-    /* line 287, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .lang:after, .header .profile:after {
       content: '';
       position: absolute;
       right: 0;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       background: url(../img/menu-arrow.svg);
       background-size: contain;
       background-repeat: no-repeat;
       width: 8px;
       height: 5px; }
-    /* line 299, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .lang:hover a, .header .profile:hover a {
       color: #fff; }
-    /* line 301, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .lang:hover > a, .header .profile:hover > a {
       color: #05c9ef; }
-    /* line 303, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .lang .lang.active:after, .header .lang .profile.active:after, .header .profile .lang.active:after, .header .profile .profile.active:after {
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
       transition: all .3s; }
-      /* line 306, /Applications/MAMP/htdocs/game/css/style.sass */
       .header .lang .lang.active:after > a, .header .lang .profile.active:after > a, .header .profile .lang.active:after > a, .header .profile .profile.active:after > a {
         color: #05c9ef; }
-    /* line 308, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .lang .dropdown-lang, .header .profile .dropdown-lang {
       display: none; }
-    /* line 310, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .lang .dropdown-menu, .header .profile .dropdown-menu {
       display: none; }
-  /* line 312, /Applications/MAMP/htdocs/game/css/style.sass */
   .header .sub-menu {
     display: none; }
-  /* line 314, /Applications/MAMP/htdocs/game/css/style.sass */
   .header .dropdown {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     padding: 0 15px; }
-    /* line 317, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .dropdown > a {
       width: 120px;
       position: relative; }
-      /* line 320, /Applications/MAMP/htdocs/game/css/style.sass */
       .header .dropdown > a:before {
         content: "";
         position: absolute;
@@ -375,30 +429,35 @@ section {
         height: 36px;
         background-color: #3b5a88;
         z-index: 0; }
-      /* line 329, /Applications/MAMP/htdocs/game/css/style.sass */
       .header .dropdown > a:after {
         content: '';
         position: absolute;
         right: 0;
         top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         background: url(../img/menu-arrow.svg);
         background-size: contain;
         background-repeat: no-repeat;
         width: 8px;
         height: 5px; }
-    /* line 341, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .dropdown:hover a:before {
       display: none; }
-    /* line 343, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .dropdown:hover a:after {
+      -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
       transform: translateY(-50%) rotate(180deg);
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
       transition: all .3s; }
-    /* line 346, /Applications/MAMP/htdocs/game/css/style.sass */
     .header .dropdown:hover {
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-      /* line 348, /Applications/MAMP/htdocs/game/css/style.sass */
       .header .dropdown:hover .sub-menu {
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         display: block;
         width: 100%;
@@ -410,44 +469,40 @@ section {
         position: absolute;
         height: auto;
         border-bottom: 1px solid #0d1025; }
-        /* line 360, /Applications/MAMP/htdocs/game/css/style.sass */
         .header .dropdown:hover .sub-menu li {
+          -webkit-align-content: space-between;
+          -ms-flex-line-pack: justify;
           align-content: space-between;
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: -ms-inline-flexbox;
           display: inline-flex;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
           flex-wrap: wrap;
           width: 250px;
           padding: 0px;
           margin-bottom: 70px; }
-          /* line 367, /Applications/MAMP/htdocs/game/css/style.sass */
           .header .dropdown:hover .sub-menu li a {
             color: #fff; }
-          /* line 370, /Applications/MAMP/htdocs/game/css/style.sass */
           .header .dropdown:hover .sub-menu li img {
             width: 28px;
             margin-right: 12px; }
-          /* line 374, /Applications/MAMP/htdocs/game/css/style.sass */
           .header .dropdown:hover .sub-menu li:hover a {
             color: #05c9ef; }
-          /* line 376, /Applications/MAMP/htdocs/game/css/style.sass */
           .header .dropdown:hover .sub-menu li:hover img {
             opacity: 1; }
-        /* line 379, /Applications/MAMP/htdocs/game/css/style.sass */
         .header .dropdown:hover .sub-menu .active a {
           color: #5e7eb1; }
-        /* line 381, /Applications/MAMP/htdocs/game/css/style.sass */
         .header .dropdown:hover .sub-menu .active img {
           opacity: .4; }
-        /* line 384, /Applications/MAMP/htdocs/game/css/style.sass */
         .header .dropdown:hover .sub-menu .active:hover a {
           color: #5e7eb1; }
-        /* line 386, /Applications/MAMP/htdocs/game/css/style.sass */
         .header .dropdown:hover .sub-menu .active:hover img {
           opacity: .4; }
 
-/* line 388, /Applications/MAMP/htdocs/game/css/style.sass */
 .lang.active {
   color: #fff; }
-  /* line 390, /Applications/MAMP/htdocs/game/css/style.sass */
   .lang.active .dropdown-lang {
     width: 170px;
     top: 52px;
@@ -457,7 +512,6 @@ section {
     border: 1px solid #334e78;
     height: 200px;
     display: block; }
-    /* line 399, /Applications/MAMP/htdocs/game/css/style.sass */
     .lang.active .dropdown-lang ul {
       padding: 10px 20px 10px 25px;
       position: relative;
@@ -465,9 +519,14 @@ section {
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       flex-direction: column; }
-      /* line 408, /Applications/MAMP/htdocs/game/css/style.sass */
       .lang.active .dropdown-lang ul:before {
         top: -30px;
         left: 53%;
@@ -479,17 +538,16 @@ section {
         border-bottom-color: #3b5a88;
         border-width: 15px;
         margin-left: -17px; }
-      /* line 419, /Applications/MAMP/htdocs/game/css/style.sass */
       .lang.active .dropdown-lang ul li {
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; }
-        /* line 426, /Applications/MAMP/htdocs/game/css/style.sass */
         .lang.active .dropdown-lang ul li:hover a {
           color: #05c9ef; }
-      /* line 428, /Applications/MAMP/htdocs/game/css/style.sass */
       .lang.active .dropdown-lang ul .dropdown-item {
         font-size: 17px;
         padding: 10px 20px 10px 35px;
@@ -500,14 +558,14 @@ section {
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; }
-        /* line 439, /Applications/MAMP/htdocs/game/css/style.sass */
         .lang.active .dropdown-lang ul .dropdown-item img {
           position: absolute;
           left: 0;
           width: 20px; }
 
-/* line 444, /Applications/MAMP/htdocs/game/css/style.sass */
 .profile.active .dropdown-menu {
   width: 220px;
   top: 52px;
@@ -517,8 +575,8 @@ section {
   border: 1px solid #334e78;
   height: 120px;
   display: block;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.28);
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.28); }
-  /* line 455, /Applications/MAMP/htdocs/game/css/style.sass */
   .profile.active .dropdown-menu ul {
     padding: 10px 20px 10px 25px;
     position: relative;
@@ -526,9 +584,14 @@ section {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
-    /* line 464, /Applications/MAMP/htdocs/game/css/style.sass */
     .profile.active .dropdown-menu ul:before {
       top: -30px;
       left: 68%;
@@ -540,111 +603,85 @@ section {
       border-bottom-color: #3b5a88;
       border-width: 15px;
       margin-left: -17px; }
-    /* line 475, /Applications/MAMP/htdocs/game/css/style.sass */
     .profile.active .dropdown-menu ul li {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
-      /* line 481, /Applications/MAMP/htdocs/game/css/style.sass */
       .profile.active .dropdown-menu ul li a {
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; }
-      /* line 488, /Applications/MAMP/htdocs/game/css/style.sass */
       .profile.active .dropdown-menu ul li:hover a {
         color: #05c9ef; }
 
-/* line 490, /Applications/MAMP/htdocs/game/css/style.sass */
 .news {
-  height: 650px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 1px;
-  perspective: 1px; }
-  /* line 497, /Applications/MAMP/htdocs/game/css/style.sass */
-  .news .parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-  /* line 503, /Applications/MAMP/htdocs/game/css/style.sass */
-  .news .parallax__layer.parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0); }
-    /* line 506, /Applications/MAMP/htdocs/game/css/style.sass */
-    .news .parallax__layer.parallax__layer--base .news_back {
-      background-position: center -136px;
-      background-image: url(../img/star.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100%;
-      width: 100%; }
-  /* line 513, /Applications/MAMP/htdocs/game/css/style.sass */
-  .news .parallax__layer.parallax__layer--back {
-    transform: translateZ(-1px) scale(2);
-    -webkit-transform: translateZ(-1px) scale(2); }
-  /* line 517, /Applications/MAMP/htdocs/game/css/style.sass */
+  background-image: url(../img/star.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -136px;
+  background-attachment: fixed; }
   .news .wr {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 80%; }
-  /* line 528, /Applications/MAMP/htdocs/game/css/style.sass */
   .news_body {
     width: 50%; }
-    /* line 530, /Applications/MAMP/htdocs/game/css/style.sass */
     .news_body .btn_white {
       color: #fff;
       border: 2px solid #fff;
       padding: 12px 50px;
       font-size: 19px; }
-      /* line 536, /Applications/MAMP/htdocs/game/css/style.sass */
       .news_body .btn_white:hover {
         border-color: #ba3044;
         background-color: #ba3044; }
-    /* line 539, /Applications/MAMP/htdocs/game/css/style.sass */
     .news_body h2 {
       font-size: 48px;
       color: #fff;
       margin-bottom: 60px; }
-    /* line 543, /Applications/MAMP/htdocs/game/css/style.sass */
     .news_body-imgs {
       margin-bottom: 40px; }
-      /* line 545, /Applications/MAMP/htdocs/game/css/style.sass */
       .news_body-imgs img {
         margin-right: 50px; }
-        /* line 547, /Applications/MAMP/htdocs/game/css/style.sass */
         .news_body-imgs img:nth-child(2) {
           margin-right: 0; }
-    /* line 549, /Applications/MAMP/htdocs/game/css/style.sass */
     .news_body-btns {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
-      /* line 555, /Applications/MAMP/htdocs/game/css/style.sass */
       .news_body-btns .btn_white {
         margin-right: 50px; }
-        /* line 557, /Applications/MAMP/htdocs/game/css/style.sass */
         .news_body-btns .btn_white:nth-child(2) {
           margin-right: 0px; }
 
-/* line 559, /Applications/MAMP/htdocs/game/css/style.sass */
 .section_head {
   width: 100%;
   margin-bottom: 60px; }
-  /* line 562, /Applications/MAMP/htdocs/game/css/style.sass */
   .section_head h2 {
     font-size: 33px;
     font-weight: bold;
@@ -652,35 +689,39 @@ section {
     color: #fff;
     text-align: center; }
 
-/* line 570, /Applications/MAMP/htdocs/game/css/style.sass */
 .tournament .wr {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between; }
 
-/* line 579, /Applications/MAMP/htdocs/game/css/style.sass */
 .tournament .tournament_body {
   width: 72%; }
 
-/* line 581, /Applications/MAMP/htdocs/game/css/style.sass */
 .tournament .tournament_body > div {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
 
-/* line 587, /Applications/MAMP/htdocs/game/css/style.sass */
 .tournament .tbl_head {
   border-bottom: none;
   background-color: #1b213a;
   color: #044669;
   border-bottom: 1px solid #030617; }
-  /* line 592, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_head div {
     color: #fff;
     padding: 12px 8px;
@@ -690,21 +731,17 @@ section {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold; }
-  /* line 601, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_head .name {
     width: 40%; }
 
-/* line 603, /Applications/MAMP/htdocs/game/css/style.sass */
 .tournament .tbl_row {
   background: #fff;
   border-bottom: 1px solid #cfe0e7;
   border-bottom: 1px solid #030617;
   background-color: #1b213a; }
-  /* line 608, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_row:nth-child(2n) {
     background: #e0ebf0;
     background-color: #1b213a; }
-  /* line 612, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_row div {
     text-align: center;
     font-size: 12px;
@@ -712,27 +749,34 @@ section {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 15%;
     padding: 12px 8px;
     padding: 15px 10px;
     color: #044669;
     color: #fff; }
-    /* line 627, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament .tbl_row div p {
       opacity: .4; }
-  /* line 629, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_row .name {
     width: 40%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
     justify-content: flex-start; }
-    /* line 632, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament .tbl_row .name img {
       max-height: 25px;
       max-width: 25px;
       margin-right: 10px; }
-    /* line 636, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament .tbl_row .name a {
       font-size: 13px;
       color: #009ad3;
@@ -743,9 +787,13 @@ section {
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center; }
-  /* line 648, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_row .status {
     color: #69ac41;
     opacity: 1;
@@ -753,14 +801,14 @@ section {
     padding-left: 24px;
     position: relative;
     display: none; }
-  /* line 655, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_row .status.active {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
-  /* line 662, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_row .status-plus:before {
     position: absolute;
     content: '';
@@ -768,14 +816,14 @@ section {
     background-position: center;
     background-size: 10px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 22%;
     width: 10px;
     height: 10px; }
-  /* line 673, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_row .status-minus {
     color: #8a8a8a; }
-    /* line 675, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament .tbl_row .status-minus:before {
       position: absolute;
       content: '';
@@ -783,14 +831,14 @@ section {
       background-position: center;
       background-size: 10px;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       left: 22%;
       width: 10px;
       height: 10px; }
-  /* line 686, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament .tbl_row .status-none {
     color: yellow; }
-    /* line 688, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament .tbl_row .status-none:before {
       position: absolute;
       content: '';
@@ -798,17 +846,17 @@ section {
       background-position: center;
       background-size: 10px;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       left: 22%;
       width: 10px;
       height: 10px; }
 
-/* line 702, /Applications/MAMP/htdocs/game/css/style.sass */
 .tournament_calendar {
   width: 25%;
   position: relative;
   background-color: #1b213a; }
-  /* line 706, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_calendar .calendar_head {
     color: #fff;
     border-bottom: 1px solid #03c7eb;
@@ -816,25 +864,37 @@ section {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 18px 0; }
-    /* line 718, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .calendar_head h2 {
       font-size: 18px;
       font-family: 'Roboto', sans-serif;
       text-transform: uppercase; }
-  /* line 722, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_calendar .filter_calendar {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  /* line 730, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_calendar .filter_month {
     position: relative;
     width: 75%;
@@ -844,37 +904,44 @@ section {
     border-right: 1px solid #030617;
     background-color: #1b213a;
     text-align: center; }
-    /* line 739, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .filter_month .c_right, .tournament_calendar .filter_month .c_left {
       height: 12px;
       cursor: pointer;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       position: absolute; }
-    /* line 745, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .filter_month .c_left {
       width: 20px;
       left: 23px; }
-    /* line 748, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .filter_month .c_right {
       right: 23px;
       width: 20px;
+      -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
       transform: translateY(-50%) rotate(180deg); }
-    /* line 752, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .filter_month .c_date {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
       color: #6a8ab9;
       cursor: pointer;
       height: 100%; }
-  /* line 765, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_calendar .filter_game {
     width: 25%;
     height: 50px;
@@ -884,8 +951,9 @@ section {
     background-color: #1b213a;
     cursor: pointer;
     position: relative;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s; }
-    /* line 776, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .filter_game:after {
       background-image: url(../img/arrow-left.svg);
       background-repeat: no-repeat;
@@ -895,16 +963,18 @@ section {
       position: absolute;
       right: 10px;
       top: 50%;
+      -webkit-transform: translateY(-50%) rotate(270deg);
+      -ms-transform: translateY(-50%) rotate(270deg);
       transform: translateY(-50%) rotate(270deg);
       content: '';
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
       transition: all 0.3s; }
-    /* line 788, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .filter_game img {
       width: 27px;
       margin-top: 8px;
       right: 5px;
       position: relative; }
-  /* line 794, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_calendar .filter_game.active:after {
     background-image: url(../img/arrow-left.svg);
     background-repeat: no-repeat;
@@ -914,10 +984,13 @@ section {
     position: absolute;
     right: 10px;
     top: 50%;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
     transform: translateY(-50%) rotate(90deg);
     content: '';
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s; }
-  /* line 806, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_calendar .calendar_games {
     position: absolute;
     top: 108px;
@@ -926,92 +999,152 @@ section {
     height: calc(100% - 108px);
     padding: 26px 15px;
     background: #1b213a;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 2;
     display: none; }
-    /* line 820, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .calendar_games img {
+      -o-object-fit: contain;
       object-fit: contain;
       width: 31px;
       height: 30px;
       margin: 10px; }
-  /* line 826, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_calendar .calendar_table {
     width: 100%;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: auto;
     padding-bottom: 7px;
     font-family: 'Roboto', sans-serif; }
-    /* line 838, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .calendar_table .calendar_table_row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
       flex-flow: row nowrap; }
-      /* line 841, /Applications/MAMP/htdocs/game/css/style.sass */
       .tournament_calendar .calendar_table .calendar_table_row .calendar_table_cell {
         font-size: 13px;
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
         word-break: break-word;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
+        -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
         flex-basis: 0;
         height: 35px;
         color: #6a8ab9;
         font-family: 'Roboto', sans-serif; }
-      /* line 857, /Applications/MAMP/htdocs/game/css/style.sass */
       .tournament_calendar .calendar_table .calendar_table_row .calendar_table_cell_day {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
         align-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
         position: relative;
         border-radius: 50%;
         height: 34px;
         width: 34px;
         cursor: default;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
         transition: all .3s ease; }
-        /* line 869, /Applications/MAMP/htdocs/game/css/style.sass */
         .tournament_calendar .calendar_table .calendar_table_row .calendar_table_cell_day:hover {
+          -webkit-transition: all .3s ease;
+          -o-transition: all .3s ease;
           transition: all .3s ease;
           background: #424f79;
           color: #fff; }
-      /* line 873, /Applications/MAMP/htdocs/game/css/style.sass */
       .tournament_calendar .calendar_table .calendar_table_row .calendar_table_cell.selected {
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
         transition: all .3s ease;
         background: #424f79;
         color: #fff; }
-      /* line 877, /Applications/MAMP/htdocs/game/css/style.sass */
       .tournament_calendar .calendar_table .calendar_table_row .calendar_table_cell_day.withclick {
         cursor: pointer; }
-    /* line 880, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .calendar_table .calendar_header_row .calendar_table_cell {
       color: #fff; }
-    /* line 883, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .calendar_table .selected_calendar_day .calendar_table_cell_day {
       color: #fff;
       background: #03c7eb; }
-    /* line 886, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_calendar .calendar_table .points_container {
       display: block;
       line-height: 5px;
       position: absolute;
-      bottom: 2px; }
-      /* line 891, /Applications/MAMP/htdocs/game/css/style.sass */
+      bottom: 2px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
       .tournament_calendar .calendar_table .points_container .day_points {
         width: 5px;
         height: 5px;
@@ -1020,62 +1153,61 @@ section {
         display: inline-block;
         line-height: 5px; }
 
-/* line 898, /Applications/MAMP/htdocs/game/css/style.sass */
 .footer {
   padding: 60px 0;
   background-color: #031020; }
-  /* line 901, /Applications/MAMP/htdocs/game/css/style.sass */
   .footer .wr {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 1170px; }
-  /* line 910, /Applications/MAMP/htdocs/game/css/style.sass */
   .footer_col {
     width: 25%;
     color: #556c8f;
     padding-left: 15px;
     padding-right: 15px; }
-    /* line 915, /Applications/MAMP/htdocs/game/css/style.sass */
     .footer_col h3 {
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
       font-size: 16px;
       margin-bottom: 15px;
       text-transform: uppercase; }
-    /* line 921, /Applications/MAMP/htdocs/game/css/style.sass */
     .footer_col li {
       font-family: 'Roboto', sans-serif;
       font-size: 15px;
       margin-bottom: 12px; }
-      /* line 925, /Applications/MAMP/htdocs/game/css/style.sass */
       .footer_col li a {
         font-family: 'Roboto', sans-serif;
         font-weight: 400; }
-  /* line 932, /Applications/MAMP/htdocs/game/css/style.sass */
   .footer_col4 .work p {
     color: #556c8f;
     font-size: 16px;
     margin-bottom: 5px; }
-  /* line 936, /Applications/MAMP/htdocs/game/css/style.sass */
   .footer_col4 .work a {
     font-family: 'Roboto Condensed', sans-serif;
     color: #337ab7;
     font-size: 16px; }
 
-/* line 940, /Applications/MAMP/htdocs/game/css/style.sass */
 .social {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px; }
-  /* line 947, /Applications/MAMP/htdocs/game/css/style.sass */
   .social li {
     width: 55px;
     height: 55px;
@@ -1085,30 +1217,42 @@ section {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-right: 10px; }
-    /* line 960, /Applications/MAMP/htdocs/game/css/style.sass */
     .social li a {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
       width: 100%;
       height: 100%; }
-    /* line 970, /Applications/MAMP/htdocs/game/css/style.sass */
     .social li img {
       height: 25px;
       opacity: .5; }
-    /* line 974, /Applications/MAMP/htdocs/game/css/style.sass */
     .social li:hover img {
       opacity: 1; }
 
-/* line 976, /Applications/MAMP/htdocs/game/css/style.sass */
 .news_archive {
   background-color: #0d1025;
   background-image: none;
@@ -1116,26 +1260,25 @@ section {
   padding-top: 60px;
   padding-bottom: 80px;
   height: calc(100% - 90px); }
-  /* line 983, /Applications/MAMP/htdocs/game/css/style.sass */
   .news_archive .wr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
-  /* line 985, /Applications/MAMP/htdocs/game/css/style.sass */
   .news_archive .news_filter {
     width: 100%;
     margin-bottom: 20px; }
-    /* line 988, /Applications/MAMP/htdocs/game/css/style.sass */
     .news_archive .news_filter h2 {
       float: left;
       font-size: 36px;
       color: #fff;
       margin-left: 10px; }
-    /* line 993, /Applications/MAMP/htdocs/game/css/style.sass */
     .news_archive .news_filter .filter_sort {
       float: right;
       vertical-align: middle;
       text-align: right;
       margin-right: 20px; }
-    /* line 998, /Applications/MAMP/htdocs/game/css/style.sass */
     .news_archive .news_filter select {
       display: inline-block;
       width: 250px;
@@ -1148,25 +1291,28 @@ section {
       outline: none;
       color: #6a8ab9;
       background-color: #0d1025; }
-  /* line 1011, /Applications/MAMP/htdocs/game/css/style.sass */
   .news_archive .btn-more {
     position: absolute;
     bottom: 0;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     padding: 8px 48px; }
-  /* line 1017, /Applications/MAMP/htdocs/game/css/style.sass */
   .news_archive .news_body {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
     position: relative;
     padding-bottom: 110px; }
-    /* line 1027, /Applications/MAMP/htdocs/game/css/style.sass */
     .news_archive .news_body .news-item {
       background-position: center !important;
       background-size: cover !important;
@@ -1179,12 +1325,23 @@ section {
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
       align-items: flex-start;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
       justify-content: flex-end;
       padding: 10px 20px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       flex-direction: column; }
-      /* line 1044, /Applications/MAMP/htdocs/game/css/style.sass */
       .news_archive .news_body .news-item:before {
         content: '';
         position: absolute;
@@ -1197,9 +1354,9 @@ section {
         background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
         background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
         background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(74%, rgba(0, 0, 0, 0.41)), to(rgba(0, 0, 0, 0.6)));
         background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); }
-      /* line 1058, /Applications/MAMP/htdocs/game/css/style.sass */
       .news_archive .news_body .news-item h3 {
         color: #fff;
         font-size: 26px;
@@ -1207,7 +1364,6 @@ section {
         margin-bottom: 0px;
         text-transform: uppercase;
         z-index: 2; }
-      /* line 1065, /Applications/MAMP/htdocs/game/css/style.sass */
       .news_archive .news_body .news-item p {
         font-size: 16px;
         color: #03cef3;
@@ -1217,17 +1373,14 @@ section {
         position: relative;
         z-index: 2;
         line-height: 1.6em; }
-        /* line 1074, /Applications/MAMP/htdocs/game/css/style.sass */
         .news_archive .news_body .news-item p a {
           margin-right: 5px; }
-        /* line 1076, /Applications/MAMP/htdocs/game/css/style.sass */
         .news_archive .news_body .news-item p span {
           font-size: 29px;
           position: relative;
           top: -5px;
           left: 0%;
           margin-right: 5px; }
-    /* line 1082, /Applications/MAMP/htdocs/game/css/style.sass */
     .news_archive .news_body .news-item > a {
       position: absolute;
       width: 100%;
@@ -1235,16 +1388,13 @@ section {
       top: 0;
       left: 0; }
 
-/* line 1088, /Applications/MAMP/htdocs/game/css/style.sass */
 .article {
   height: calc(100% - 90px);
   margin-top: 90px;
   background: #0b1225; }
-  /* line 1092, /Applications/MAMP/htdocs/game/css/style.sass */
   .article .wr {
     width: 730px;
     position: relative; }
-  /* line 1095, /Applications/MAMP/htdocs/game/css/style.sass */
   .article_img {
     background-position: center !important;
     background-size: cover !important;
@@ -1259,12 +1409,23 @@ section {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 20px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
-    /* line 1115, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_img:before {
       content: '';
       position: absolute;
@@ -1277,10 +1438,13 @@ section {
       background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
       background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
       background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(74%, rgba(0, 0, 0, 0.41)), to(rgba(0, 0, 0, 0.6)));
       background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(38%, transparent), color-stop(74%, rgba(0, 0, 0, 0.41)), to(rgba(0, 0, 0, 0.6)));
+      background: -webkit-linear-gradient(top, transparent 38%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
+      background: -o-linear-gradient(top, transparent 38%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
       background: linear-gradient(to bottom, transparent 38%, rgba(0, 0, 0, 0.41) 74%, rgba(0, 0, 0, 0.6) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); }
-    /* line 1130, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_img h3 {
       color: #fff;
       font-size: 26px;
@@ -1288,17 +1452,20 @@ section {
       margin-bottom: 5px;
       text-transform: uppercase;
       z-index: 2; }
-    /* line 1137, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_img .info {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
       width: 100%;
       z-index: 2; }
-    /* line 1147, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_img a {
       font-size: 14px;
       color: #fff;
@@ -1308,7 +1475,6 @@ section {
       position: relative;
       padding-right: 10px;
       margin-right: 10px; }
-      /* line 1156, /Applications/MAMP/htdocs/game/css/style.sass */
       .article_img a:after {
         content: '';
         position: absolute;
@@ -1317,43 +1483,32 @@ section {
         height: 100%;
         right: 0;
         top: 0; }
-      /* line 1164, /Applications/MAMP/htdocs/game/css/style.sass */
       .article_img a:last-child:after {
         display: none; }
-  /* line 1166, /Applications/MAMP/htdocs/game/css/style.sass */
   .article_content {
     color: #fff;
     text-align: justify;
     line-height: 32px; }
-    /* line 1170, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_content p {
       font-family: 'Roboto', sans-serif;
       margin-bottom: 20px;
       font-size: 18px;
       letter-spacing: -0.3px; }
-    /* line 1176, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_content h1, .article_content h2, .article_content h3, .article_content h4, .article_content h5 {
       font-family: 'Roboto', sans-serif;
       margin-bottom: 10px; }
-    /* line 1179, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_content h1 {
       font-size: 26px; }
-    /* line 1181, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_content h2 {
       font-size: 24px; }
-    /* line 1183, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_content h3 {
       font-size: 22px; }
-    /* line 1185, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_content h4 {
       font-size: 20px; }
-    /* line 1187, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_content h5 {
       font-size: 18px; }
-    /* line 1189, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_content a {
       border-bottom: 1px solid #06dcf9; }
-  /* line 1192, /Applications/MAMP/htdocs/game/css/style.sass */
   .article_comments {
     margin-top: 40px;
     margin-bottom: 50px;
@@ -1363,14 +1518,17 @@ section {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
-    /* line 1203, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_comments input[type=submit] {
       margin-left: auto;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-bottom: 15px;
       margin-right: 20px;
@@ -1379,43 +1537,47 @@ section {
       padding: 0;
       font-size: 14px;
       text-transform: none; }
-      /* line 1217, /Applications/MAMP/htdocs/game/css/style.sass */
       .article_comments input[type=submit]:hover {
         background: none;
         color: #23527c; }
-    /* line 1220, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_comments .profiile_icon {
       width: 15%;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
       align-items: flex-start;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
       padding-top: 15px; }
-    /* line 1230, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_comments .profile_comment {
       width: 85%;
       border-top: 1px solid #242f43; }
-    /* line 1233, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_comments img {
       height: 60px;
       width: 60px; }
-  /* line 1236, /Applications/MAMP/htdocs/game/css/style.sass */
   .article_share {
     position: absolute;
     left: -70px;
     top: 0; }
-    /* line 1240, /Applications/MAMP/htdocs/game/css/style.sass */
     .article_share ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       flex-direction: column; }
-      /* line 1242, /Applications/MAMP/htdocs/game/css/style.sass */
       .article_share ul li {
         margin: 0;
         margin-bottom: 10px; }
 
-/* line 1245, /Applications/MAMP/htdocs/game/css/style.sass */
 textarea {
   width: 100%;
   padding: 20px 0 55px;
@@ -1424,44 +1586,48 @@ textarea {
   outline: none;
   resize: none;
   font-size: 18px;
-  color: #6881a9; }
+  border-radius: 3px; }
 
-/* line 1254, /Applications/MAMP/htdocs/game/css/style.sass */
-textarea::placeholder {
-  color: #6881a9; }
-
-/* line 1256, /Applications/MAMP/htdocs/game/css/style.sass */
-textarea::-moz-placeholder {
-  color: #6881a9; }
-
-/* line 1258, /Applications/MAMP/htdocs/game/css/style.sass */
 textarea::-webkit-input-placeholder {
   color: #6881a9; }
 
-/* line 1260, /Applications/MAMP/htdocs/game/css/style.sass */
+textarea::-moz-placeholder {
+  color: #6881a9; }
+
+textarea:-ms-input-placeholder {
+  color: #6881a9; }
+
+textarea::placeholder {
+  color: #6881a9; }
+
+textarea::-moz-placeholder {
+  color: #6881a9; }
+
+textarea::-webkit-input-placeholder {
+  color: #6881a9; }
+
 .tournament_page {
   position: relative;
   height: calc(100% - 90px);
   margin-top: 90px;
   background: #0d1025; }
-  /* line 1265, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_page .wr {
     padding-left: 75px; }
-  /* line 1267, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_page .tournament_calendar {
     height: 100%; }
-  /* line 1269, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_page .filter_left {
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 90px;
+    top: 0px;
     bottom: 0;
     z-index: 4;
     background-color: #022b40;
     height: 100%;
-    width: 75px; }
-    /* line 1278, /Applications/MAMP/htdocs/game/css/style.sass */
+    width: 75px;
+    z-index: 0; }
     .tournament_page .filter_left li {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
       transition: 0.3s;
       display: block;
       width: 100%;
@@ -1470,49 +1636,54 @@ textarea::-webkit-input-placeholder {
       background-color: #022131;
       cursor: pointer;
       position: relative; }
-      /* line 1287, /Applications/MAMP/htdocs/game/css/style.sass */
       .tournament_page .filter_left li:hover {
         background-color: #02324a; }
-      /* line 1289, /Applications/MAMP/htdocs/game/css/style.sass */
       .tournament_page .filter_left li a {
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
         width: 100%;
         height: 100%; }
-    /* line 1299, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_page .filter_left img {
       height: 30px;
       width: 30px; }
-  /* line 1302, /Applications/MAMP/htdocs/game/css/style.sass */
   .tournament_page .pagination {
     display: inline-block;
     border-radius: 0px;
     margin-left: auto; }
-    /* line 1306, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_page .pagination .nav-links {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       width: auto;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
       padding: 0; }
-    /* line 1316, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_page .pagination .page-numbers {
       font-size: 14px;
       width: 20px;
       color: #fff;
       margin: 0 5px; }
-      /* line 1321, /Applications/MAMP/htdocs/game/css/style.sass */
       .tournament_page .pagination .page-numbers:last-child {
         margin-right: 0; }
-    /* line 1325, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_page .pagination .prev, .tournament_page .pagination .next {
       width: 39px;
       height: 39px;
@@ -1523,12 +1694,21 @@ textarea::-webkit-input-placeholder {
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
       position: relative;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
       transition: all .2s ease; }
-      /* line 1340, /Applications/MAMP/htdocs/game/css/style.sass */
       .tournament_page .pagination .prev:after, .tournament_page .pagination .next:after {
         background: url(../img/arrow-left.svg) !important;
         background-repeat: no-repeat !important;
@@ -1537,33 +1717,40 @@ textarea::-webkit-input-placeholder {
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         height: 14px;
         width: 10px;
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
         transition: all .2s ease; }
-      /* line 1352, /Applications/MAMP/htdocs/game/css/style.sass */
       .tournament_page .pagination .prev:hover, .tournament_page .pagination .next:hover {
         background: #fff;
         opacity: 1;
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
         transition: all .2s ease; }
-    /* line 1357, /Applications/MAMP/htdocs/game/css/style.sass */
     .tournament_page .pagination .next:after {
+      -webkit-transform: translate(-50%, -50%) rotate(180deg);
+      -ms-transform: translate(-50%, -50%) rotate(180deg);
       transform: translate(-50%, -50%) rotate(180deg); }
 
-/* line 1359, /Applications/MAMP/htdocs/game/css/style.sass */
 .about {
   background-color: #0d1025;
   padding-top: 80px;
   padding-bottom: 90px; }
-  /* line 1363, /Applications/MAMP/htdocs/game/css/style.sass */
   .about_body {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    /* line 1370, /Applications/MAMP/htdocs/game/css/style.sass */
     .about_body .card {
       width: calc(25% - 20px);
       margin-left: 10px;
@@ -1575,43 +1762,55 @@ textarea::-webkit-input-placeholder {
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
       justify-content: flex-start; }
-      /* line 1387, /Applications/MAMP/htdocs/game/css/style.sass */
       .about_body .card h2 {
         font-size: 16px;
         text-transform: uppercase;
         line-height: 1.4em;
         color: #fff;
         text-align: center; }
-      /* line 1393, /Applications/MAMP/htdocs/game/css/style.sass */
       .about_body .card img {
         height: 60px;
         width: 60px;
         margin-bottom: 20px; }
 
-/* line 1400, /Applications/MAMP/htdocs/game/css/style.sass */
 .download img {
   width: 199px;
   height: 77px; }
 
-/* line 1403, /Applications/MAMP/htdocs/game/css/style.sass */
 .news_main {
   padding: 60px 0 80px;
   background-color: #0d1025;
   background-image: none; }
-  /* line 1407, /Applications/MAMP/htdocs/game/css/style.sass */
   .news_main .wr {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
 
-/* line 1414, /Applications/MAMP/htdocs/game/css/style.sass */
 .md {
   position: fixed;
   top: 0;
@@ -1620,7 +1819,6 @@ textarea::-webkit-input-placeholder {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   z-index: 100; }
-  /* line 1423, /Applications/MAMP/htdocs/game/css/style.sass */
   .md_back {
     width: 100%;
     height: 100%;
@@ -1628,12 +1826,26 @@ textarea::-webkit-input-placeholder {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
     justify-content: flex-start; }
-  /* line 1435, /Applications/MAMP/htdocs/game/css/style.sass */
   .md .close {
     width: 15px;
     height: 15px;
@@ -1646,13 +1858,10 @@ textarea::-webkit-input-placeholder {
     position: absolute;
     right: 0;
     top: 0; }
-  /* line 1447, /Applications/MAMP/htdocs/game/css/style.sass */
   .md .md_body {
     display: none; }
-  /* line 1449, /Applications/MAMP/htdocs/game/css/style.sass */
   .md .md_body.active {
     display: block; }
-  /* line 1451, /Applications/MAMP/htdocs/game/css/style.sass */
   .md .md_cont {
     width: 540px;
     text-align: left;
@@ -1665,31 +1874,32 @@ textarea::-webkit-input-placeholder {
     -moz-box-shadow: 1px 5px 160px -22px #1c0b1e;
     box-shadow: 1px 5px 160px -22px #1c0b1e;
     position: relative; }
-    /* line 1463, /Applications/MAMP/htdocs/game/css/style.sass */
     .md .md_cont .nav {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-bottom: 30px;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
       justify-content: flex-end; }
-      /* line 1472, /Applications/MAMP/htdocs/game/css/style.sass */
       .md .md_cont .nav li a {
         color: #8da1c2;
         font-family: 'Roboto', sans-serif;
         margin-right: 40px;
         font-size: 17px;
         font-weight: 500; }
-      /* line 1479, /Applications/MAMP/htdocs/game/css/style.sass */
       .md .md_cont .nav li.active a {
         color: #fff;
         border-bottom: 2px solid #fff; }
-    /* line 1482, /Applications/MAMP/htdocs/game/css/style.sass */
     .md .md_cont form {
       position: relative;
-      margin-bottom: 50px; }
-      /* line 1485, /Applications/MAMP/htdocs/game/css/style.sass */
+      margin-bottom: 10px;
+      display: block; }
       .md .md_cont form .label_placeholder {
         font-weight: 400;
         font-size: 17px;
@@ -1697,8 +1907,9 @@ textarea::-webkit-input-placeholder {
         position: absolute;
         top: 5px;
         left: 0;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
         transition: 0.4s; }
-      /* line 1493, /Applications/MAMP/htdocs/game/css/style.sass */
       .md .md_cont form input {
         padding: 12px 0px 0;
         font-size: 17px;
@@ -1708,14 +1919,15 @@ textarea::-webkit-input-placeholder {
         background-color: #242b49;
         border-radius: 0px;
         margin-top: 0;
+        -webkit-box-shadow: none;
         box-shadow: none;
         width: 100%; }
-    /* line 1505, /Applications/MAMP/htdocs/game/css/style.sass */
     .md .md_cont form.focused .label_placeholder {
+      -webkit-transform: translateY(-120%);
+      -ms-transform: translateY(-120%);
       transform: translateY(-120%);
       font-size: 14px;
       color: #8297ba; }
-    /* line 1510, /Applications/MAMP/htdocs/game/css/style.sass */
     .md .md_cont input[type=submit] {
       width: 100%;
       margin-top: 10px;
@@ -1729,10 +1941,8 @@ textarea::-webkit-input-placeholder {
       text-transform: none;
       margin-bottom: 20px;
       line-height: 1.42857143; }
-      /* line 1523, /Applications/MAMP/htdocs/game/css/style.sass */
       .md .md_cont input[type=submit]:hover {
         background-color: #2EFEBD; }
-    /* line 1525, /Applications/MAMP/htdocs/game/css/style.sass */
     .md .md_cont .btn_resetpass {
       width: 100%;
       text-align: center;
@@ -1747,52 +1957,70 @@ textarea::-webkit-input-placeholder {
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
       margin-bottom: 20px;
       margin-top: -20px; }
-      /* line 1544, /Applications/MAMP/htdocs/game/css/style.sass */
       .md .md_cont .btn_resetpass:hover {
         outline: none;
         text-decoration: none;
         color: #A3BDE8; }
-  /* line 1550, /Applications/MAMP/htdocs/game/css/style.sass */
+  .md .form-group {
+    position: relative;
+    height: 60px; }
+  .md .checkbox {
+    margin-bottom: 10px; }
   .md .md_footer .btn-facebook {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 10px;
     background-color: #3b5998;
     font-size: 20px;
     color: #fff;
     line-height: 1.42857143;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
     font-weight: 500; }
-    /* line 1565, /Applications/MAMP/htdocs/game/css/style.sass */
     .md .md_footer .btn-facebook:hover {
       background-color: #4766A8;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
       transition: all .3s ease; }
-    /* line 1568, /Applications/MAMP/htdocs/game/css/style.sass */
     .md .md_footer .btn-facebook img {
       margin-right: 7px;
       width: 10px; }
 
-/* line 1571, /Applications/MAMP/htdocs/game/css/style.sass */
 .checkbox {
   font-size: 17px;
   color: #8297ba;
   position: relative;
   padding-left: 30px;
   margin-bottom: 20px; }
-  /* line 1577, /Applications/MAMP/htdocs/game/css/style.sass */
   .checkbox input[type=checkbox] {
     display: none; }
-  /* line 1580, /Applications/MAMP/htdocs/game/css/style.sass */
   .checkbox .checkbox_check label {
     min-height: 20px;
     padding-left: 20px;
@@ -1802,12 +2030,11 @@ textarea::-webkit-input-placeholder {
     position: absolute;
     width: 20px;
     height: 20px;
-    top: 0;
+    top: 0px;
     left: 0;
     padding-left: 17px;
     background: transparent;
     border: 1px solid #8297ba; }
-    /* line 1594, /Applications/MAMP/htdocs/game/css/style.sass */
     .checkbox .checkbox_check label:after {
       opacity: 0;
       content: '';
@@ -1817,567 +2044,632 @@ textarea::-webkit-input-placeholder {
       height: 7px;
       top: 6px;
       left: 4px; }
-  /* line 1603, /Applications/MAMP/htdocs/game/css/style.sass */
   .checkbox .checkbox_check input[type=checkbox]:checked + label:after {
     opacity: 1; }
-  /* line 1605, /Applications/MAMP/htdocs/game/css/style.sass */
   .checkbox a {
     text-decoration: underline; }
 
-/* line 1607, /Applications/MAMP/htdocs/game/css/style.sass */
 section.profile {
   height: calc(100% - 90px);
   margin-top: 90px; }
-  /* line 1610, /Applications/MAMP/htdocs/game/css/style.sass */
-  section.profile .profile_content {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex; }
-    /* line 1616, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content .col1 {
-      width: 25%;
-      padding-right: 15px;
-      padding-left: 15px; }
-    /* line 1620, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-user {
-      width: 100%;
-      padding: 30px;
-      border-radius: 3px;
-      background: #1b213a; }
-      /* line 1625, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-user .user_avatar {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 10px;
-        position: relative;
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        background-color: #2a335a;
-        background-image: linear-gradient(-45deg, #2a335a 50%, transparent 50%, transparent), linear-gradient(-27deg, #03c7eb 50%, #2a335a 50%, #2a335a);
-        background-image: linear-gradient(33deg, #725daa, #58afad 59%, #83c4a3);
-        background-position: center;
-        background-size: 297px;
-        background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/lk_profile/avatar_default.png); }
-        /* line 1645, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile .profile_content-user .user_avatar div {
-          background: #030617;
-          width: 106px;
-          height: 106px;
-          border-radius: 50%;
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          align-items: center;
-          justify-content: center; }
-        /* line 1658, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile .profile_content-user .user_avatar img {
-          width: 55px;
-          height: 55px;
-          cursor: pointer; }
-      /* line 1662, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-user h2 {
-        font-size: 20px;
-        color: #fff;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 2px; }
-      /* line 1669, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-user p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 16px;
-        color: #fff;
-        text-align: center;
-        margin-bottom: 10px; }
-      /* line 1676, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-user .user_rank {
-        margin-bottom: 10px; }
-      /* line 1678, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-user .user_rank, section.profile .profile_content-user .wallet {
-        font-size: 14px;
-        color: #6a8ab9;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        text-align: center;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        /* line 1691, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile .profile_content-user .user_rank img, section.profile .profile_content-user .wallet img {
-          width: 25px;
-          height: 25px;
-          margin-right: 5px; }
-    /* line 1696, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-menu {
-      width: 100%;
-      margin-top: 20px;
-      border-bottom: 0;
-      background-color: #1b213a;
-      border-radius: 3px; }
-      /* line 1702, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-menu li {
-        width: 100%;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex; }
-      /* line 1710, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-menu li > a {
-        padding: 20px 30px;
-        width: 100%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        color: #6a8ab9;
-        border-radius: 0;
-        margin-right: 0px;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex; }
-        /* line 1723, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile .profile_content-menu li > a:hover {
-          background-color: #222a49; }
-      /* line 1725, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-menu li.active {
-        border-left: 3px solid #03c7eb; }
-      /* line 1727, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-menu li.active > a {
-        color: #03c7eb;
-        border: none;
-        background-color: #222a49;
-        border-radius: 3px;
-        position: relative; }
-        /* line 1733, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile .profile_content-menu li.active > a:after {
-          content: "";
-          position: absolute;
-          right: 10px;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 10px;
-          height: 13px;
-          background-image: url(../img/profile-arrow.svg);
-          background-repeat: no-repeat; }
-    /* line 1743, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content .col2 {
-      width: 75%;
-      padding-right: 15px;
-      padding-left: 15px; }
-  /* line 1747, /Applications/MAMP/htdocs/game/css/style.sass */
-  section.profile .profile_content-info.active {
-    display: block; }
-  /* line 1749, /Applications/MAMP/htdocs/game/css/style.sass */
-  section.profile .profile_content-info {
-    height: auto;
-    display: none; }
-    /* line 1752, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info .options {
-      padding: 20px;
-      border-bottom: 0;
-      background-color: #1b213a;
-      border-radius: 3px;
-      margin-bottom: 20px; }
-      /* line 1758, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info .options:last-child {
-        margin-bottom: 0; }
-    /* line 1760, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info .options_head {
-      border-bottom: 1px solid #2b3559;
+
+.profile_content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .profile_content .col1 {
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .profile_content-user {
+    width: 100%;
+    padding: 30px;
+    border-radius: 3px;
+    background: #1b213a; }
+    .profile_content-user .user_avatar {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      padding-bottom: 20px; }
-    /* line 1771, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info .edit {
-      background: #03c7eb;
-      background-image: linear-gradient(to top, #4b98da, #03c7eb);
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 0 auto 10px;
+      position: relative;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #2a335a;
+      background-image: -webkit-linear-gradient(135deg, #2a335a 50%, transparent 50%, transparent), -webkit-linear-gradient(117deg, #03c7eb 50%, #2a335a 50%, #2a335a);
+      background-image: -o-linear-gradient(135deg, #2a335a 50%, transparent 50%, transparent), -o-linear-gradient(117deg, #03c7eb 50%, #2a335a 50%, #2a335a);
+      background-image: linear-gradient(-45deg, #2a335a 50%, transparent 50%, transparent), linear-gradient(-27deg, #03c7eb 50%, #2a335a 50%, #2a335a);
+      background-image: -webkit-linear-gradient(57deg, #725daa, #58afad 59%, #83c4a3);
+      background-image: -o-linear-gradient(57deg, #725daa, #58afad 59%, #83c4a3);
+      background-image: linear-gradient(33deg, #725daa, #58afad 59%, #83c4a3);
+      background-position: center;
+      background-size: 297px;
+      background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/lk_profile/avatar_default.png); }
+      .profile_content-user .user_avatar div {
+        background: #030617;
+        width: 106px;
+        height: 106px;
+        border-radius: 50%;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+      .profile_content-user .user_avatar img {
+        width: 55px;
+        height: 55px;
+        cursor: pointer; }
+    .profile_content-user h2 {
+      font-size: 20px;
       color: #fff;
-      -webkit-appearance: none;
-      border: 0;
-      text-transform: none;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2px; }
+    .profile_content-user p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 10px; }
+    .profile_content-user .user_rank {
+      margin-bottom: 18px; }
+    .profile_content-user .user_rank, .profile_content-user .wallet {
+      font-size: 14px;
+      color: #6a8ab9;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      text-align: center;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .profile_content-user .user_rank img, .profile_content-user .wallet img {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px; }
+  .profile_content-menu {
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 0;
+    background-color: #1b213a;
+    border-radius: 3px; }
+    .profile_content-menu li {
+      width: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .profile_content-menu li > a {
+      padding: 20px 30px;
+      width: 100%;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: #6a8ab9;
+      border-radius: 0;
+      margin-right: 0px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .profile_content-menu li > a:hover {
+        background-color: #222a49; }
+    .profile_content-menu li.active {
+      border-left: 3px solid #03c7eb; }
+    .profile_content-menu li.active > a {
+      color: #03c7eb;
+      border: none;
+      background-color: #222a49;
       border-radius: 3px;
-      transition: all 0.35s ease-in-out; }
-      /* line 1780, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info .edit:hover {
-        transition: all 0.35s ease-in-out;
-        background-color: #03dd9b;
-        box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6); }
-    /* line 1784, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info h2 {
-      text-transform: uppercase;
-      margin-top: 0px;
+      position: relative; }
+      .profile_content-menu li.active > a:after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 10px;
+        height: 13px;
+        background-image: url(../img/profile-arrow.svg);
+        background-repeat: no-repeat; }
+  .profile_content .col2 {
+    width: 75%;
+    padding-right: 15px;
+    padding-left: 15px; }
+
+.cont {
+  display: none; }
+
+.cont.active {
+  display: block; }
+
+.profile_content-info.active {
+  display: block; }
+
+.profile_content-info {
+  height: auto;
+  display: none; }
+  .profile_content-info .options {
+    padding: 20px;
+    border-bottom: 0;
+    background-color: #1b213a;
+    border-radius: 3px;
+    margin-bottom: 20px; }
+    .profile_content-info .options:last-child {
+      margin-bottom: 0; }
+  .profile_content-info .options_head {
+    border-bottom: 1px solid #2b3559;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px; }
+  .profile_content-info h2 {
+    text-transform: uppercase;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff; }
+  .profile_content-info .row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .profile_content-info .col {
+    width: 49%; }
+    .profile_content-info .col p {
+      margin-bottom: 23px;
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
       font-size: 15px;
-      color: #fff; }
-    /* line 1794, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info .row {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-    /* line 1802, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info .col {
-      width: 49%; }
-      /* line 1804, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info .col p {
-        margin-bottom: 23px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        color: white; }
-    /* line 1810, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info .col100 {
-      width: 100%; }
-      /* line 1813, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info .col100 .tbl_row p {
-        margin-bottom: 0; }
-      /* line 1815, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info .col100 .tbl_row div {
-        font-size: 15px;
-        padding: 15px 25px;
-        justify-content: flex-start; }
-    /* line 1819, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info input {
-      font-size: 14px;
-      color: #5e7aa6;
-      border: 1px solid #5e7aa6;
-      background: transparent;
-      border-radius: 3px;
-      height: 100%;
-      padding: 10px;
-      width: 100%;
-      margin-top: 5px;
-      margin-bottom: 20px;
-      transition: all .2s linear; }
-      /* line 1831, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info input:focus {
-        transition: all .2s linear;
-        border-color: #66afe9;
-        outline: 0;
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
-    /* line 1836, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info label {
-      font-size: 14px;
-      color: #6786b4;
-      font-weight: 400;
-      width: 100%; }
-    /* line 1842, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info input[type="submit"] {
-      width: 100%;
-      background: #03c7eb;
-      background-image: linear-gradient(to top, #4b98da, #03c7eb);
-      box-shadow: 0 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.5);
-      color: #fff;
-      -webkit-appearance: none;
-      border: 0;
-      text-transform: none; }
-      /* line 1852, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info input[type="submit"]:hover {
-        background-color: #03dd9b;
-        box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6); }
-    /* line 1855, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info input[type="submit"].delete_acc {
-      padding: 10px 10px;
-      color: #6a8ab9;
-      border: 1px solid #6a8ab9;
-      background-image: unset;
-      background-color: unset; }
-      /* line 1862, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info input[type="submit"].delete_acc:hover {
-        color: #03c7eb;
-        border-color: #03c7eb; }
-    /* line 1865, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info input[readonly] {
-      background-color: #0f1831; }
-    /* line 1868, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info .deact_account p {
-      margin-bottom: 10px; }
-    /* line 1870, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info .left {
-      width: 50%;
-      float: left; }
-      /* line 1873, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info .left:first-child {
-        padding-right: 2%; }
-    /* line 1875, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .profile_content-info .tournament_body {
-      width: 100%; }
-      /* line 1877, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .profile_content-info .tournament_body .tbl_row, section.profile .profile_content-info .tournament_body .tbl_head {
-        border-bottom: 1px solid #2b3559;
-        background-color: #222a49; }
-        /* line 1880, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile .profile_content-info .tournament_body .tbl_row div, section.profile .profile_content-info .tournament_body .tbl_head div {
-          width: 25%; }
-        /* line 1882, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile .profile_content-info .tournament_body .tbl_row .name, section.profile .profile_content-info .tournament_body .tbl_head .name {
-          width: 50%; }
-  /* line 1885, /Applications/MAMP/htdocs/game/css/style.sass */
-  section.profile #teams .tournament_body, section.profile #create_team .tournament_body {
+      color: white; }
+  .profile_content-info .col100 {
     width: 100%; }
-    /* line 1887, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile #teams .tournament_body .tbl_row, section.profile #teams .tournament_body .tbl_head, section.profile #create_team .tournament_body .tbl_row, section.profile #create_team .tournament_body .tbl_head {
+    .profile_content-info .col100 .tbl_row p {
+      margin-bottom: 0; }
+    .profile_content-info .col100 .tbl_row div {
+      font-size: 15px;
+      padding: 15px 25px;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+  .profile_content-info input {
+    font-size: 14px;
+    color: #5e7aa6;
+    border: 1px solid #5e7aa6;
+    background: transparent;
+    border-radius: 3px;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear; }
+    .profile_content-info input:focus {
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+  .profile_content-info label {
+    font-size: 14px;
+    color: #6786b4;
+    font-weight: 400;
+    width: 100%; }
+  .profile_content-info input[type="submit"] {
+    width: 100%;
+    background: #03c7eb;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#4b98da), to(#03c7eb));
+    background-image: -webkit-linear-gradient(bottom, #4b98da, #03c7eb);
+    background-image: -o-linear-gradient(bottom, #4b98da, #03c7eb);
+    background-image: linear-gradient(to top, #4b98da, #03c7eb);
+    -webkit-box-shadow: 0 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+    -webkit-appearance: none;
+    border: 0;
+    text-transform: none; }
+    .profile_content-info input[type="submit"]:hover {
+      background-color: #03dd9b;
+      -webkit-box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6);
+      box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6); }
+  .profile_content-info input[type="submit"].delete_acc {
+    padding: 10px 10px;
+    color: #6a8ab9;
+    border: 1px solid #6a8ab9;
+    background-image: unset;
+    background-color: unset; }
+    .profile_content-info input[type="submit"].delete_acc:hover {
+      color: #03c7eb;
+      border-color: #03c7eb; }
+  .profile_content-info input[readonly] {
+    background-color: #0f1831; }
+  .profile_content-info .deact_account p {
+    margin-bottom: 10px; }
+  .profile_content-info .left {
+    width: 50%;
+    float: left; }
+    .profile_content-info .left:first-child {
+      padding-right: 2%; }
+  .profile_content-info .tournament_body {
+    width: 100%; }
+    .profile_content-info .tournament_body .tbl_row, .profile_content-info .tournament_body .tbl_head {
       border-bottom: 1px solid #2b3559;
       background-color: #222a49; }
-      /* line 1890, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile #teams .tournament_body .tbl_row div, section.profile #teams .tournament_body .tbl_head div, section.profile #create_team .tournament_body .tbl_row div, section.profile #create_team .tournament_body .tbl_head div {
-        width: 20%; }
-      /* line 1892, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile #teams .tournament_body .tbl_row .name, section.profile #teams .tournament_body .tbl_head .name, section.profile #create_team .tournament_body .tbl_row .name, section.profile #create_team .tournament_body .tbl_head .name {
-        width: 40%; }
-      /* line 1894, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile #teams .tournament_body .tbl_row .member, section.profile #teams .tournament_body .tbl_head .member, section.profile #create_team .tournament_body .tbl_row .member, section.profile #create_team .tournament_body .tbl_head .member {
-        color: #69ac41;
-        font-weight: bold;
-        padding-left: 24px;
-        position: relative; }
-        /* line 1899, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile #teams .tournament_body .tbl_row .member:before, section.profile #teams .tournament_body .tbl_head .member:before, section.profile #create_team .tournament_body .tbl_row .member:before, section.profile #create_team .tournament_body .tbl_head .member:before {
-          position: absolute;
-          content: '';
-          background: url(../img/star.svg);
-          background-position: center;
-          background-size: 10px;
-          top: 50%;
-          transform: translateY(-50%);
-          left: 29%;
-          width: 10px;
-          height: 10px; }
-  /* line 1910, /Applications/MAMP/htdocs/game/css/style.sass */
-  section.profile #teams .team, section.profile #create_team .team {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex; }
-    /* line 1916, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile #teams .team_img, section.profile #create_team .team_img {
-      width: 120px;
-      height: 120px;
-      border-radius: 3px; }
-      /* line 1920, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile #teams .team_img img, section.profile #create_team .team_img img {
-        border-radius: 3px; }
-    /* line 1922, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile #teams .team_info, section.profile #create_team .team_info {
-      width: calc((100% - 180px)/2);
-      margin-left: 15px;
-      margin-right: 15px; }
-      /* line 1926, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile #teams .team_info .discipline, section.profile #create_team .team_info .discipline {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        align-items: center;
-        color: #fff;
-        margin-bottom: 15px;
-        width: 100%; }
-        /* line 1936, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile #teams .team_info .discipline .value, section.profile #create_team .team_info .discipline .value {
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          align-items: center; }
-          /* line 1943, /Applications/MAMP/htdocs/game/css/style.sass */
-          section.profile #teams .team_info .discipline .value img, section.profile #create_team .team_info .discipline .value img {
-            width: 20px;
-            height: 20px; }
-          /* line 1946, /Applications/MAMP/htdocs/game/css/style.sass */
-          section.profile #teams .team_info .discipline .value p, section.profile #create_team .team_info .discipline .value p {
-            width: calc(100% - 30px);
-            margin-left: 10px;
-            font-size: 14px; }
-        /* line 1950, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile #teams .team_info .discipline h3, section.profile #create_team .team_info .discipline h3 {
-          font-size: 14px;
-          margin-right: 8px; }
-      /* line 1954, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile #teams .team_info h2, section.profile #create_team .team_info h2 {
-        margin-bottom: 15px;
-        font-size: 14px;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 600;
-        color: #03c7eb;
-        letter-spacing: 0px; }
-      /* line 1961, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile #teams .team_info li, section.profile #create_team .team_info li {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        align-items: center;
-        color: #fff;
-        font-size: 14px;
-        text-transform: none;
-        margin-bottom: 5px; }
-        /* line 1972, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile #teams .team_info li h3, section.profile #create_team .team_info li h3 {
-          margin-right: 8px;
-          font-size: 14px; }
-        /* line 1975, /Applications/MAMP/htdocs/game/css/style.sass */
-        section.profile #teams .team_info li img, section.profile #create_team .team_info li img {
-          height: 20px;
-          width: 20px; }
-  /* line 1978, /Applications/MAMP/htdocs/game/css/style.sass */
-  section.profile .choose_game {
-    width: 100%;
+      .profile_content-info .tournament_body .tbl_row div, .profile_content-info .tournament_body .tbl_head div {
+        width: 25%; }
+      .profile_content-info .tournament_body .tbl_row .name, .profile_content-info .tournament_body .tbl_head .name {
+        width: 50%; }
+
+.edit {
+  background: #03c7eb;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#4b98da), to(#03c7eb));
+  background-image: -webkit-linear-gradient(bottom, #4b98da, #03c7eb);
+  background-image: -o-linear-gradient(bottom, #4b98da, #03c7eb);
+  background-image: linear-gradient(to top, #4b98da, #03c7eb);
+  color: #fff;
+  -webkit-appearance: none;
+  border: 0;
+  text-transform: none;
+  border-radius: 3px;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out; }
+  .edit:hover {
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    background-color: #03dd9b;
+    -webkit-box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6);
+    box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6);
+    color: #fff;
+    border: 0; }
+
+#teams .tournament_body, #create_team .tournament_body {
+  width: 100%; }
+  #teams .tournament_body .tbl_row, #teams .tournament_body .tbl_head, #create_team .tournament_body .tbl_row, #create_team .tournament_body .tbl_head {
     border-bottom: 1px solid #2b3559;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    /* line 1991, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .choose_game .game {
-      line-height: 25px; }
-    /* line 1994, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .choose_game form {
-      width: 250px; }
-      /* line 1996, /Applications/MAMP/htdocs/game/css/style.sass */
-      section.profile .choose_game form input {
-        margin-bottom: 0;
-        height: auto; }
-  /* line 1999, /Applications/MAMP/htdocs/game/css/style.sass */
-  section.profile .checkbox {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    align-items: center;
-    margin-bottom: 0; }
-    /* line 2007, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .checkbox label {
-      width: auto;
-      top: 4px;
+    background-color: #222a49; }
+    #teams .tournament_body .tbl_row div, #teams .tournament_body .tbl_head div, #create_team .tournament_body .tbl_row div, #create_team .tournament_body .tbl_head div {
+      width: 20%; }
+    #teams .tournament_body .tbl_row .name, #teams .tournament_body .tbl_head .name, #create_team .tournament_body .tbl_row .name, #create_team .tournament_body .tbl_head .name {
+      width: 40%; }
+    #teams .tournament_body .tbl_row .member, #teams .tournament_body .tbl_head .member, #create_team .tournament_body .tbl_row .member, #create_team .tournament_body .tbl_head .member {
+      color: #69ac41;
+      font-weight: bold;
+      padding-left: 24px;
+      position: relative; }
+      #teams .tournament_body .tbl_row .member:before, #teams .tournament_body .tbl_head .member:before, #create_team .tournament_body .tbl_row .member:before, #create_team .tournament_body .tbl_head .member:before {
+        position: absolute;
+        content: '';
+        background: url(../img/star.svg);
+        background-position: center;
+        background-size: 10px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 29%;
+        width: 10px;
+        height: 10px; }
+
+#teams .team, #create_team .team {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #teams .team_img, #create_team .team_img {
+    width: 120px;
+    height: 120px;
+    border-radius: 3px; }
+    #teams .team_img img, #create_team .team_img img {
+      border-radius: 3px; }
+  #teams .team_info, #create_team .team_info {
+    width: calc((100% - 180px)/2);
+    margin-left: 15px;
+    margin-right: 15px; }
+    #teams .team_info .discipline, #create_team .team_info .discipline {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
-      color: #fff; }
-    /* line 2017, /Applications/MAMP/htdocs/game/css/style.sass */
-    section.profile .checkbox img {
-      height: 30px;
-      width: 30px;
-      margin-right: 10px; }
-  /* line 2021, /Applications/MAMP/htdocs/game/css/style.sass */
-  section.profile .team_head {
+      color: #fff;
+      margin-bottom: 15px;
+      width: 100%; }
+      #teams .team_info .discipline .value, #create_team .team_info .discipline .value {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        #teams .team_info .discipline .value img, #create_team .team_info .discipline .value img {
+          width: 20px;
+          height: 20px; }
+        #teams .team_info .discipline .value p, #create_team .team_info .discipline .value p {
+          width: calc(100% - 30px);
+          margin-left: 10px;
+          font-size: 14px; }
+      #teams .team_info .discipline h3, #create_team .team_info .discipline h3 {
+        font-size: 14px;
+        margin-right: 8px; }
+    #teams .team_info h2, #create_team .team_info h2 {
+      margin-bottom: 15px;
+      font-size: 14px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 600;
+      color: #03c7eb;
+      letter-spacing: 0px; }
+    #teams .team_info li, #create_team .team_info li {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #fff;
+      font-size: 14px;
+      text-transform: none;
+      margin-bottom: 5px; }
+      #teams .team_info li h3, #create_team .team_info li h3 {
+        margin-right: 8px;
+        font-size: 14px; }
+      #teams .team_info li img, #create_team .team_info li img {
+        height: 20px;
+        width: 20px; }
+
+.choose_game {
+  width: 100%;
+  border-bottom: 1px solid #2b3559;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .choose_game .game {
+    line-height: 25px; }
+    .choose_game .game .checkbox label {
+      top: 4px; }
+  .choose_game form {
+    width: 250px; }
+    .choose_game form input {
+      margin-bottom: 0;
+      height: auto; }
+
+.checkbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0; }
+  .checkbox label {
+    width: auto;
+    top: 4px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px; }
-  /* line 2031, /Applications/MAMP/htdocs/game/css/style.sass */
-  section.profile #choose_games input[type="submit"] {
-    width: 200px; }
+    color: #fff; }
+  .checkbox img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px; }
 
-/* line 2033, /Applications/MAMP/htdocs/game/css/style.sass */
+.team_head {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+#choose_games input[type="submit"] {
+  width: 200px; }
+
 .team_body {
   display: none; }
 
-/* line 2036, /Applications/MAMP/htdocs/game/css/style.sass */
 .team_body.active form, .md_body form {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-/* line 2044, /Applications/MAMP/htdocs/game/css/style.sass */
 .team_body.active .field50, .md_body .field50 {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   width: 50%; }
-  /* line 2053, /Applications/MAMP/htdocs/game/css/style.sass */
   .team_body.active .field50:nth-child(2n-1), .md_body .field50:nth-child(2n-1) {
     padding-right: 2%; }
 
-/* line 2055, /Applications/MAMP/htdocs/game/css/style.sass */
 .team_body.active .custom-select, .md_body .custom-select {
   margin-bottom: 20px;
   margin-top: 5px;
   width: 100%;
   height: auto; }
 
-/* line 2060, /Applications/MAMP/htdocs/game/css/style.sass */
 .team_body.active .custom-select > select, .md_body .custom-select > select {
   display: none; }
 
-/* line 2062, /Applications/MAMP/htdocs/game/css/style.sass */
 .team_body.active .select-selected, .md_body .select-selected {
   font-size: 14px; }
 
-/* line 2065, /Applications/MAMP/htdocs/game/css/style.sass */
 .team_body.active .select-items div, .md_body .select-items div {
   font-size: 14px; }
 
-/* line 2067, /Applications/MAMP/htdocs/game/css/style.sass */
 .team_body.active .field100, .md_body .field100 {
   width: 100%; }
 
-/* line 2070, /Applications/MAMP/htdocs/game/css/style.sass */
 .team_body.active textarea, .md_body textarea {
   border: 1px solid #3b5a88;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 14px; }
 
-/* line 2075, /Applications/MAMP/htdocs/game/css/style.sass */
 .balance_cards {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between; }
-  /* line 2083, /Applications/MAMP/htdocs/game/css/style.sass */
   .balance_cards .card {
     width: 30%;
     height: 70px;
@@ -2389,36 +2681,52 @@ section.profile {
     font-size: 22px;
     font-weight: 600;
     letter-spacing: .3px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
     transition: all 0.25s ease; }
-    /* line 2096, /Applications/MAMP/htdocs/game/css/style.sass */
     .balance_cards .card a {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
       height: 100%;
       width: 100%; }
-    /* line 2106, /Applications/MAMP/htdocs/game/css/style.sass */
     .balance_cards .card:hover {
+      -webkit-transition: all 0.45s ease;
+      -o-transition: all 0.45s ease;
       transition: all 0.45s ease;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#4b98da), to(#03c7eb));
+      background-image: -webkit-linear-gradient(bottom, #4b98da, #03c7eb);
+      background-image: -o-linear-gradient(bottom, #4b98da, #03c7eb);
       background-image: linear-gradient(to top, #4b98da, #03c7eb);
       border: none;
       color: #fff; }
 
-/* line 2112, /Applications/MAMP/htdocs/game/css/style.sass */
 .form_btns {
   width: 100%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 15px; }
-  /* line 2121, /Applications/MAMP/htdocs/game/css/style.sass */
   .form_btns .btn, .form_btns input[type=submit].btn {
     padding: 8px 50px;
     margin-top: 0;
@@ -2427,42 +2735,42 @@ section.profile {
     width: auto !important;
     text-transform: none;
     border-radius: 3px; }
-  /* line 2129, /Applications/MAMP/htdocs/game/css/style.sass */
   .form_btns input[type=submit], .form_btns .btn-current {
     margin-right: 20px; }
-  /* line 2131, /Applications/MAMP/htdocs/game/css/style.sass */
   .form_btns .btn-cancel, .form_btns .btn-dark {
     background-color: #030617;
     border: none;
     color: #6a8ab9;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
     transition: all 0.35s ease; }
-    /* line 2136, /Applications/MAMP/htdocs/game/css/style.sass */
     .form_btns .btn-cancel:hover, .form_btns .btn-dark:hover {
       color: #fff;
+      -webkit-box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6);
       box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6);
       background-image: -webkit-linear-gradient(bottom, #4b98da, #03c7eb);
       background-image: -o-linear-gradient(bottom, #4b98da, #03c7eb);
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#4b98da), to(#03c7eb));
       background-image: linear-gradient(to top, #4b98da, #03c7eb);
+      -webkit-transition: all 0.35s ease;
+      -o-transition: all 0.35s ease;
       transition: all 0.35s ease; }
 
-/* line 2145, /Applications/MAMP/htdocs/game/css/style.sass */
 #balance .options > p {
   text-align: center;
   color: #6a8ab9; }
 
-/* line 2148, /Applications/MAMP/htdocs/game/css/style.sass */
 #balance .options_head {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  /* line 2150, /Applications/MAMP/htdocs/game/css/style.sass */
   #balance .options_head h2 {
     margin-bottom: 10px; }
-  /* line 2152, /Applications/MAMP/htdocs/game/css/style.sass */
   #balance .options_head p {
     width: 100%;
     font-size: 13px;
     color: #fff; }
 
-/* line 2157, /Applications/MAMP/htdocs/game/css/style.sass */
 #balance .enter_price_btn {
   font-size: 14px;
   width: 100%;
@@ -2470,152 +2778,280 @@ section.profile {
   color: #6a8ab9;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
-  /* line 2172, /Applications/MAMP/htdocs/game/css/style.sass */
   #balance .enter_price_btn:hover {
     color: #03c7eb;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
     opacity: 1; }
 
-/* line 2176, /Applications/MAMP/htdocs/game/css/style.sass */
 #balance form {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
 
-/* line 2182, /Applications/MAMP/htdocs/game/css/style.sass */
 #balance .select-items div, #balance .select-selected {
   font-size: 14px; }
 
-/* line 2184, /Applications/MAMP/htdocs/game/css/style.sass */
 #balance .custom-select {
   height: 40px; }
 
-/* line 2186, /Applications/MAMP/htdocs/game/css/style.sass */
 #balance .custom-select > select {
   display: none; }
 
-/* line 2188, /Applications/MAMP/htdocs/game/css/style.sass */
 #balance .field30 {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   width: calc(33% - 20px);
   margin: 10px; }
-  /* line 2198, /Applications/MAMP/htdocs/game/css/style.sass */
   #balance .field30 input {
     margin-bottom: 0; }
-  /* line 2200, /Applications/MAMP/htdocs/game/css/style.sass */
   #balance .field30 input[type="submit"] {
     height: 40px; }
 
-/* line 2202, /Applications/MAMP/htdocs/game/css/style.sass */
 #balance #enter_price {
   display: none; }
 
-/* line 2205, /Applications/MAMP/htdocs/game/css/style.sass */
 .school {
   height: calc(100% - 90px);
   margin-top: 90px;
   position: relative; }
-  /* line 2209, /Applications/MAMP/htdocs/game/css/style.sass */
-  .school .wr {
+  .school_body {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; }
-    /* line 2216, /Applications/MAMP/htdocs/game/css/style.sass */
-    .school .wr .news_body {
-      width: 100%;
-      margin-bottom: 50px; }
-  /* line 2219, /Applications/MAMP/htdocs/game/css/style.sass */
-  .school .news_back {
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; }
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%; }
+    .school_body .professor {
+      margin-right: 2%;
+      width: 48%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border-radius: 3px;
+      height: 265px;
+      margin-bottom: 2%;
+      -webkit-transition: .15s ease-in;
+      -o-transition: .15s ease-in;
+      transition: .15s ease-in; }
+      .school_body .professor:hover {
+        -webkit-transition: .15s ease-in;
+        -o-transition: .15s ease-in;
+        transition: .15s ease-in;
+        -webkit-box-shadow: 0 0.125rem 0.9375rem 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0.125rem 0.9375rem 0 rgba(0, 0, 0, 0.5); }
+      .school_body .professor-img {
+        border-radius: 0 3px 3px 0;
+        background-size: cover !important;
+        width: 50%;
+        height: 100%;
+        background-position: center !important;
+        background-repeat: no-repeat !important; }
+        .school_body .professor-img a {
+          width: 100%;
+          height: 100%;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+      .school_body .professor-info {
+        border-radius: 3px 0 0 3px;
+        background-image: -webkit-radial-gradient(ellipse farthest-corner at center top, #222a49 0%, #1b213a 70%);
+        background-image: -o-radial-gradient(ellipse farthest-corner at center top, #222a49 0%, #1b213a 70%);
+        background-image: radial-gradient(ellipse farthest-corner at center top, #222a49 0%, #1b213a 70%);
+        width: 50%;
+        padding: 15px;
+        position: relative; }
+        .school_body .professor-info h2 {
+          line-height: 1.5em;
+          font-size: 18px;
+          color: #fff;
+          margin-bottom: 5px; }
+        .school_body .professor-info p {
+          color: #fff;
+          font-size: 14px;
+          line-height: 1.5em; }
+        .school_body .professor-info ul {
+          margin-top: 15px;
+          font-size: 14px;
+          color: #fff;
+          line-height: 1.4em; }
+        .school_body .professor-info span {
+          margin-left: 5px;
+          opacity: .7; }
+        .school_body .professor-info .professor-btns {
+          position: absolute;
+          bottom: 15px;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 90%;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+        .school_body .professor-info .btn {
+          font-size: 14px;
+          text-transform: none;
+          width: 48%;
+          height: 38px;
+          padding: 0px;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          border-radius: 3px;
+          border: 2px solid #03c7eb;
+          color: #03c7eb; }
+          .school_body .professor-info .btn:hover {
+            color: #fff;
+            background-image: -webkit-gradient(linear, left bottom, left top, from(#4b98da), to(#03c7eb));
+            background-image: -webkit-linear-gradient(bottom, #4b98da, #03c7eb);
+            background-image: -o-linear-gradient(bottom, #4b98da, #03c7eb);
+            background-image: linear-gradient(to top, #4b98da, #03c7eb); }
+        .school_body .professor-info .edit {
+          border: 0;
+          color: #fff; }
 
-/* line 2230, /Applications/MAMP/htdocs/game/css/style.sass */
 #status .options_head {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  /* line 2232, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .options_head h2 {
     margin-bottom: 10px; }
-  /* line 2234, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .options_head p {
     width: 100%;
     font-size: 13px;
     color: #fff;
     line-height: 1.4em; }
 
-/* line 2239, /Applications/MAMP/htdocs/game/css/style.sass */
 #status .status_head {
   margin-bottom: 40px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
-  /* line 2249, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_head-img .stat {
     display: none; }
-  /* line 2251, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_head-img .stat.active {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 80px;
     height: 80px;
     position: relative; }
-    /* line 2262, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_head-img .stat.active:before {
       content: '';
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       display: block;
       width: 180px;
       height: 180px;
       background: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient_badge_def@2x.png) center/contain no-repeat;
       z-index: -1; }
-    /* line 2274, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_head-img .stat.active img {
       position: relative;
       z-index: 1;
       width: 100%;
       height: 100%; }
-  /* line 2280, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_head-info {
     margin-top: 10px; }
-    /* line 2282, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_head-info h2 {
       font-size: 24px;
       font-weight: bold;
@@ -2623,24 +3059,29 @@ section.profile {
       text-transform: none;
       font-family: 'Roboto Condensed', sans-serif;
       text-align: center; }
-    /* line 2289, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_head-info .stat_view {
       position: relative;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       justify-content: center;
       margin-top: 5px; }
-      /* line 2299, /Applications/MAMP/htdocs/game/css/style.sass */
       #status .status_head-info .stat_view p {
         font-size: 16px;
         color: #6a8ab9;
         margin-left: 0px;
         position: relative; }
-        /* line 2304, /Applications/MAMP/htdocs/game/css/style.sass */
         #status .status_head-info .stat_view p:after {
           content: '';
           position: absolute;
@@ -2654,33 +3095,43 @@ section.profile {
           background-repeat: no-repeat;
           width: 12px;
           height: 12px; }
-      /* line 2317, /Applications/MAMP/htdocs/game/css/style.sass */
       #status .status_head-info .stat_view img {
         height: 15px;
         width: 15px;
         margin-right: 10px; }
 
-/* line 2321, /Applications/MAMP/htdocs/game/css/style.sass */
 #status .stat_progress {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 20px;
   height: 49px; }
-  /* line 2330, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .stat_progress .progress {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 100%; }
-  /* line 2339, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .stat_progress .progress-bar {
     width: 13.25rem;
     height: .75rem;
@@ -2688,63 +3139,78 @@ section.profile {
     background-color: rgba(255, 255, 255, 0.35);
     position: relative;
     top: 7px; }
-  /* line 2346, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .stat_progress .progress-full {
     position: relative;
     background-image: -webkit-gradient(linear, right top, left top, from(#0ee3d0), to(#8c73e6));
+    background-image: -webkit-linear-gradient(right, #0ee3d0, #8c73e6);
+    background-image: -o-linear-gradient(right, #0ee3d0, #8c73e6);
     background-image: linear-gradient(to left, #0ee3d0, #8c73e6);
     height: 100%;
     width: 18%;
     border-radius: .375rem; }
 
-/* line 2353, /Applications/MAMP/htdocs/game/css/style.sass */
 #status .points-counter {
   margin-top: 10px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #fff;
   font-size: 16px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center; }
-  /* line 2364, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .points-counter img {
     margin-left: 2px;
     width: 16px;
     height: 16px; }
 
-/* line 2368, /Applications/MAMP/htdocs/game/css/style.sass */
 #status .stat-def {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-left: 20px;
   margin-right: 20px; }
-  /* line 2378, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .stat-def img {
     height: 25px;
     width: 25px;
     margin-bottom: 5px; }
-  /* line 2382, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .stat-def p {
     color: #fff;
     font-size: 16px; }
 
-/* line 2385, /Applications/MAMP/htdocs/game/css/style.sass */
 #status .status_body {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  /* line 2392, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body .status-item {
     width: calc(20% - 20px);
     margin: 10px;
@@ -2752,8 +3218,17 @@ section.profile {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     border-radius: 3px;
     background-color: #222a49;
@@ -2761,26 +3236,21 @@ section.profile {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover; }
-    /* line 2408, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_body .status-item img {
       height: 35px;
       width: 35px;
       margin-bottom: 10px; }
-    /* line 2412, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_body .status-item h2 {
       text-transform: none;
       font-weight: bold;
       font-size: 18px; }
-  /* line 2416, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body .points-counter {
     margin-top: 3px;
     margin-bottom: 15px; }
-    /* line 2419, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_body .points-counter img {
       margin: 0 5px;
       height: 15px;
       width: 15px; }
-  /* line 2423, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body p {
     text-align: center;
     font-size: 13px;
@@ -2790,59 +3260,64 @@ section.profile {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     line-height: 1.4em; }
-    /* line 2436, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_body p span {
       line-height: 1.4em;
       width: 100%;
       font-weight: 800;
       margin-right: 5px;
       font-size: 18px; }
-  /* line 2442, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body .card-plus {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 12px; }
-    /* line 2451, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_body .card-plus span {
       font-size: 16px;
       font-weight: 500;
       color: #fff;
       text-align: center;
       margin-bottom: 10px; }
-    /* line 2457, /Applications/MAMP/htdocs/game/css/style.sass */
     #status .status_body .card-plus img {
       width: 20px;
       height: 20px;
       margin-bottom: 4px; }
-  /* line 2461, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body .def {
     background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-def.png); }
-  /* line 2463, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body .silver {
     background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-silver.png); }
-  /* line 2465, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body .bronze {
     background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-bronze.png); }
-  /* line 2467, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body .gold {
     background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-gold.png); }
-  /* line 2469, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body .diamond {
     background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/vip/gradient-card-diamond.png); }
-  /* line 2471, /Applications/MAMP/htdocs/game/css/style.sass */
   #status .status_body .card-info {
     height: 70px; }
 
-/* line 2473, /Applications/MAMP/htdocs/game/css/style.sass */
 #status .status-text {
   color: #fff;
   font-size: 14px;
@@ -2850,7 +3325,6 @@ section.profile {
   text-align: justify;
   margin-top: 20px; }
 
-/* line 2479, /Applications/MAMP/htdocs/game/css/style.sass */
 .inputfile {
   width: 0.1px !important;
   height: 0.1px !important;
@@ -2859,7 +3333,6 @@ section.profile {
   position: absolute;
   z-index: -1; }
 
-/* line 2487, /Applications/MAMP/htdocs/game/css/style.sass */
 .inputfile + label {
   font-size: 1.25em;
   font-weight: 700;
@@ -2868,11 +3341,9 @@ section.profile {
   display: inline-block;
   cursor: pointer; }
 
-/* line 2495, /Applications/MAMP/htdocs/game/css/style.sass */
 .inputfile:focus + label, .inputfile + label:hover {
   background-color: red; }
 
-/* line 2497, /Applications/MAMP/htdocs/game/css/style.sass */
 label.for_file {
   font-size: 14px;
   color: #5e7aa6;
@@ -2885,14 +3356,17 @@ label.for_file {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 20px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
   transition: all .2s linear;
   cursor: pointer;
   position: relative; }
-  /* line 2512, /Applications/MAMP/htdocs/game/css/style.sass */
   label.for_file:before {
     position: absolute;
     left: 10px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
@@ -2902,77 +3376,83 @@ label.for_file {
     background-repeat: no-repeat;
     content: ''; }
 
-/* line 2526, /Applications/MAMP/htdocs/game/css/style.sass */
 #prof .tournament_body .tbl_row:last-child {
   border-bottom: none; }
 
-/* line 2530, /Applications/MAMP/htdocs/game/css/style.sass */
 #history.profile_content-info .tournament_body .tbl_head > div, #history.profile_content-info .tournament_body .tbl_row > div, #prev.profile_content-info .tournament_body .tbl_head > div, #prev.profile_content-info .tournament_body .tbl_row > div {
   width: 50%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 14px; }
-  /* line 2540, /Applications/MAMP/htdocs/game/css/style.sass */
   #history.profile_content-info .tournament_body .tbl_head > div a, #history.profile_content-info .tournament_body .tbl_row > div a, #prev.profile_content-info .tournament_body .tbl_head > div a, #prev.profile_content-info .tournament_body .tbl_row > div a {
     color: #03c7eb; }
-    /* line 2542, /Applications/MAMP/htdocs/game/css/style.sass */
     #history.profile_content-info .tournament_body .tbl_head > div a:nth-child(2), #history.profile_content-info .tournament_body .tbl_row > div a:nth-child(2), #prev.profile_content-info .tournament_body .tbl_head > div a:nth-child(2), #prev.profile_content-info .tournament_body .tbl_row > div a:nth-child(2) {
       margin-left: 4px;
       margin-right: 4px; }
-  /* line 2545, /Applications/MAMP/htdocs/game/css/style.sass */
   #history.profile_content-info .tournament_body .tbl_head > div span:nth-child(1), #history.profile_content-info .tournament_body .tbl_row > div span:nth-child(1), #prev.profile_content-info .tournament_body .tbl_head > div span:nth-child(1), #prev.profile_content-info .tournament_body .tbl_row > div span:nth-child(1) {
     width: 100%; }
 
-/* line 2547, /Applications/MAMP/htdocs/game/css/style.sass */
 #history.profile_content-info .tournament_body .tbl_row, #prev.profile_content-info .tournament_body .tbl_row {
   position: relative; }
-  /* line 2549, /Applications/MAMP/htdocs/game/css/style.sass */
   #history.profile_content-info .tournament_body .tbl_row .numb, #prev.profile_content-info .tournament_body .tbl_row .numb {
     font-size: 14px;
     position: absolute;
     left: 10px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     border: 1px solid #03c7eb;
     color: #03c7eb;
     width: 12px;
     height: 12px;
     padding: 12px; }
-  /* line 2560, /Applications/MAMP/htdocs/game/css/style.sass */
   #history.profile_content-info .tournament_body .tbl_row .add_result, #prev.profile_content-info .tournament_body .tbl_row .add_result {
     text-decoration: underline;
     color: #03c7eb; }
 
-/* line 2564, /Applications/MAMP/htdocs/game/css/style.sass */
 .md2 h2 {
   color: #fff;
   font-size: 20px;
   margin-bottom: 20px; }
 
-/* line 2570, /Applications/MAMP/htdocs/game/css/style.sass */
 .md2 .md_cont form .field100 {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%; }
 
-/* line 2579, /Applications/MAMP/htdocs/game/css/style.sass */
 .md2 .md_cont form label {
   font-size: 14px;
   color: #6786b4;
   font-weight: 400;
   width: 100%; }
 
-/* line 2584, /Applications/MAMP/htdocs/game/css/style.sass */
 .md2 .md_cont form input {
   font-size: 14px;
   color: #5e7aa6;
@@ -2984,13 +3464,18 @@ label.for_file {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 20px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
   transition: all .2s linear; }
 
-/* line 2596, /Applications/MAMP/htdocs/game/css/style.sass */
 .md2 .md_cont form input[type="submit"] {
   width: 100%;
   background: #03c7eb;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#4b98da), to(#03c7eb));
+  background-image: -webkit-linear-gradient(bottom, #4b98da, #03c7eb);
+  background-image: -o-linear-gradient(bottom, #4b98da, #03c7eb);
   background-image: linear-gradient(to top, #4b98da, #03c7eb);
+  -webkit-box-shadow: 0 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.5);
   color: #fff;
   -webkit-appearance: none;
@@ -2998,25 +3483,221 @@ label.for_file {
   text-transform: none;
   font-size: 14px; }
 
-/* line 2606, /Applications/MAMP/htdocs/game/css/style.sass */
+.faq {
+  margin-top: 90px;
+  height: calc(100% - 90px); }
+  .faq .wr {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .faq .col1 {
+    width: 30%; }
+  .faq .col2 {
+    width: 65%; }
+  .faq .section_head {
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%; }
+    .faq .section_head h2 {
+      position: relative;
+      margin-bottom: 10px; }
+    .faq .section_head p {
+      width: 50%;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 15px;
+      color: #fff;
+      opacity: .8;
+      line-height: 1.4; }
+  .faq .profile_content-menu {
+    margin-top: 0; }
+
+.faq_body {
+  margin-left: auto;
+  margin-right: auto; }
+  .faq_body .question {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    text-align: left;
+    background: #1b213a;
+    margin-bottom: 20px; }
+    .faq_body .question .question_head {
+      cursor: pointer;
+      padding: 20px; }
+      .faq_body .question .question_head img {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        vertical-align: middle; }
+      .faq_body .question .question_head h3 {
+        width: calc(100% - 35px);
+        padding-left: 10px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        display: inline-block;
+        vertical-align: middle; }
+    .faq_body .question .question_body {
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease;
+      display: none; }
+      .faq_body .question .question_body p {
+        padding: 20px;
+        padding-left: 50px;
+        padding-top: 0;
+        font-size: 15px;
+        color: #fff;
+        line-height: 150%;
+        opacity: .7; }
+  .faq_body .question.expanded .question_head img {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  .faq_body .question.expanded .question_body {
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    display: block; }
+
+.faq_form {
+  margin-bottom: 20px; }
+  .faq_form .section_head {
+    margin-bottom: 60px; }
+    .faq_form .section_head h2 {
+      color: #fff;
+      margin-bottom: 20px; }
+    .faq_form .section_head p {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fff;
+      text-align: center; }
+
+.faq_form__body {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto; }
+  .faq_form__body form {
+    max-width: 500px;
+    width: calc(100% - 80px);
+    background: #fff;
+    border-radius: 3px;
+    padding: 30px 40px 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    text-align: left;
+    -webkit-box-shadow: 0 7px 14px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 7px 14px 1px rgba(0, 0, 0, 0.15); }
+    .faq_form__body form .form-input {
+      padding: 10px 0;
+      display: block;
+      width: 100%;
+      position: relative; }
+      .faq_form__body form .form-input label {
+        font-weight: 900;
+        font-size: 14px;
+        color: #526dc6;
+        padding-bottom: 8px;
+        display: block; }
+    .faq_form__body form .form-input.half {
+      padding: 10px 0;
+      width: calc(50% - 10px);
+      display: inline-block;
+      vertical-align: top; }
+      .faq_form__body form .form-input.half:nth-child(2) {
+        margin-left: 15px; }
+    .faq_form__body form #form-name-input, .faq_form__body form #form-email-input, .faq_form__body form #form-subject-select {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 30px;
+      line-height: 100%;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      color: #636363;
+      font-weight: 400;
+      font-size: 16px;
+      padding: 5px 10px; }
+    .faq_form__body form .icon {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      right: 7px;
+      bottom: 15px;
+      position: absolute;
+      z-index: 5;
+      pointer-events: none;
+      cursor: pointer; }
+    .faq_form__body form #form-message-input {
+      -webkit-appearance: none;
+      outline: 0;
+      padding: 0;
+      border: 0;
+      margin: 0;
+      width: 100%;
+      height: 120px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      resize: vertical;
+      color: #636363;
+      font-size: 16px;
+      line-height: 120%;
+      font-weight: 400;
+      padding: 11px 10px;
+      margin-bottom: 10px; }
+    .faq_form__body form select {
+      background: #fff; }
+    .faq_form__body form .btn {
+      width: 200px;
+      border-radius: 6px;
+      -webkit-box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.1);
+      height: 50px; }
+
 .svg {
   -webkit-filter: drop-shadow(0px 0px 4px rgba(102, 175, 233, 0.6));
   filter: drop-shadow(0px 0px 4px rgba(102, 175, 233, 0.6)); }
 
-/* line 2610, /Applications/MAMP/htdocs/game/css/style.sass */
-input::placeholder {
-  color: #6881a9; }
-
-/* line 2612, /Applications/MAMP/htdocs/game/css/style.sass */
-input::-moz-placeholder {
-  color: #6881a9; }
-
-/* line 2614, /Applications/MAMP/htdocs/game/css/style.sass */
 input::-webkit-input-placeholder {
   color: #6881a9; }
 
-/* line 2616, /Applications/MAMP/htdocs/game/css/style.sass */
+input::-moz-placeholder {
+  color: #6881a9; }
+
+input:-ms-input-placeholder {
+  color: #6881a9; }
+
+input::placeholder {
+  color: #6881a9; }
+
+input::-moz-placeholder {
+  color: #6881a9; }
+
+input::-webkit-input-placeholder {
+  color: #6881a9; }
+
 .none {
   display: none; }
-
-/*# sourceMappingURL=style.css.map */

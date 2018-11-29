@@ -80,3 +80,37 @@ a.disabled {
 .select-items div:first-child {
     display: none;
 }
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url(../img/search-blue.svg);
+    background-position: 99% center;
+
+    position: relative;
+    border: 1px solid #5e7aa6;
+    background-color: #1b213a;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: inset 0 3px 3px rgba(0,0,0,.3);
+    box-shadow: inset 0 3px 3px rgba(0,0,0,.3);
+    transition: border-color;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+}
+.input[type=search]:focus {
+        border-color: #848fbc;
+}
+#teams .team_info h2, #create_team .team_info h2 {
+    line-height: 1.4em
+}
+#balance .options_head p {
+    line-height: 1.4em
+}
+#choose_games.profile_content-info input {
+    margin: 0;
+}

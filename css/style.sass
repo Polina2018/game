@@ -36,7 +36,7 @@ a
     border: solid 2px #03cef3
     background-color: transparent
     font-size: 17px
-    padding: 8px 50px
+    padding: 4px 50px
     text-transform: uppercase
      -webkit-transition: all 0.35s ease-in-out
     -moz-transition: all 0.35s ease-in-out
@@ -44,6 +44,7 @@ a
     -o-transition: all 0.35s ease-in-out
     transition: all 0.35s ease-in-out
     font-weight: 700
+    line-height: 1.7em
     &:hover
         color: #1c2237
         border: solid 2px #03cef3
@@ -488,32 +489,12 @@ section
                     a
                         color: #05c9ef
 .news
+    background-image: url(../img/star.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center -136px
+    background-attachment: fixed
     
-    height: 650px
-    overflow-x: hidden
-    overflow-y: auto
-    -webkit-perspective: 1px
-    perspective: 1px
-    .parallax__layer
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-    .parallax__layer.parallax__layer--base
-        -webkit-transform: translateZ(0)
-        transform: translateZ(0)
-        .news_back
-            background-position: center -136px
-            background-image: url(../img/star.png)
-            background-size: cover
-            background-repeat: no-repeat
-            height: 100%
-            width: 100%
-    .parallax__layer.parallax__layer--back
-        transform: translateZ(-1px) scale(2)
-        -webkit-transform: translateZ(-1px) scale(2)
-        
     .wr
         display: -webkit-flex
         display: -moz-flex
@@ -888,6 +869,8 @@ section
             line-height: 5px
             position: absolute
             bottom: 2px
+            left: 50%
+            transform: translateX(-50%)
             .day_points
                 width: 5px
                 height: 5px
@@ -1250,7 +1233,8 @@ textarea
     outline: none
     resize: none
     font-size: 18px
-    color: #6881a9
+    border-radius: 3px
+    
 textarea::placeholder
     color: #6881a9
 textarea::-moz-placeholder
@@ -1267,14 +1251,15 @@ textarea::-webkit-input-placeholder
     .tournament_calendar
         height: 100%
     .filter_left
-        position: fixed
+        position: absolute
         left: 0
-        top: 90px
+        top: 0px
         bottom: 0
         z-index: 4
         background-color: #022b40
         height: 100%
         width: 75px
+        z-index: 0
         li
             transition: 0.3s
             display: block
@@ -1478,10 +1463,11 @@ textarea::-webkit-input-placeholder
             li.active
                 a
                     color: #fff
-                    border-bottom: 2px solid #fff
+                    border-bottom: 2px solid #fff        
         form
             position: relative
-            margin-bottom: 50px
+            margin-bottom: 10px
+            display: block
             .label_placeholder
                 font-weight: 400
                 font-size: 17px
@@ -1545,7 +1531,11 @@ textarea::-webkit-input-placeholder
                 outline: none
                 text-decoration: none
                 color: #A3BDE8
-        
+    .form-group   
+        position: relative
+        height: 60px
+    .checkbox
+        margin-bottom: 10px
     .md_footer
         .btn-facebook
             display: -webkit-flex
@@ -1586,7 +1576,7 @@ textarea::-webkit-input-placeholder
             position: absolute
             width: 20px
             height: 20px
-            top: 0
+            top: 0px
             left: 0
             padding-left: 17px
             background: transparent
@@ -1607,429 +1597,436 @@ textarea::-webkit-input-placeholder
 section.profile
     height: calc(100% - 90px)
     margin-top: 90px
-    .profile_content
-        display: -webkit-flex
-        display: -moz-flex
-        display: -ms-flex
-        display: -o-flex
-        display: flex
-        .col1
-            width: 25%
-            padding-right: 15px
-            padding-left: 15px
-        &-user
-            width: 100%
-            padding: 30px
-            border-radius: 3px
-            background: #1b213a
-            .user_avatar
-                display: -webkit-flex
-                display: -moz-flex
-                display: -ms-flex
-                display: -o-flex
-                display: flex
-                align-items: center
-                justify-content: center
-                margin: 0 auto 10px
-                position: relative
-                width: 120px
-                height: 120px
-                border-radius: 50%
-                background-color: #2a335a
-                background-image: linear-gradient(-45deg, #2a335a 50%, transparent 50%, transparent),linear-gradient(-27deg, #03c7eb 50%, #2a335a 50%, #2a335a)
-                background-image: linear-gradient(33deg,#725daa,#58afad 59%,#83c4a3);
-                background-position: center
-                background-size: 297px
-                background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/lk_profile/avatar_default.png)
-            
-                div
-                    background: #030617
-                    width: 106px
-                    height: 106px
-                    border-radius: 50%
-                    display: -webkit-flex
-                    display: -moz-flex
-                    display: -ms-flex
-                    display: -o-flex
-                    display: flex
-                    align-items: center
-                    justify-content: center
-                    
-                img
-                    width: 55px
-                    height: 55px
-                    cursor: pointer
-            h2
-                font-size: 20px
-                color: #fff
-                font-family: 'Roboto', sans-serif
-                font-weight: bold
-                text-align: center
-                margin-bottom: 2px
-            p
-                font-family: 'Roboto', sans-serif
-                font-weight: 300
-                font-size: 16px
-                color: #fff
-                text-align: center
-                margin-bottom: 10px
-            .user_rank
-                margin-bottom: 10px
-            .user_rank, .wallet
-                font-size: 14px
-                color: #6a8ab9
-                font-family: 'Roboto', sans-serif
-                font-weight: 500
-                text-align: center
-                display: -webkit-flex
-                display: -moz-flex
-                display: -ms-flex
-                display: -o-flex
-                display: flex
-                align-items: center
-                justify-content: center
-                img
-                    width: 25px
-                    height: 25px
-                    margin-right: 5px
-            
-        &-menu
-            width: 100%
-            margin-top: 20px
-            border-bottom: 0
-            background-color: #1b213a
-            border-radius: 3px
-            li
-                width: 100%
-                display: -webkit-flex
-                display: -moz-flex
-                display: -ms-flex
-                display: -o-flex
-                display: flex
-                
-            li > a
-                padding: 20px 30px
-                width: 100%
-                font-family: 'Roboto', sans-serif
-                font-size: 16px
-                color: #6a8ab9
-                border-radius: 0
-                margin-right: 0px
-                display: -webkit-flex
-                display: -moz-flex
-                display: -ms-flex
-                display: -o-flex
-                display: flex
-                &:hover
-                    background-color: #222a49 
-            li.active
-                border-left: 3px solid #03c7eb
-            li.active > a
-                color: #03c7eb
-                border: none
-                background-color: #222a49 
-                border-radius: 3px
-                position: relative
-                &:after
-                    content: ""
-                    position: absolute
-                    right: 10px
-                    top: 50%
-                    transform: translateY(-50%)
-                    width: 10px
-                    height: 13px
-                    background-image: url(../img/profile-arrow.svg)
-                    background-repeat: no-repeat
-        .col2
-            width: 75%
-            padding-right: 15px
-            padding-left: 15px
-    .profile_content-info.active
-        display: block
-    .profile_content-info
-        height: auto
-        display: none
-        .options
-            padding: 20px
-            border-bottom: 0
-            background-color: #1b213a
-            border-radius: 3px
-            margin-bottom: 20px
-            &:last-child
-                margin-bottom: 0
-        .options_head
-            border-bottom: 1px solid #2b3559
+.profile_content
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    .col1
+        width: 25%
+        padding-right: 15px
+        padding-left: 15px
+    &-user
+        width: 100%
+        padding: 30px
+        border-radius: 3px
+        background: #1b213a
+        .user_avatar
             display: -webkit-flex
             display: -moz-flex
             display: -ms-flex
             display: -o-flex
             display: flex
             align-items: center
-            justify-content: space-between
-            margin-bottom: 20px
-            padding-bottom: 20px
-        .edit 
-            background: #03c7eb
-            background-image: linear-gradient(to top, #4b98da, #03c7eb)
-            color: #fff
-            -webkit-appearance: none
-            border: 0
-            text-transform: none
-            border-radius: 3px
-            transition: all 0.35s ease-in-out
-            &:hover
-                transition: all 0.35s ease-in-out
-                background-color: #03dd9b
-                box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6)
-        h2  
-            text-transform: uppercase
-            margin-top: 0px
+            justify-content: center
+            margin: 0 auto 10px
+            position: relative
+            width: 120px
+            height: 120px
+            border-radius: 50%
+            background-color: #2a335a
+            background-image: linear-gradient(-45deg, #2a335a 50%, transparent 50%, transparent),linear-gradient(-27deg, #03c7eb 50%, #2a335a 50%, #2a335a)
+            background-image: linear-gradient(33deg,#725daa,#58afad 59%,#83c4a3);
+            background-position: center
+            background-size: 297px
+            background-image: url(https://xp-scw-portal-ng-ru.akamaized.net/assets/img/backgrounds/lk_profile/avatar_default.png)
 
+            div
+                background: #030617
+                width: 106px
+                height: 106px
+                border-radius: 50%
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+                justify-content: center
+
+            img
+                width: 55px
+                height: 55px
+                cursor: pointer
+        h2
+            font-size: 20px
+            color: #fff
+            font-family: 'Roboto', sans-serif
+            font-weight: bold
+            text-align: center
+            margin-bottom: 2px
+        p
+            font-family: 'Roboto', sans-serif
+            font-weight: 300
+            font-size: 16px
+            color: #fff
+            text-align: center
+            margin-bottom: 10px
+        .user_rank
+            margin-bottom: 18px
+        .user_rank, .wallet
+            font-size: 14px
+            color: #6a8ab9
+            font-family: 'Roboto', sans-serif
+            font-weight: 500
+            text-align: center
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                width: 25px
+                height: 25px
+                margin-right: 5px
+
+    &-menu
+        width: 100%
+        margin-top: 20px
+        border-bottom: 0
+        background-color: #1b213a
+        border-radius: 3px
+        li
+            width: 100%
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+
+        li > a
+            padding: 20px 30px
+            width: 100%
+            font-family: 'Roboto', sans-serif
+            font-size: 16px
+            color: #6a8ab9
+            border-radius: 0
+            margin-right: 0px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            &:hover
+                background-color: #222a49 
+        li.active
+            border-left: 3px solid #03c7eb
+        li.active > a
+            color: #03c7eb
+            border: none
+            background-color: #222a49 
+            border-radius: 3px
+            position: relative
+            &:after
+                content: ""
+                position: absolute
+                right: 10px
+                top: 50%
+                transform: translateY(-50%)
+                width: 10px
+                height: 13px
+                background-image: url(../img/profile-arrow.svg)
+                background-repeat: no-repeat
+    .col2
+        width: 75%
+        padding-right: 15px
+        padding-left: 15px
+.cont
+    display: none
+.cont.active
+    display: block
+.profile_content-info.active
+    display: block
+.profile_content-info
+    height: auto
+    display: none
+    .options
+        padding: 20px
+        border-bottom: 0
+        background-color: #1b213a
+        border-radius: 3px
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+    .options_head
+        border-bottom: 1px solid #2b3559
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 20px
+        padding-bottom: 20px
+    h2  
+        text-transform: uppercase
+        margin-top: 0px
+        font-weight:  bold
+        font-size: 15px
+        color: #fff
+
+
+    .row
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .col
+        width: 49%
+        p
+            margin-bottom: 23px
             font-family: 'Roboto', sans-serif
             font-weight: 400
             font-size: 15px
-            color: #fff
-
-
-        .row
-            display: -webkit-flex
-            display: -moz-flex
-            display: -ms-flex
-            display: -o-flex
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-between
-        .col
-            width: 49%
-            p
-                margin-bottom: 23px
-                font-family: 'Roboto', sans-serif
-                font-weight: 400
-                font-size: 15px
-                color: white
-        .col100
-            width: 100%
-            .tbl_row 
-                p
-                    margin-bottom: 0
-                div
-                    font-size: 15px
-                    padding: 15px 25px
-                    justify-content: flex-start
-        input
-            font-size: 14px
-            color: #5e7aa6
-            border: 1px solid #5e7aa6
-            background: transparent
-            border-radius: 3px
-            height: 100%
-            padding: 10px
-            width: 100%
-            margin-top: 5px
-            margin-bottom: 20px
-            transition: all .2s linear
-            &:focus 
-                transition: all .2s linear
-                border-color: #66afe9
-                outline: 0
-                box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6)
-        label
-            
-            font-size: 14px
-            color: #6786b4
-            font-weight: 400
-            width: 100%
-        input[type="submit"]
-            width: 100%
-            background: #03c7eb
-            background-image: linear-gradient(to top, #4b98da, #03c7eb)
-            box-shadow: 0 0.125rem 1.25rem 0 rgba(0,0,0,.5)
-            color: #fff
-            -webkit-appearance: none
-            border: 0
-            text-transform: none
-            
-            &:hover
-                background-color: #03dd9b
-                box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6)
-        input[type="submit"].delete_acc
-            padding: 10px 10px
-            color: #6a8ab9
-            border: 1px solid #6a8ab9
-            background-image: unset
-            background-color: unset
-            
-            &:hover
-                color: #03c7eb
-                border-color: #03c7eb
-        input[readonly] 
-            background-color: #0f1831
-        .deact_account
-            p
-                margin-bottom: 10px
-        .left
-            width: 50%
-            float: left
-            &:first-child
-                padding-right: 2%   
-        .tournament_body
-            width: 100%
-            .tbl_row, .tbl_head
-                border-bottom: 1px solid #2b3559
-                background-color: #222a49
-                div
-                    width: 25%
-                .name
-                    width: 50%
-    #teams, #create_team
-        .tournament_body
-            width: 100%
-            .tbl_row, .tbl_head
-                border-bottom: 1px solid #2b3559
-                background-color: #222a49
-                div
-                    width: 20%
-                .name
-                    width: 40%
-                .member
-                    color: #69ac41
-                    font-weight: bold
-                    padding-left: 24px
-                    position: relative
-                    &:before 
-                        position: absolute
-                        content: ''
-                        background: url(../img/star.svg)
-                        background-position: center
-                        background-size: 10px
-                        top: 50%
-                        transform: translateY(-50%)
-                        left: 29%
-                        width: 10px
-                        height: 10px
-        .team
-            display: -webkit-flex
-            display: -moz-flex
-            display: -ms-flex
-            display: -o-flex
-            display: flex
-            &_img
-                width: 120px
-                height: 120px
-                border-radius: 3px
-                img
-                    border-radius: 3px
-            &_info
-                width: calc((100% - 180px)/2)
-                margin-left: 15px
-                margin-right: 15px
-                .discipline
-                    display: -webkit-flex
-                    display: -moz-flex
-                    display: -ms-flex
-                    display: -o-flex
-                    display: flex
-                    align-items: center
-                    color: #fff
-                    margin-bottom: 15px
-                    width: 100%
-                    .value
-                        display: -webkit-flex
-                        display: -moz-flex
-                        display: -ms-flex
-                        display: -o-flex
-                        display: flex
-                        align-items: center
-                        img
-                            width: 20px
-                            height: 20px
-                        p
-                            width: calc(100% - 30px)
-                            margin-left: 10px
-                            font-size: 14px
-                    h3
-
-                        font-size: 14px
-                        margin-right: 8px
-                h2
-                    margin-bottom: 15px
-                    font-size: 14px
-                    font-family: 'Roboto Condensed', sans-serif
-                    font-weight: 600
-                    color: #03c7eb
-                    letter-spacing: 0px
-                li
-                    display: -webkit-flex
-                    display: -moz-flex
-                    display: -ms-flex
-                    display: -o-flex
-                    display: flex
-                    align-items: center
-                    color: #fff
-                    font-size: 14px
-                    text-transform: none
-                    margin-bottom: 5px
-                    h3
-                        margin-right: 8px
-                        font-size: 14px
-                    img
-                        height: 20px
-                        width: 20px
-    .choose_game
+            color: white
+    .col100
         width: 100%
-        border-bottom: 1px solid #2b3559
-        padding-bottom: 20px
-        
-        margin-bottom: 20px
-        display: -webkit-flex
-        display: -moz-flex
-        display: -ms-flex
-        display: -o-flex
-        display: flex
-        justify-content: space-between
-        align-items: center
-        .game
-            
-            line-height: 25px
-        form
-            width: 250px
-            input
+        .tbl_row 
+            p
                 margin-bottom: 0
-                height: auto            
-    .checkbox
+            div
+                font-size: 15px
+                padding: 15px 25px
+                justify-content: flex-start
+    input
+        font-size: 14px
+        color: #5e7aa6
+        border: 1px solid #5e7aa6
+        background: transparent
+        border-radius: 3px
+        height: 100%
+        padding: 10px
+        width: 100%
+        margin-top: 5px
+        margin-bottom: 20px
+        transition: all .2s linear
+        &:focus 
+            transition: all .2s linear
+            border-color: #66afe9
+            outline: 0
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6)
+    label
+
+        font-size: 14px
+        color: #6786b4
+        font-weight: 400
+        width: 100%
+    input[type="submit"]
+        width: 100%
+        background: #03c7eb
+        background-image: linear-gradient(to top, #4b98da, #03c7eb)
+        box-shadow: 0 0.125rem 1.25rem 0 rgba(0,0,0,.5)
+        color: #fff
+        -webkit-appearance: none
+        border: 0
+        text-transform: none
+
+        &:hover
+            background-color: #03dd9b
+            box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6)
+    input[type="submit"].delete_acc
+        padding: 10px 10px
+        color: #6a8ab9
+        border: 1px solid #6a8ab9
+        background-image: unset
+        background-color: unset
+
+        &:hover
+            color: #03c7eb
+            border-color: #03c7eb
+    input[readonly] 
+        background-color: #0f1831
+    .deact_account
+        p
+            margin-bottom: 10px
+    .left
+        width: 50%
+        float: left
+        &:first-child
+            padding-right: 2%   
+    .tournament_body
+        width: 100%
+        .tbl_row, .tbl_head
+            border-bottom: 1px solid #2b3559
+            background-color: #222a49
+            div
+                width: 25%
+            .name
+                width: 50%
+.edit 
+    background: #03c7eb
+    background-image: linear-gradient(to top, #4b98da, #03c7eb)
+    color: #fff
+    -webkit-appearance: none
+    border: 0
+    text-transform: none
+    border-radius: 3px
+    transition: all 0.35s ease-in-out
+    &:hover
+        transition: all 0.35s ease-in-out
+        background-color: #03dd9b
+        box-shadow: 0 0 1.25rem 0 rgba(75, 152, 218, 0.6)
+        color: #fff
+        border: 0
+#teams, #create_team
+    .tournament_body
+        width: 100%
+        .tbl_row, .tbl_head
+            border-bottom: 1px solid #2b3559
+            background-color: #222a49
+            div
+                width: 20%
+            .name
+                width: 40%
+            .member
+                color: #69ac41
+                font-weight: bold
+                padding-left: 24px
+                position: relative
+                &:before 
+                    position: absolute
+                    content: ''
+                    background: url(../img/star.svg)
+                    background-position: center
+                    background-size: 10px
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 29%
+                    width: 10px
+                    height: 10px
+    .team
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        &_img
+            width: 120px
+            height: 120px
+            border-radius: 3px
+            img
+                border-radius: 3px
+        &_info
+            width: calc((100% - 180px)/2)
+            margin-left: 15px
+            margin-right: 15px
+            .discipline
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+                color: #fff
+                margin-bottom: 15px
+                width: 100%
+                .value
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+                    align-items: center
+                    img
+                        width: 20px
+                        height: 20px
+                    p
+                        width: calc(100% - 30px)
+                        margin-left: 10px
+                        font-size: 14px
+                h3
+
+                    font-size: 14px
+                    margin-right: 8px
+            h2
+                margin-bottom: 15px
+                font-size: 14px
+                font-family: 'Roboto Condensed', sans-serif
+                font-weight: 600
+                color: #03c7eb
+                letter-spacing: 0px
+            li
+                display: -webkit-flex
+                display: -moz-flex
+                display: -ms-flex
+                display: -o-flex
+                display: flex
+                align-items: center
+                color: #fff
+                font-size: 14px
+                text-transform: none
+                margin-bottom: 5px
+                h3
+                    margin-right: 8px
+                    font-size: 14px
+                img
+                    height: 20px
+                    width: 20px
+.choose_game
+    width: 100%
+    border-bottom: 1px solid #2b3559
+    padding-bottom: 20px
+
+    margin-bottom: 20px
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .game
+
+        line-height: 25px
+        .checkbox
+            label
+                top: 4px
+    form
+        width: 250px
+        input
+            margin-bottom: 0
+            height: auto            
+.checkbox
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    margin-bottom: 0
+    label
+        width: auto
+        top: 4px
         display: -webkit-flex
         display: -moz-flex
         display: -ms-flex
         display: -o-flex
         display: flex
         align-items: center
-        margin-bottom: 0
-        label
-            width: auto
-            top: 4px
-            display: -webkit-flex
-            display: -moz-flex
-            display: -ms-flex
-            display: -o-flex
-            display: flex
-            align-items: center
-            color: #fff
-        img
-            height: 30px
-            width: 30px
-            margin-right: 10px
-    .team_head
-        display: -webkit-flex
-        display: -moz-flex
-        display: -ms-flex
-        display: -o-flex
-        display: flex
-        align-items: center
-        justify-content: space-between
-        margin-bottom: 10px
-    #choose_games 
-        input[type="submit"]
-            width: 200px
+        color: #fff
+    img
+        height: 30px
+        width: 30px
+        margin-right: 10px
+.team_head
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 10px
+#choose_games 
+    input[type="submit"]
+        width: 200px
 .team_body
     display: none
 .team_body.active, .md_body
@@ -2206,26 +2203,107 @@ section.profile
     height: calc(100% - 90px)
     margin-top: 90px
     position: relative
-    .wr
+    &_body
         display: -webkit-flex
         display: -moz-flex
         display: -ms-flex
         display: -o-flex
         display: flex
-        flex-direction: column
-        .news_body
-            width: 100%
-            margin-bottom: 50px
-    .news_back
-        background-position: center !important
-        background-size: cover !important
-        background-repeat: no-repeat !important
-        height: 100%
+        flex-wrap: wrap
         width: 100%
-        position: absolute
-        top: 0
-        left: 0
-        z-index: -1
+        .professor
+            margin-right: 2%;
+            width: 48%
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            display: flex
+            border-radius: 3px
+            height: 265px
+            margin-bottom: 2%
+            transition: .15s ease-in
+            &:hover
+                transition: .15s ease-in
+                box-shadow: 0 0.125rem 0.9375rem 0 rgba(0,0,0,.5)
+            
+            &-img
+                border-radius: 0 3px 3px 0
+                background-size: cover !important
+                width: 50%
+                height: 100%
+                background-position: center !important
+                background-repeat: no-repeat !important
+                a
+                    width: 100%
+                    height: 100%
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+            &-info
+                border-radius: 3px 0 0 3px
+                background-image: radial-gradient(ellipse farthest-corner at center top,#222a49 0%,#1b213a 70%)
+                width: 50%
+                padding: 15px
+                position: relative
+                
+                h2
+                    line-height: 1.5em
+                    font-size: 18px
+                    color: #fff
+                    margin-bottom: 5px
+                p
+                    color: #fff
+                    font-size: 14px
+                    line-height: 1.5em
+                ul
+                    margin-top: 15px
+                    font-size: 14px
+                    color: #fff
+                    line-height: 1.4em
+                span
+                    margin-left: 5px
+                    opacity: .7
+                .professor-btns
+                    position: absolute
+                    bottom: 15px
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+                    width: 90%
+                    left: 50%
+                    transform: translateX(-50%)
+                    justify-content: space-between
+                .btn
+                    font-size: 14px
+                    text-transform: none
+                    width: 48%
+                    height: 38px
+                    padding: 0px
+                    align-items: center
+                    display: -webkit-flex
+                    display: -moz-flex
+                    display: -ms-flex
+                    display: -o-flex
+                    display: flex
+                    justify-content: center
+                    border-radius: 3px
+                    border: 2px solid #03c7eb
+                    color: #03c7eb
+                    &:hover
+                        color: #fff
+                        background-image: linear-gradient(to top, #4b98da, #03c7eb)
+                .edit
+                    border: 0
+                    color: #fff
+                    
+                    
+                
+                    
 #status
     .options_head
         flex-wrap: wrap
@@ -2603,6 +2681,185 @@ label.for_file
                 border: 0
                 text-transform: none
                 font-size: 14px
+.faq
+    margin-top: 90px
+    height: calc(100% - 90px)
+    .wr
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .col1
+        width: 30%
+    .col2
+        width: 65%
+    .section_head
+        position: relative
+        margin-bottom: 60px
+        width: 100%
+        h2
+            position: relative
+            margin-bottom: 10px
+            
+        p
+            width: 50%
+            text-align: center
+            margin-right: auto
+            margin-left: auto
+            font-size: 15px
+            color: #fff
+            opacity: .8
+            line-height: 1.4
+    .profile_content-menu
+        margin-top: 0
+.faq_body
+    margin-left: auto
+    margin-right: auto        
+    .question
+        width: 100%
+        margin-bottom: 20px
+        border-radius: 3px
+        text-align: left
+        background: #1b213a
+        margin-bottom: 20px
+        .question_head
+            cursor: pointer
+            padding: 20px
+            img
+                transform: rotate(0deg)
+                -webkit-transition: all .2s linear
+                transition: all .2s linear
+                -webkit-transform: rotate(-90deg)
+                transform: rotate(-90deg)
+                width: 15px
+                height: 15px
+                display: inline-block
+                vertical-align: middle
+            h3
+                width: calc(100% - 35px)
+                padding-left: 10px
+                font-size: 16px
+                color: #fff
+                font-weight: 400
+                display: inline-block
+                vertical-align: middle
+        .question_body
+            transition: all .2s ease
+            display: none
+            
+            p
+                padding: 20px
+                padding-left: 50px
+                padding-top: 0
+                font-size: 15px
+                color: #fff
+                line-height: 150%  
+                opacity: .7
+    .question.expanded
+        .question_head
+            img
+                transform: rotate(0deg)
+        .question_body
+            transition: all .2s ease
+            display: block
+.faq_form
+    margin-bottom: 20px
+    .section_head
+        margin-bottom: 60px
+        h2
+            color: #fff
+            margin-bottom: 20px
+        p
+            width: 50%
+            margin-left: auto
+            margin-right: auto
+            color: #fff
+            text-align: center
+.faq_form__body
+    max-width: 720px
+    margin-left: auto
+    margin-right: auto
+    form       
+        max-width: 500px
+        width: calc(100% - 80px)
+        background: #fff
+        border-radius: 3px
+        padding: 30px 40px 40px
+        margin: 0 auto
+        margin-top: 30px
+        display: block
+        text-align: left
+        -webkit-box-shadow: 0 7px 14px 1px rgba(0,0,0,.15)
+        box-shadow: 0 7px 14px 1px rgba(0,0,0,.15)
+        .form-input
+            
+            padding: 10px 0
+            display: block
+            width: 100%
+            position: relative
+            label
+                
+                font-weight: 900
+                font-size: 14px
+                color: rgba(82,109,198,1)
+                padding-bottom: 8px
+                display: block
+        .form-input.half
+            padding: 10px 0
+            width: calc(50% - 10px)
+            display: inline-block
+            vertical-align: top
+            &:nth-child(2)
+                margin-left: 15px
+        #form-name-input, #form-email-input, #form-subject-select
+                
+            -webkit-appearance: none
+            width: 100%
+            height: 30px
+            line-height: 100%
+            border: 1px solid #e0e0e0
+            border-radius: 6px
+            color: #636363
+            font-weight: 400
+            font-size: 16px
+            padding: 5px 10px
+        .icon
+            width: 20px
+            height: 20px
+            padding: 5px
+            right: 7px
+            bottom: 15px
+            position: absolute
+            z-index: 5
+            pointer-events: none
+            cursor: pointer
+        #form-message-input
+            -webkit-appearance: none
+            outline: 0
+            padding: 0
+            border: 0
+            margin: 0
+            width: 100%
+            height: 120px
+            border: 1px solid #e0e0e0
+            border-radius: 6px
+            resize: vertical
+            color: #636363
+            font-size: 16px
+            line-height: 120%
+            font-weight: 400
+            padding: 11px 10px
+            margin-bottom: 10px
+        select
+            background: #fff
+        .btn
+            width: 200px
+            border-radius: 6px
+            box-shadow: 0 6px 10px 1px rgba(0,0,0,.1)
+            height: 50px
 .svg
     
     -webkit-filter: drop-shadow(0px 0px 4px rgba(102, 175, 233, 0.6))   

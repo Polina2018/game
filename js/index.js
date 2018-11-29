@@ -1,4 +1,8 @@
  jQuery(function ($) {
+     
+     $('.calendar_head').click(function () {
+         $(this).parent().toggleClass('open', 1000, 'easeOutSine');
+      });
      $('#filter_game').click(function () {
          if ($(this).hasClass('active')) {
              $(this).removeClass('active');
@@ -9,6 +13,8 @@
              $('.calendar_games').fadeIn(100);
          }
      });
+     
+     
      $('#lang').click(function () {
          if ($(this).hasClass('active')) {
              $(this).removeClass('active');
@@ -30,11 +36,11 @@
          }
      });
      $('inputs').click(function () {
-         if ($(this).parent().hasClass('focused')) {
-             $(this).parent().removeClass('focused');
+         if ($(this).parent().parent().hasClass('focused')) {
+             $(this).parent().parent().removeClass('focused');
          }
          else {
-             $(this).parent().addClass('focused');
+             $(this).parent().parent().addClass('focused');
          }
      });
      let input = document.getElementsByClassName('form-control')
@@ -44,13 +50,13 @@
      }
 
      function show() {
-         this.parentNode.classList.add('focused')
+         this.parentNode.parentNode.classList.add('focused')
      }
 
      function hide() {
          // Check first that
          // there any input exist or not in input field 
-         if (this.value.length == 0) this.parentNode.classList.remove('focused')
+         if (this.value.length == 0) this.parentNode.parentNode.classList.remove('focused')
      }
      $(".btn_resetpass").click(function () {
          $('#modal').modal('hide');
@@ -91,6 +97,10 @@
              , clickable: true
          , }
      , });
+     $('.header_mobile #login a').click(function () {
+         $('.md1').fadeIn(0);
+         $('body').css('overflow', 'hidden');
+     });
      $('#login').click(function () {
          $('.md1').fadeIn(0);
          $('.md_login').addClass('active');
@@ -132,21 +142,18 @@
      $('.btn-create').click(function () {
          if ($(this).parent().parent().children('.team_body').hasClass('active')) {
              $('.team_body').removeClass('active');
-           
              $('.team_body').hide(300);
          }
          else {
              $('.team_body').toggleClass('active');
              $('.team_body.active').show(300);
-             
          }
      });
-     
-      $('#enter_price_btn').click(function () {
+     $('#enter_price_btn').click(function () {
          $('.balance_cards').fadeOut(0);
          $('#enter_price').fadeIn(0);
      });
-      $('#choose_price_btn').click(function () {
+     $('#choose_price_btn').click(function () {
          $('#enter_price').css('display', 'none');
          $('.balance_cards').fadeIn(0);
      });
@@ -228,7 +235,7 @@
  document.addEventListener('DOMContentLoaded', function () {
      var navListItems = $('ul.nav-list li a')
          , navHeadItems = $('.options_head a')
-         , cont = $('.profile_content-info');
+         , cont = $('.cont');
      cont.hide();
      navListItems.click(function (e) {
          e.preventDefault();
@@ -251,4 +258,37 @@
          }
      });
      $('ul.nav-list li.active a').trigger('click');
+ });
+ $(document).ready(function () {
+     $(".question_head").on("click", function (e) {
+         if ($(e.currentTarget).parent().hasClass("expanded")) {
+             $(e.currentTarget).parent().removeClass("expanded");
+         }
+         else {
+             $(e.currentTarget).parent().addClass("expanded");
+         }
+     });
+ });
+ $(document).ready(function () {
+     $('.open_menu').click(function () {
+         if ($(this).hasClass('active')) {
+             $(this).removeClass('active');
+             $('.header').removeClass('header-2');
+              $('html').removeClass('scrollHidden');
+         }
+         else {
+             $(this).addClass('active');
+             $('.header').addClass('header-2');
+              $('html').addClass('scrollHidden');
+         }
+     });
+     $('.header-2 .dropdown').click(function () {
+         if ($(this).hasClass('active')) {
+             $(this).removeClass('active');  
+         }
+         else {
+             $(this).addClass('active');
+         }
+     });
+     
  });
